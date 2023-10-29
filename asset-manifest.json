@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/the-watoto-library/static/css/main.a502af64.css",
-    "main.js": "/the-watoto-library/static/js/main.8fddd0a0.js",
+    "main.js": "/the-watoto-library/static/js/main.6a575bd9.js",
     "static/media/IMG_8027-780x420.png": "/the-watoto-library/static/media/IMG_8027-780x420.37c94f469a2afc554ec8.png",
     "static/media/3.png": "/the-watoto-library/static/media/3.30ebcefdf556d7f2d366.png",
     "static/media/4.png": "/the-watoto-library/static/media/4.370d57108e77fe7ec755.png",
@@ -152,10 +152,10 @@
     "static/media/502nkB7w_400x400.jpeg": "/the-watoto-library/static/media/502nkB7w_400x400.1f1ea880c337d6d4219c.jpeg",
     "index.html": "/the-watoto-library/index.html",
     "main.a502af64.css.map": "/the-watoto-library/static/css/main.a502af64.css.map",
-    "main.8fddd0a0.js.map": "/the-watoto-library/static/js/main.8fddd0a0.js.map"
+    "main.6a575bd9.js.map": "/the-watoto-library/static/js/main.6a575bd9.js.map"
   },
   "entrypoints": [
     "static/css/main.a502af64.css",
-    "static/js/main.8fddd0a0.js"
+    "static/js/main.6a575bd9.js"
   ]
 }
