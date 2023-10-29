@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-        <Routes>
+        <Routes basename="/the-watoto-library">
           <Route path="/" element={<Home />} />
           <Route path="/Articles" element={<Articles />} />
           <Route path="/WhatWeDo" element={<WhatWeDo />} />
