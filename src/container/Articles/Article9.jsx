@@ -65,14 +65,11 @@ const Article9 = () => {
                   <br />
                   <br />
                   Earlier this year, we made plans to do{" "}
-                  <u>
-                    <a
-                      href="http://thewatotolibrary.org/articles/4.html"
-                      target="_blank"
-                    >
-                      cleanups around Kibera
-                    </a>
-                  </u>{" "}
+                  <Link to="/articles/4" target="_blank">
+                    <u>
+                      <a>cleanups around Kibera</a>
+                    </u>
+                  </Link>{" "}
                   to improve the water quality of the community. We are thrilled
                   to see these plans being implemented, and we are proud to
                   share that our children and staff are actively volunteering

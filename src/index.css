@@ -319,6 +319,9 @@ padding-right: 5%;
   padding-left: 0;
   box-shadow: 0px 0px 0.6em rgba(0, 0, 0, 0.2);
   width: 10em;
+  border-left: 0.08em solid #1ba0f2;
+  border-bottom: 0.08em solid #1ba0f2;
+  border-right: 0.08em solid #1ba0f2;
 }
 
 .submenu > li > a {
