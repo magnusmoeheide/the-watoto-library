@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
 import { Home, Article, Articles, GetInTouch, Donate, About, Kibera, Founder, Store, TermsOfSale } from './container';
 
-import { WhatWeDo, ComputerClass, ChessClub, StudyGroup, DanceGroup, Klwf } from './container';
+import { WhatWeDo, Wwd } from './container';
 import { Fullscreen } from './components';
 
 
@@ -22,7 +22,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/article/:articleId" element={<Article />} />
           <Route path="/articles" element={<Articles />} />
-          <Route path="/WhatWeDo" element={<WhatWeDo />} />
+          <Route path="/whatwedo" element={<WhatWeDo />} />
+          <Route path="/whatwedo/:wwdId" element={<Wwd />} />
           <Route path="/getintouch" element={<GetInTouch />} />
 
           <Route path="/about" element={<About />} />
@@ -32,13 +33,6 @@ function App() {
           <Route path="/donate" element={<Donate />} />
           <Route path="/donate/store" element={<Store />} />
           <Route path="/donate/termsofsale" element={<TermsOfSale />} />
-
-          <Route path="/whatwedo/1" element={<ComputerClass />} />   
-          <Route path="/whatwedo/2" element={<ChessClub/>} />   
-          <Route path="/whatwedo/3" element={<StudyGroup/>} />   
-          <Route path="/whatwedo/4" element={<DanceGroup/>} />   
-          <Route path="/whatwedo/5" element={<Klwf/>} />   
-
         </Routes>
     </div>
   );

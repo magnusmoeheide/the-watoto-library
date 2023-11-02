@@ -15,11 +15,7 @@ import Articles from './Articles/Articles';
 
 // WHAT WE DO
 import WhatWeDo from './WhatWeDo/WhatWeDo';
-import ComputerClass from './WhatWeDo/ComputerClass';
-import ChessClub from './WhatWeDo/ChessClub';
-import StudyGroup from './WhatWeDo/StudyGroup';
-import DanceGroup from './WhatWeDo/DanceGroup';
-import Klwf from './WhatWeDo/Klwf';
+import Wwd from './WhatWeDo/Wwd';
 
 
 export {
@@ -27,5 +23,5 @@ export {
     
     About, Kibera, Founder,
 
-    WhatWeDo, ComputerClass, ChessClub, StudyGroup, DanceGroup, Klwf
+    WhatWeDo, Wwd
 }
