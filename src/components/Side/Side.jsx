@@ -7,7 +7,7 @@ const Side = () => {
     <div className="side" id="side">
       <Link to="/">
         <div className="logo" style={{ cursor: "pointer" }}>
-          <img src={images.logoTransparent} className="img-nozoom" />
+          <img src={images.logoTransparent} className="img-nozoom" alt="logo" />
         </div>
       </Link>
 
@@ -37,7 +37,11 @@ const Side = () => {
       <Link to="/whatwedo/chessclub">
         <div className="pointer">
           <div className="chess-peak">
-            <img src={images.boysPlayingChess} className="img-nozoom" />
+            <img
+              src={images.boysPlayingChess}
+              className="img-nozoom"
+              alt="Boys playing chess"
+            />
           </div>
         </div>
       </Link>

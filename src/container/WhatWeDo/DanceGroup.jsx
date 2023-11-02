@@ -1,19 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Footer, Side, Slideshow, Section } from "../../components";
+import { Navbar, Footer, Side, Section } from "../../components";
 import { images } from "../../constants";
 
 const DanceGroup = () => {
   const currentWwdId = "4";
-
-  const slides = [
-    images.studyGroup1,
-    images.studyGroup2,
-    images.studyGroup5,
-    images.studyGroup9,
-    images.studyGroup8,
-  ];
-  const dots = Array(slides.length).fill(null);
 
   return (
     <div>

@@ -24,7 +24,11 @@ const About = () => {
                   by private funds and sponsors.
                 </p>
               </div>
-              <img src={images.insideTheLibrary} className="img" />
+              <img
+                src={images.insideTheLibrary}
+                className="img"
+                alt="Inside TWL"
+              />
             </div>
           </div>
 
@@ -49,7 +53,7 @@ const About = () => {
                   </div>
                 </Link>
               </div>
-              <img src={images.kibera1} className="img" />
+              <img src={images.kibera1} className="img" alt="Kibera1" />
             </div>
           </div>
 
@@ -71,7 +75,7 @@ const About = () => {
                   empathy for one another.
                 </p>
               </div>
-              <img src={images.workingTogether} className="img" />
+              <img src={images.workingTogether} className="img" alt="Why TWL" />
             </div>
             <div className="flex-image-text">
               <div>
@@ -86,7 +90,11 @@ const About = () => {
                   will aid the kids with their learning.
                 </p>
               </div>
-              <img src={images.happyChildren} className="img" />
+              <img
+                src={images.happyChildren}
+                className="img"
+                alt="Happy children"
+              />
             </div>
           </div>
 
@@ -111,7 +119,7 @@ const About = () => {
                   </div>
                 </Link>
               </div>
-              <img src={images.founder1} className="img" />
+              <img src={images.founder1} className="img" alt="The founder" />
             </div>
           </div>
 

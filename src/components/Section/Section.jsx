@@ -71,7 +71,7 @@ const Section = ({
             </div>
           )}
         </div>
-        {img && <img src={img} className="img" />}
+        {img && <img src={img} className="img" alt={title} />}
       </div>
       {!readMore && <br />}
     </div>

@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Navbar, Footer, Side, Section } from "../../components";
-import { images } from "../../constants";
+import React from "react";
+import { Link } from "react-router-dom";
+import { Navbar, Footer, Side } from "../../components";
 
 const TermsOfSale = () => {
   return (

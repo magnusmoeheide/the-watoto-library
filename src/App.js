@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
-import { Home, Article, Articles, GetInTouch, Donate, About, Kibera, Founder, Partners, Store, TermsOfSale } from './container';
+import { Home, Article, Articles, GetInTouch, Donate, About, Kibera, Founder, Store, TermsOfSale } from './container';
 
 import { WhatWeDo, ComputerClass, ChessClub, StudyGroup, DanceGroup, Klwf } from './container';
 import { Fullscreen } from './components';
-import Slideshow from './components';
 
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
           <Route path="/articles" element={<Articles />} />
           <Route path="/WhatWeDo" element={<WhatWeDo />} />
           <Route path="/getintouch" element={<GetInTouch />} />
-          {/* <Route path="/getintouch/partners" element={<Partners />} /> */}
 
           <Route path="/about" element={<About />} />
           <Route path="/about/kibera" element={<Kibera />} />

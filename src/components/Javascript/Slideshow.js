@@ -27,7 +27,8 @@ function Slideshow({ slides, dots }) {
 
   useEffect(() => {
     showSlides(slideIndex);
-  }, [slideIndex]);
+  }, [slideIndex, showSlides]);
+  
 
   function showSlides(n) {
     const allSlides = document.getElementsByClassName("mySlides");

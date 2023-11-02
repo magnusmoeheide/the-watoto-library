@@ -239,7 +239,6 @@ export default {
     // DONATE
     vippsLogo, paypalLogo, donorBoxLogo, scanVipps, kidLooking,
 
-
     // ARTICLE IMAGES
     one1, one2, one3, one4, one5, one6, one7,
     three1, three2, three3, three4, three5, three6, three7, three8, three9, three10,

@@ -1,6 +1,5 @@
 import React from "react";
 import { images } from "../../constants";
-import { Link } from "react-router-dom";
 
 const partners = [
   {

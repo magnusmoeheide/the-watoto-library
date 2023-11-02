@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { images } from "../../constants";
-import { Navbar, Footer, Side, Section } from "../../components";
+import { Navbar, Footer, Section } from "../../components";
 import { SelectArticle } from "../../components";
 
 export const articles = [
