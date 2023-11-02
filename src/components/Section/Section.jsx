@@ -63,7 +63,7 @@ const Section = ({
           <p>{description}</p>
           {readMore && (
             <div class="div-readmore">
-              <Link to={customReadMoreLink || `/articles/${articleId}`}>
+              <Link to={customReadMoreLink || `/article/${articleId}`}>
                 <p class="readmore">
                   {readMore} <i class="fa-solid fa-arrow-right"></i>
                 </p>

@@ -4,7 +4,7 @@ import { articles } from "../../container/Articles/Articles";
 
 function NextArticles({ currentArticleId }) {
   const currentArticleIndex = articles.findIndex(
-    (article) => article.id === currentArticleId
+    (article) => article.id === Number(currentArticleId)
   );
 
   let prevArticles = articles
@@ -26,7 +26,7 @@ function NextArticles({ currentArticleId }) {
       <div className="article-click" style={{ cursor: "default" }}>
         <h3>Read More</h3>
         {prevArticles.map((article) => (
-          <Link to={`/articles/${article.id}`} key={article.id}>
+          <Link to={`/article/${article.id}`} key={article.id}>
             <div className="newsletter-wrapping">
               <a className="button">{article.title}</a>
             </div>
