@@ -69,7 +69,7 @@ const Kibera = () => {
                   </p>
                 </>
               }
-              img={images.kibera2}
+              img={images.kibera3}
             />
 
             <Section

@@ -7,7 +7,7 @@ const partners = [
     name: "Skullerud skole",
     img: images.skullerudSkole,
     text: "Hello",
-    website: "https://www.skullerud.osloskolen.no",
+    website: "https://skullerud.osloskolen.no",
   },
   {
     name: "Opsahlgruppen",

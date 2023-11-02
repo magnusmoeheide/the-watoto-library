@@ -21,22 +21,48 @@ const Home = () => {
           <div className="article">
             <div className="counter-parent">
               <Counter
-                header="Programs"
-                targetNumber={6}
-                icon='<i class="fa-solid fa-utensils"></i>'
-                description="Through our programs, we are able to bring change to many areas of the Kibera children's lives."
+                header="Daily library users"
+                targetNumber={200}
+                icon='<i class="fa-solid fa-book"></i>'
+                description={
+                  <>
+                    More than 200 children have direct access to our library on
+                    a daily basis.
+                  </>
+                }
               />
               <Counter
                 header="Children impacted"
-                targetNumber={800}
+                targetNumber={1200}
                 icon='<i class="fa-solid fa-hand-holding-medical"></i>'
-                description="The entire community utilizes and appreciates The Watoto Library."
+                description={
+                  <>
+                    The entire community utilizes and appreciates The Watoto
+                    Library.
+                  </>
+                }
               />
               <Counter
-                header="Children sent to school"
-                targetNumber={1166}
+                header="Sponsored children"
+                targetNumber={24}
                 icon='<i class="fa-solid fa-school"></i>'
-                description="We have been able to send several kids to school and change their future."
+                description={
+                  <>
+                    We have been able to send a great number of children to
+                    school.
+                  </>
+                }
+              />
+              <Counter
+                header="Meals served"
+                targetNumber={800}
+                icon='<i class="fa-solid fa-utensils"></i>'
+                description={
+                  <>
+                    Through our programs, we have been able to feed many
+                    children.
+                  </>
+                }
               />
             </div>
           </div>

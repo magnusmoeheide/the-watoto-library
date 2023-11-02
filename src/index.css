@@ -713,13 +713,21 @@ display: flex;
 align-items: center;
 }
 
+.flex-image-text h3 {
+  margin-bottom: 0;
+}
+
+.flex-image-text p {
+  margin-top: 0;
+}
+
+
 .flex-image-text h2 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   }
 
 .flex-image-text img {
-/*max-height: 19em;*/
 max-width: 50%;
 margin-left: 0.9em;
 }
@@ -731,10 +739,16 @@ margin-left: 0.9em;
   padding: 0;
 }
 
+.flex-image-text h3 {
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
 .flex-image-text img {
   max-height:none;
   max-width: 100%;
   margin: 0;
+  margin-top: 0.5em;
 }
 
 }
@@ -1404,6 +1418,7 @@ border: 0.1em solid rgba(128, 128, 128, 0.352);
 
 .button-design.paypal {
   max-width: 100%;
+  margin-top: 1em;
 }
 }
 
@@ -1485,6 +1500,7 @@ border-radius: 0.4em;
 user-select: none;
 display: inline-block;
 margin: 0;
+margin-top: 0.5em;
 }
 
 .date i {
@@ -1777,6 +1793,8 @@ color: rgba(0, 0, 0, 0.25);
   padding: 0;
   margin: 0;
   color: #1BA0F2;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @keyframes underlineAppearThenDisappear {
@@ -1795,7 +1813,7 @@ color: rgba(0, 0, 0, 0.25);
 }
 
 .underline-animation-header {
-    font-size: 1.5em;
+    font-size: 1.4em;
     position: relative;
     display: inline-block;
     margin: 0;

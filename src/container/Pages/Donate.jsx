@@ -73,7 +73,7 @@ const Donate = () => {
               <img
                 src={images.vippsLogo}
                 className="img-nozoom paypal"
-                style={{ width: "15em", marginTop: "-0.6em" }}
+                style={{ width: "15em", marginTop: "-0.3em" }}
               />
             </div>
           </div>
@@ -99,7 +99,7 @@ const Donate = () => {
               <img
                 src={images.donorBoxLogo}
                 className="img-nozoom paypal"
-                style={{ width: "15em", marginTop: "-0.6em" }}
+                style={{ width: "15em" }}
               />
             </div>
           </div>

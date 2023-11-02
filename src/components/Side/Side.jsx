@@ -16,7 +16,7 @@ const Side = () => {
           Imagine a place <span>valued</span> and <span>appreciated</span>.
         </p>
         <p>
-          A place where kids can come in, feel good about themselves,
+          A place where children can come in, feel good about themselves,
           <span> trust</span> and <span>understand</span> one another.
         </p>
         <p>

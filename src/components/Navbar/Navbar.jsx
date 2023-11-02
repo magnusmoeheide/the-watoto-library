@@ -88,7 +88,7 @@ const Navbar = () => {
             <li className="header-category">
               <Link to="/about">
                 <i className="fa-solid fa-book"></i>
-                <span>About TWL</span>
+                <span>About Us</span>
               </Link>
             </li>
             <li>

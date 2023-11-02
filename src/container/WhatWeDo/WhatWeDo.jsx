@@ -50,7 +50,7 @@ export const whatwedo = [
     title: "Kibera Local Water Forum",
     instructor: "Brandon",
     openingHours: "Fri - Sat | 8 - 12am",
-    img: images.klwf1,
+    img: images.klwf13,
     description:
       "We are dedicated to restoring and beautifying a long section of the Nairobi River that flows through our community. In the past, this river played a crucial role in enhancing our community's well-being, serving as a source of clean water for drinking, bathing, and washing clothes.",
   },

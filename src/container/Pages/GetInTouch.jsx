@@ -33,9 +33,9 @@ const GetInTouch = () => {
                         <br />
                         Executive Director
                       </p>
-                      <p>
+                      {/* <p>
                         <a className="button-design form">Contact</a>
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -54,9 +54,9 @@ const GetInTouch = () => {
                         <br />
                         Director of IT and Finance
                       </p>
-                      <p>
+                      {/* <p>
                         <a className="button-design form">Contact</a>
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </div>
