@@ -4,6 +4,72 @@ import { Navbar, Footer, Side, Section } from "../../components";
 import { images } from "../../constants";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
+const team = [
+  {
+    id: 1,
+    role: "Board",
+    name: "Brandon Francis Okoth",
+    description_1: "Founder",
+    description_2: "Executive Director",
+    img: images.brandon,
+  },
+  {
+    id: 2,
+    role: "Board",
+    name: "Magnus Heide",
+    description_1: "Cofounder",
+    description_2: "Director of Finance and IT",
+    img: images.magnus,
+  },
+  {
+    id: 3,
+    role: "Team",
+    name: "Justin Omondi",
+    description_1: "Educator",
+    img: images.justin,
+  },
+  {
+    id: 4,
+    role: "Team",
+    name: "Bernard Chacha",
+    description_1: "Dance Instuctor",
+    img: images.bernard,
+  },
+  {
+    id: 5,
+    role: "Team",
+    name: "Alice Ngina",
+    description_1: "Library Keeper",
+    img: images.alice,
+  },
+  {
+    id: 6,
+    role: "Team",
+    name: "Evans Mwangi",
+    description_1: "Computer Educator",
+    img: images.evans,
+  },
+];
+
+const boardMembers = team.filter((member) => member.role === "Board");
+const teamMembers = team.filter((member) => member.role === "Team");
+
+const renderMember = (member) => (
+  <div className="column" id={member.name.toLowerCase().replace(/\s/g, "")}>
+    <div className="card">
+      <img src={member.img} alt={member.name} style={{ width: "100%" }} />
+      <div className="container">
+        <h2>{member.name}</h2>
+        <p className="title">
+          {member.description_1}
+          <br />
+          {member.description_2 && `${member.description_2}`}
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
 const GetInTouch = () => {
   return (
     <div>
@@ -15,51 +81,8 @@ const GetInTouch = () => {
           <div className="article" id="board">
             <h2>Board</h2>
             <div className="flex-container">
-              <div classNames="row2">
-                <div className="column" id="brandon">
-                  <div
-                    className="card"
-                    onclick="changeToBrandon(), openPopup()"
-                  >
-                    <img
-                      src={images.brandon}
-                      alt="Brandon"
-                      style={{ width: "100%" }}
-                    />
-                    <div className="container">
-                      <h2>Brandon Francis Okoth</h2>
-                      <p className="title">
-                        Founder
-                        <br />
-                        Executive Director
-                      </p>
-                      {/* <p>
-                        <a className="button-design form">Contact</a>
-                      </p> */}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="column" id="magnus">
-                  <div className="card" onclick="changeToMagnus(), openPopup()">
-                    <img
-                      src={images.magnus}
-                      alt="Magnus"
-                      style={{ width: "100%" }}
-                    />
-                    <div className="container">
-                      <h2>Magnus Heide</h2>
-                      <p className="title">
-                        Cofounder
-                        <br />
-                        Director of IT and Finance
-                      </p>
-                      {/* <p>
-                        <a className="button-design form">Contact</a>
-                      </p> */}
-                    </div>
-                  </div>
-                </div>
+              <div className="row2">
+                {boardMembers.map((member) => renderMember(member))}
               </div>
             </div>
           </div>
@@ -68,92 +91,14 @@ const GetInTouch = () => {
 
           <div className="article" id="team">
             <h2>Team</h2>
-            <div class="flex-container">
-              <div class="row2">
-                <div class="column" id="justin">
-                  <div
-                    class="card"
-                    style={{ marginTop: "10px", cursor: "auto" }}
-                  >
-                    <img
-                      src={images.justin}
-                      alt="Justin"
-                      style={{ width: "100%" }}
-                    />
-                    <div class="container">
-                      <h2>Justin Omondi</h2>
-                      <p class="title">Educator</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column" id="bernard">
-                  <div
-                    class="card"
-                    style={{ marginTop: "10px", cursor: "auto" }}
-                  >
-                    <img
-                      src={images.bernard}
-                      alt="Bernard"
-                      style={{ width: "100%" }}
-                    />
-                    <div class="container">
-                      <h2>Bernard Chacha</h2>
-                      <p class="title">Dance Instructor</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column" id="alice">
-                  <div
-                    class="card"
-                    style={{ marginTop: "10px", cursor: "auto" }}
-                  >
-                    <img
-                      src={images.alice}
-                      alt="Alice"
-                      style={{ width: "100%" }}
-                    />
-                    <div class="container">
-                      <h2>Alice Ngina</h2>
-                      <p class="title">Library Keeper</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column" id="evans">
-                  <div
-                    class="card"
-                    style={{ marginTop: "10px", cursor: "auto" }}
-                  >
-                    <img
-                      src={images.evans}
-                      alt="Evans"
-                      style={{ width: "100%" }}
-                    />
-                    <div class="container">
-                      <h2>Evans Mwangi</h2>
-                      <p class="title">Computer Educator</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="flex-container">
+              <div className="row2">
+                {teamMembers.map((member) => renderMember(member))}
               </div>
             </div>
           </div>
 
           <br />
-
-          {/* <div className="article" id="contact">
-            <Section
-              header="Our Partners"
-              description="We are able to accomplish many our our goals through our partners
-              and thank them for their engagements."
-              readMore="Read more"
-              customReadMoreLink="/getintouch/partners"
-            />
-          </div>
-
-          <br /> */}
 
           <div className="article" id="contact">
             <h2>Contact Us</h2>

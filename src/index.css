@@ -699,6 +699,10 @@ color: white;
 color: white;
 }
 
+.fab:hover {
+  cursor: pointer;
+}
+
 
 /*.se-pre-con {
 position: fixed;

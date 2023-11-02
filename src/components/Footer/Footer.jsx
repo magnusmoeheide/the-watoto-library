@@ -52,7 +52,7 @@ const Footer = () => {
                   <a>Our Team</a>
                 </li>
               </Link>
-              <Link to="/articles/founder">
+              <Link to="/about/founder">
                 <li>
                   <a>Our Founder</a>
                 </li>
