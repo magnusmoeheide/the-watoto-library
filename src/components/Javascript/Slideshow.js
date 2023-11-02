@@ -49,8 +49,7 @@ function Slideshow({ slides, dots }) {
 
   return (
     <div>
-        <br />
-        <br />
+      <br />
         <div className="slideshow-content slideshow-display-container">
             {slides.map((src, index) => (
                 <img className="mySlides" src={src} alt={`Slide ${index + 1}`} key={index}  onClick={toggleFullscreen}/>
@@ -73,9 +72,7 @@ function Slideshow({ slides, dots }) {
                     ></span>
                 ))}
             </div>
-        )}
-        <br />
-        <br />  
+        )} 
     </div>
   );
 }

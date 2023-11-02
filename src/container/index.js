@@ -8,7 +8,8 @@ import About from './Pages/About';
 import Kibera from './Pages/Kibera';
 import Founder from './Pages/Founder';
 import Partners from './Pages/Partners'
-import Store from './Pages/Store'
+import Store from './Pages/Store';
+import TermsOfSale from './Pages/TermsOfSale';
 
 import Articles from './Articles/Articles';
 import Article1 from './Articles/Article1';
@@ -31,7 +32,7 @@ import Klwf from './WhatWeDo/Klwf';
 
 
 export {
-    Home, Articles, GetInTouch, Donate, Store,
+    Home, Articles, GetInTouch, Donate, Store, TermsOfSale,
     
     About, Kibera, Founder, Partners,
 

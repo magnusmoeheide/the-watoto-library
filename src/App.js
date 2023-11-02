@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
-import { Home, Articles, GetInTouch, Donate, About, Kibera, Founder, Partners, Store } from './container';
+import { Home, Articles, GetInTouch, Donate, About, Kibera, Founder, Partners, Store, TermsOfSale } from './container';
 
 import { Article1, Article3, Article4, Article5, Article6, Article7, Article8, Article9, Article10 } from './container';
 
@@ -34,6 +34,7 @@ function App() {
 
           <Route path="/donate" element={<Donate />} />
           <Route path="/donate/store" element={<Store />} />
+          <Route path="/donate/termsofsale" element={<TermsOfSale />} />
 
           <Route path="/whatwedo/1" element={<ComputerClass />} />   
           <Route path="/whatwedo/2" element={<ChessClub/>} />   

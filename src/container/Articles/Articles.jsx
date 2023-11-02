@@ -13,7 +13,7 @@ export const articles = [
     title: "Building Bonds of Joy and Hope",
     img: images.ten10,
     description:
-      "Our best gifts come from our library children. The gifts of joy and hope, as we shower them with lots of love and care. They have taught us to be good listeners as they share their life stories with us. We are grateful to them for the trust they have placed in our devoted staff. We are walking a beautiful journey with the children, reminding each other that we are here for one another.",
+      "Our best gifts come from our library children. The gifts of joy and hope, as we shower them with lots of love and care. They have taught us to be good listeners as they share their life stories with us. We are walking a beautiful journey with the children, reminding each other that we are here for one another.",
   },
   {
     id: "9",

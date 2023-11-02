@@ -150,7 +150,7 @@ const Donate = () => {
 
           <br />
 
-          <div className="article" id="legal">
+          <div className="article" id="legal termsofsale">
             <h3>Legal</h3>
             <p>
               The Watoto Library is registered under{" "}
@@ -166,9 +166,11 @@ const Donate = () => {
             </p>
             <p>
               For Norwegian sales terms,{" "}
-              <u>
-                <a href="./articles/termsOfSale.html">click here</a>
-              </u>
+              <Link to="termsofsale">
+                <u>
+                  <a>click here</a>
+                </u>
+              </Link>
               .
             </p>
             <p>
