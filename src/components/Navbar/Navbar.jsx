@@ -133,7 +133,7 @@ const Navbar = () => {
             <Link
               to={item.path}
               className="main-link"
-              onClick={(e) => isMobile && item.submenu && e.preventDefault()}
+              // onClick={(e) => isMobile && item.submenu && e.preventDefault()}
             >
               {item.name}
             </Link>
