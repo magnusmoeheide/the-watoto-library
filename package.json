@@ -1,7 +1,7 @@
 {
   "name": "the-watoto-library",
   "version": "0.1.0",
-  "homepage": "https://the-watoto-library.web.app/",
+  "homepage": "https://thewatotolibrary.org",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",

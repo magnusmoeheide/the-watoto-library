@@ -15,7 +15,7 @@ const About = () => {
           <div className="article">
             <div className="flex-image-text">
               <div>
-                <h2>About us</h2>
+                <h2>About Us</h2>
                 <p>
                   The Watoto Library works to better the lives of children in
                   Kibera by providing free access to a library where kids can
