@@ -153,7 +153,7 @@ const Donate = () => {
           <div className="article" id="legal termsofsale">
             <h3>Legal</h3>
             <p>
-              The Watoto Library is registered under{" "}
+              The Watoto Library is registered in Norway under{" "}
               <u>
                 <a
                   href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=931464817"
@@ -163,6 +163,10 @@ const Donate = () => {
                 </a>
               </u>
               , org. nr. 931 464 817.
+            </p>
+            <p>
+              The Watoto Library is registered in Kenya as a CBO, org. nr.
+              KBR/CBO/5/4/2023(439).
             </p>
             <p>
               For Norwegian sales terms,{" "}
