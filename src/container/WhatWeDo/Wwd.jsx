@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { Navbar, Footer, Side, Slideshow, Section } from "../../components";
 import { useParams } from "react-router-dom";
 import { whatwedo } from "./WhatWeDo";
+import NextItems from "../../components/NextItems/NextItems";
 
 const Wwd = () => {
-  const { wwdId } = useParams();
-  const wwd = whatwedo.find((wwd) => wwd.id === Number(wwdId));
+  const { wwdUrl } = useParams();
+  const wwd = whatwedo.find((item) => item.url === wwdUrl);
   const dots = wwd.slides ? Array(wwd.slides.length).fill(null) : [];
 
   if (!wwd) {
@@ -20,7 +21,7 @@ const Wwd = () => {
         <Side />
         <div className="main">
           <div>
-            <Link to={`/whatwedo#${wwdId}`}>
+            <Link to={`/whatwedo#${wwdUrl}`}>
               <div className="div-back">
                 <p className="allNewsLetters">
                   <i className="fa-solid fa-arrow-left"></i>Back to What We Do
@@ -28,9 +29,10 @@ const Wwd = () => {
               </div>
             </Link>
           </div>
-          <div className="article" id={wwdId}>
+          <div className="article" id={wwdUrl}>
             <Section
               header={wwd.title}
+              coming={wwd.coming}
               description={wwd.description}
               img={wwd.img}
             />
@@ -48,6 +50,14 @@ const Wwd = () => {
             {wwd.slides && wwd.slides.length > 0 && (
               <Slideshow slides={wwd.slides} dots={dots} />
             )}
+          </div>
+          <br />
+          <div className="article">
+            <NextItems
+              items={whatwedo}
+              currentIdentifier={wwdUrl}
+              identifierType="url"
+            />
           </div>
         </div>
       </div>

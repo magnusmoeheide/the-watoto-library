@@ -8,7 +8,6 @@ import {
   Partners,
   Section,
 } from "../../components";
-import { images } from "../../constants";
 import { articles } from "../../container/Articles/Articles";
 
 const Home = () => {
@@ -74,6 +73,7 @@ const Home = () => {
           </Link>
 
           {articles
+            .filter((article) => article.status === "Published")
             .sort((a, b) => b.id - a.id)
             .slice(0, 3)
             .map((article) => (

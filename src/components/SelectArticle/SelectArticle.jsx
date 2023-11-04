@@ -20,11 +20,13 @@ function SelectArticle() {
   return (
     <select value={selectedValue} onChange={handleChange}>
       <option value="">Select article</option>
-      {articles.map((article) => (
-        <option key={article.id} value={article.id}>
-          {article.month} {article.year} - {article.title}
-        </option>
-      ))}
+      {articles
+        .filter((article) => article.status === "Published")
+        .map((article) => (
+          <option key={article.id} value={article.id}>
+            {article.month} {article.year} - {article.title}
+          </option>
+        ))}
     </select>
   );
 }

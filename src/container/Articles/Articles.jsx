@@ -7,6 +7,7 @@ import { SelectArticle } from "../../components";
 export const articles = [
   {
     id: 10,
+    status: "Published",
     day: "27",
     month: "July",
     year: "2023",
@@ -113,6 +114,7 @@ export const articles = [
   },
   {
     id: 9,
+    status: "Published",
     day: "29",
     month: "June",
     year: "2023",
@@ -240,6 +242,7 @@ export const articles = [
   },
   {
     id: 8,
+    status: "Published",
     day: "26",
     month: "May",
     year: "2023",
@@ -384,6 +387,7 @@ export const articles = [
   },
   {
     id: 7,
+    status: "Published",
     day: "19",
     month: "March",
     year: "2023",
@@ -457,6 +461,7 @@ export const articles = [
   },
   {
     id: 6,
+    status: "Published",
     day: "1",
     month: "February",
     year: "2023",
@@ -532,6 +537,7 @@ export const articles = [
   },
   {
     id: 5,
+    status: "Published",
     day: "10",
     month: "January",
     year: "2023",
@@ -617,6 +623,7 @@ export const articles = [
   },
   {
     id: 4,
+    status: "Published",
     day: "5",
     month: "November",
     img: images.four9,
@@ -677,6 +684,7 @@ export const articles = [
   },
   {
     id: 3,
+    status: "Published",
     day: "8",
     month: "October",
     year: "2022",
@@ -740,6 +748,7 @@ export const articles = [
   },
   {
     id: 1,
+    status: "Published",
     day: "1",
     month: "July",
     year: "2022",
@@ -913,6 +922,7 @@ const Articles = () => {
                     <div className="timeline__cards">
                       {articles
                         .filter((article) => article.year.includes(year))
+                        .filter((article) => article.status === "Published")
                         .map((article) => (
                           <div
                             key={article.id}

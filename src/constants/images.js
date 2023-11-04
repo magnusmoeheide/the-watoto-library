@@ -1,4 +1,3 @@
-
 // PAGES IMAGES
 import logoTransparent from '../assets/logo/logo-transparent.png';
 import boysPlayingChess from '../assets/chess/boys-playing-chess.png';
@@ -58,6 +57,13 @@ import klwf10 from '../assets/whatwedo/klwf/img_8300.jpg';
 import klwf11 from '../assets/whatwedo/klwf/poster.png';
 import klwf12 from '../assets/whatwedo/klwf/whatsapp1.jpeg';
 import klwf13 from '../assets/whatwedo/klwf/IMG_1301.JPG';
+
+// WHAT WE DO - The Watoto Academy
+import twa1 from '../assets/whatwedo/theWatotoAcademy/classroom.jpg';
+import twa2 from '../assets/whatwedo/theWatotoAcademy/sciencelab.jpg';
+import twa3 from '../assets/whatwedo/theWatotoAcademy/fundraising.png';
+import twa4 from '../assets/whatwedo/theWatotoAcademy/budget.png';
+import twa5 from '../assets/whatwedo/theWatotoAcademy/renovating.jpg';
 
 // ABOUT US - Kibera
 import kibera1 from '../assets/about/kibera/whereWeOperate.jpeg';
@@ -223,6 +229,9 @@ export default {
     
     // WHAT WE DO - KLWF
     klwf1, klwf2, klwf3, klwf4, klwf5, klwf6, klwf7, klwf8, klwf9, klwf10, klwf11, klwf12, klwf13,
+
+    // WHAT WE DO - The Watoto Academy
+    twa1, twa2, twa3, twa4, twa5,
 
     // ABOUT US - Kibera
     kibera1, kibera2, kibera3, kibera4, kibera5,

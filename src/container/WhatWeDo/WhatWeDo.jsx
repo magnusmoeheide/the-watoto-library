@@ -7,17 +7,24 @@ import Locationscroll from "../../components/Locationscroll/Locationscroll";
 export const whatwedo = [
   {
     id: 1,
+    status: "Published",
+    url: "computerclass",
     title: "Computer Class",
     instructor: "Evans",
     places: "20",
     openingHours: "Sat 8am - 12pm",
     img: images.computerClass2,
+    icon: <i className="fa-solid fa-laptop"></i>,
     slides: [images.computerClass9],
     description: (
       <>
         The Watoto Library is excited to announce the launch of its new computer
         classes, made possible by a generous donation of computers from{" "}
-        <a href="https://skullerud.osloskolen.no/" target="_blank">
+        <a
+          href="https://skullerud.osloskolen.no/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <u>
             Skullerud lower secondary school{" "}
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -99,11 +106,14 @@ export const whatwedo = [
   },
   {
     id: 2,
+    status: "Published",
+    url: "chessclub",
     title: "Chess Club",
     instructor: "Brandon",
     places: "25",
     openingHours: "Weekends",
     img: images.chessClub2,
+    icon: <i className="fa-solid fa-chess"></i>,
     slides: [images.chessClub4, images.chessClub5],
     description: (
       <>
@@ -163,11 +173,14 @@ export const whatwedo = [
   },
   {
     id: 3,
+    status: "Published",
+    url: "studygroup",
     title: "Study Group",
     instructor: "Justin",
     places: "40",
     openingHours: "Opening hours",
     img: images.studyGroup4,
+    icon: <i className="fa-solid fa-graduation-cap"></i>,
     slides: [
       images.studyGroup1,
       images.studyGroup2,
@@ -218,11 +231,14 @@ export const whatwedo = [
   },
   {
     id: 4,
+    status: "Published",
+    url: "dancegroup",
     title: "Dance Group",
     instructor: "Bernard",
     places: "25",
     openingHours: "Sat - Sun | 2pm - 6pm",
     img: images.danceGroup1,
+    icon: <i className="fa-solid fa-child-reaching"></i>,
     description: (
       <>
         Every Saturday our dance teacher Bernard Chacha organizes a dancing
@@ -300,10 +316,13 @@ export const whatwedo = [
   },
   {
     id: 5,
+    status: "Published",
+    url: "klwf",
     title: "Kibera Local Water Forum",
     instructor: "Brandon",
     openingHours: "Fri - Sat | 8 - 12am",
     img: images.klwf13,
+    icon: <i className="fa-solid fa-person-digging"></i>,
     slides: [images.klwf11, images.klwf8, images.klwf10, images.klwf7],
     description: (
       <>
@@ -423,6 +442,88 @@ export const whatwedo = [
       },
     ],
   },
+  {
+    id: 6,
+    status: "Draft",
+    url: "thewatotoacademy",
+    title: "The Watoto Academy",
+    coming: "coming",
+    img: images.twa1,
+    icon: <i class="fa-solid fa-school"></i>,
+    // slides: [images.klwf11, images.klwf8, images.klwf10, images.klwf7],
+    description: (
+      <>
+        We are planning to establish a tuition-free school for 30 talented Grade
+        7 students starting from 2024. The school will serve as a place for
+        students who lack the financial means to continue with their education.
+      </>
+    ),
+    sections: [
+      {
+        section_id: 1,
+        section_title: "Renovating The Watoto Library",
+        section_description: (
+          <>
+            To best acommodate our school, we will renovate our library space to
+            serve as a school during the day, and as a library in the
+            afternoons.
+          </>
+        ),
+        section_image: images.twa5,
+      },
+      {
+        section_id: 2,
+        section_title: "Science Lab",
+        section_description: (
+          <>
+            One of the reasons there are few schools in Kibera after Grade 7 is
+            the requirement for a science lab. We will also establish a science
+            lab, as per the Kenyan requirements.
+          </>
+        ),
+        section_image: images.twa2,
+      },
+      {
+        section_id: 3,
+        section_title: "Financing The School",
+        section_description: (
+          <>
+            We are thrilled to share that our partner{" "}
+            <a
+              href="https://skullerud.osloskolen.no/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u>Skullerud skole</u>
+            </a>{" "}
+            will raise the necessary funds to run our school for the first year.
+            In addition,{" "}
+            <a
+              href="https://opsahlgruppen.no/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u>Opsahlgruppen</u>
+            </a>{" "}
+            will donate the necessary funds for us to do renovation of our
+            classroom and science lab.
+          </>
+        ),
+        section_image: images.twa3,
+      },
+      {
+        section_id: 3,
+        section_title: "Our Budget",
+        section_description: (
+          <>
+            Here is our plan for the first year to finance the school. Kindly
+            see the relevant budget here.
+          </>
+        ),
+        section_image: images.twa4,
+      },
+    ],
+  },
 ];
 
 const WhatWeDo = () => {
@@ -470,24 +571,28 @@ const WhatWeDo = () => {
           </div>
           <br />
 
-          {whatwedo.map((wwd) => (
-            <div>
-              <div key={wwd.id} className="article" id={wwd.id}>
-                <Section
-                  wwdId={wwd.id}
-                  title={wwd.title}
-                  instructor={wwd.instructor}
-                  places={wwd.places}
-                  openingHours={wwd.openingHours}
-                  description={wwd.description}
-                  img={wwd.img}
-                  readMore="Read more"
-                  customReadMoreLink={`/whatwedo/${wwd.id}`}
-                />
+          {whatwedo
+            .filter((wwd) => wwd.status === "Published")
+            .map((wwd) => (
+              <div key={wwd.id}>
+                <div className="article" id={wwd.url}>
+                  <Section
+                    wwdId={wwd.id}
+                    wwdUrl={wwd.url}
+                    title={wwd.title}
+                    coming={wwd.coming}
+                    instructor={wwd.instructor}
+                    places={wwd.places}
+                    openingHours={wwd.openingHours}
+                    description={wwd.description}
+                    img={wwd.img}
+                    readMore="Read more"
+                    customReadMoreLink={`/whatwedo/${wwd.url}`}
+                  />
+                </div>
+                <br />
               </div>
-              <br />
-            </div>
-          ))}
+            ))}
         </div>
       </div>
       <Footer />

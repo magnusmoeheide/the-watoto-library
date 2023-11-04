@@ -7,10 +7,10 @@ import SelectArticle from './SelectArticle/SelectArticle';
 import Counter from './Counter/Counter';
 import Partners from './Partners/Partners';
 import Section from './Section/Section';
-import NextArticles from './NextArticles/NextArticles';
+import NextItems from './NextItems/NextItems';
 import Locationscroll from './Locationscroll/Locationscroll'
 
 
 export {
-    Navbar, Footer, Side, Slideshow, Fullscreen, SelectArticle, Counter, Partners, Section, NextArticles, Locationscroll
+    Navbar, Footer, Side, Slideshow, Fullscreen, SelectArticle, Counter, Partners, Section, NextItems, Locationscroll
 }

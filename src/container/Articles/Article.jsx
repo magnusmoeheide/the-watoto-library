@@ -6,7 +6,7 @@ import {
   Side,
   Slideshow,
   Section,
-  NextArticles,
+  NextItems,
 } from "../../components";
 import { useParams } from "react-router-dom";
 import { articles } from "./Articles";
@@ -59,7 +59,11 @@ const Article = () => {
               <Slideshow slides={article.slides} dots={dots} />
             )}
           </div>
-          <NextArticles currentArticleId={articleId} />
+          <NextItems
+            items={articles}
+            currentIdentifier={articleId}
+            identifierType="id"
+          />
         </div>
       </div>
       <Footer />

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Section = ({
   articleId,
   header,
+  coming,
   title,
   day,
   month,
@@ -24,6 +25,7 @@ const Section = ({
           <div className="flex-container-2">
             {header && <h2>{header}</h2>}
             {title && <h3>{title}</h3>}
+            {coming && <span className="coming">{coming}</span>}
             <div class="flex-container-2">
               {instructor && (
                 <div className="coach">
