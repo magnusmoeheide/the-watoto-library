@@ -7,8 +7,23 @@ const Navbar = () => {
   const location = useLocation();
   const isMobile = window.innerWidth <= 670;
 
-  const isActive = (path) => {
-    return location.pathname === path ? "active" : "";
+  const isActive = (item) => {
+    if (location.pathname === item.path) {
+      return "active";
+    }
+
+    if (item.submenu) {
+      // Check if any of the submenu items' path is part of the current path
+      const match = item.submenu.some((subItem) => {
+        return location.pathname.includes(subItem.path);
+      });
+
+      if (match) {
+        return "active";
+      }
+    }
+
+    return "";
   };
 
   const toggleMenu = () => {
@@ -114,10 +129,7 @@ const Navbar = () => {
 
       <ul className={`navigation ${isMenuOpen ? "mobile-open" : ""}`} id="nav">
         {navItems.map((item) => (
-          <li
-            key={item.name}
-            className={`${isActive(item.path)} main-nav-item`}
-          >
+          <li key={item.name} className={`${isActive(item)} main-nav-item`}>
             <Link
               to={item.path}
               className="main-link"

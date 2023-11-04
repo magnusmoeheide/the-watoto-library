@@ -33,6 +33,9 @@ const Wwd = () => {
             <Section
               header={wwd.title}
               coming={wwd.coming}
+              instructor={wwd.instructor}
+              places={wwd.places}
+              openingHours={wwd.openingHours}
               description={wwd.description}
               img={wwd.img}
             />
