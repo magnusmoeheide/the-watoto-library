@@ -5,6 +5,7 @@ import { whatwedo } from "../../container/WhatWeDo/WhatWeDo";
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const isMobile = window.innerWidth <= 670;
 
   const isActive = (path) => {
     return location.pathname === path ? "active" : "";
@@ -117,7 +118,11 @@ const Navbar = () => {
             key={item.name}
             className={`${isActive(item.path)} main-nav-item`}
           >
-            <Link to={item.path} className="main-link">
+            <Link
+              to={item.path}
+              className="main-link"
+              onClick={(e) => isMobile && item.submenu && e.preventDefault()}
+            >
               {item.name}
             </Link>
             {item.submenu && (
