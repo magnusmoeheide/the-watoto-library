@@ -76,12 +76,12 @@ const Navbar = () => {
         {
           name: "Where We Work",
           icon: <i className="fa-solid fa-house"></i>,
-          path: "/about/kibera",
+          path: "/about#kibera",
         },
         {
           name: "Our Founder",
           icon: <i className="fa-solid fa-book-open-reader"></i>,
-          path: "/about/founder",
+          path: "/about#founder",
         },
       ],
     },

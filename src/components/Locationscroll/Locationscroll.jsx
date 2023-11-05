@@ -5,31 +5,27 @@ const LocationScroll = () => {
   const location = useLocation();
 
   useEffect(() => {
-    let intervalId; // Declare intervalId in the scope accessible to both attemptScroll and the cleanup function
+    // This disables the browser's automatic scroll restoration
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
 
-    // This function will attempt to scroll to the element.
     const attemptScroll = () => {
       const elemId = location.hash.slice(1);
       const element = document.getElementById(elemId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
-        clearInterval(intervalId); // Clear the interval once the element is found
       }
     };
 
-    // Check if there is a hash in the URL
     if (location.hash) {
-      // Set an interval to keep checking for the element
-      intervalId = setInterval(attemptScroll, 100); // Check every 100ms
-    }
+      // Wait a little longer to ensure all async elements are loaded
+      const timeoutId = setTimeout(attemptScroll, 100);
 
-    // Clean up the interval when the component unmounts
-    return () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
-    };
-  }, [location]); // Only re-run if the location object changes
+      // Cleanup the timeout when the component is unmounted or the location changes
+      return () => clearTimeout(timeoutId);
+    }
+  }, [location.pathname, location.hash]); // Depend on both pathname and hash
 
   return null;
 };
