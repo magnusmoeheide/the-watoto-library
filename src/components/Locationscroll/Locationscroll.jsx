@@ -5,26 +5,25 @@ const LocationScroll = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleLoad = () => {
+    // This function will attempt to scroll to the element.
+    const attemptScroll = () => {
       const elemId = location.hash.slice(1);
-      if (elemId) {
-        let elem = document.getElementById(elemId);
-        if (elem) {
-          elem.scrollIntoView({ behavior: "smooth" });
-        }
+      const element = document.getElementById(elemId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        clearInterval(intervalId); // Clear the interval once the element is found
       }
     };
 
-    // Bind the event listener
-    window.addEventListener("load", handleLoad);
-    // Invoke the handler in case the page is already loaded
-    handleLoad();
+    // Check if there is a hash in the URL
+    if (location.hash) {
+      // Set an interval to keep checking for the element
+      const intervalId = setInterval(attemptScroll, 100); // Check every 100ms
 
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, [location]);
+      // Clean up the interval when the component unmounts
+      return () => clearInterval(intervalId);
+    }
+  }, [location]); // Only re-run if the location object changes
 
   return null;
 };
