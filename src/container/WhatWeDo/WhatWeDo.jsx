@@ -583,6 +583,7 @@ const WhatWeDo = () => {
                   <Section
                     wwdId={wwd.id}
                     wwdUrl={wwd.url}
+                    header={wwd.header}
                     title={wwd.title}
                     coming={wwd.coming}
                     instructor={wwd.instructor}
