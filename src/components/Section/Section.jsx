@@ -46,6 +46,7 @@ const Section = ({
         <div>
           <div className="flex-container-2">
             {header && <h2>{header}</h2>}
+            {/* {"TEST"} */}
             {title && <h3>{title}</h3>}
             {coming && <span className="coming">{coming}</span>}
             <div class="flex-container-2">
