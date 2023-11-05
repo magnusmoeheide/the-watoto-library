@@ -461,18 +461,32 @@ export const whatwedo = [
     sections: [
       {
         section_id: 1,
+        section_title: "Our Scholarship",
+        section_description: (
+          <>
+            Our students will receive a full scholarship and everything they
+            need to successfully do their studies for free. This includes
+            tuition fees covered, as well as school uniform, materials and
+            nutritious meals.
+          </>
+        ),
+        section_image: images.twa6,
+      },
+      {
+        section_id: 2,
         section_title: "Renovating The Watoto Library",
         section_description: (
           <>
-            To best acommodate our school, we will renovate our library space to
-            serve as a school during the day, and as a library in the
-            afternoons.
+            To make best use of our resources and funds, we will renovate our
+            library space to serve as a school during the day, and as a library
+            in the afternoons. In that way, our facilities will be used
+            throughout the day and evening, every day.
           </>
         ),
         section_image: images.twa5,
       },
       {
-        section_id: 2,
+        section_id: 3,
         section_title: "Science Lab",
         section_description: (
           <>
@@ -483,8 +497,9 @@ export const whatwedo = [
         ),
         section_image: images.twa2,
       },
+
       {
-        section_id: 3,
+        section_id: 4,
         section_title: "Financing The School",
         section_description: (
           <>
@@ -506,18 +521,32 @@ export const whatwedo = [
               <u>Opsahlgruppen</u>
             </a>{" "}
             will donate the necessary funds for us to do renovation of our
-            classroom and science lab.
+            classroom and science lab. Our{" "}
+            <u>
+              <Link to="/whatwedo/klwf">Kibera Local Water Forum</Link>
+            </u>{" "}
+            progam will set up a resource center which will allow the school to
+            have free toilet facilities and water access.
           </>
         ),
         section_image: images.twa3,
       },
       {
-        section_id: 3,
+        section_id: 5,
         section_title: "Our Budget",
         section_description: (
           <>
-            Here is our plan for the first year to finance the school. Kindly
-            see the relevant budget here.
+            Our budget is designed to support the requirements of quality
+            education in today's world, ensuring that essential resources are
+            included. We've been careful to keep costs down to enable a wider
+            number of students to benefit from our program. For further details,
+            please consult the{" "}
+            <u>
+              <a href="" target="_blank">
+                attached budget document
+              </a>
+            </u>
+            .
           </>
         ),
         section_image: images.twa4,

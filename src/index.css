@@ -96,6 +96,12 @@ select {
   border-radius: 0.3em;
 }
 
+select:focus {
+  border: 0em;
+  outline: none;
+  border-bottom: 0.2em solid #1ba0f220;
+}
+
 input:hover {
   cursor: pointer;
 }
@@ -317,7 +323,9 @@ padding-right: 5%;
   list-style-type: none;
   padding-left: 0;
   box-shadow: 0px 0px 0.6em rgba(0, 0, 0, 0.2);
-  width: 12em;
+  max-width: 12em;
+  min-width: 10em;
+  white-space: nowrap;
   border-left: 0.08em solid #1ba0f2;
   border-bottom: 0.08em solid #1ba0f2;
   border-right: 0.08em solid #1ba0f2;
@@ -763,6 +771,10 @@ height: auto;
   max-width: 100%;
   margin: 0;
   margin-top: 0.5em;
+}
+
+.flex-container-2.subheader {
+  margin-top: 0.6em;
 }
 }
 

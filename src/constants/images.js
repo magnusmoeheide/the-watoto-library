@@ -64,6 +64,7 @@ import twa2 from '../assets/whatwedo/theWatotoAcademy/sciencelab.jpg';
 import twa3 from '../assets/whatwedo/theWatotoAcademy/fundraising.png';
 import twa4 from '../assets/whatwedo/theWatotoAcademy/budget.png';
 import twa5 from '../assets/whatwedo/theWatotoAcademy/renovating.jpg';
+import twa6 from '../assets/whatwedo/theWatotoAcademy/twa-logo.png';
 
 // ABOUT US - Kibera
 import kibera1 from '../assets/about/kibera/whereWeOperate.jpeg';
@@ -231,7 +232,7 @@ export default {
     klwf1, klwf2, klwf3, klwf4, klwf5, klwf6, klwf7, klwf8, klwf9, klwf10, klwf11, klwf12, klwf13,
 
     // WHAT WE DO - The Watoto Academy
-    twa1, twa2, twa3, twa4, twa5,
+    twa1, twa2, twa3, twa4, twa5, twa6,
 
     // ABOUT US - Kibera
     kibera1, kibera2, kibera3, kibera4, kibera5,

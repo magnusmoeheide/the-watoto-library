@@ -1,19 +1,32 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const Locationscroll = () => {
+const LocationScroll = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
+    const handleLoad = () => {
+      const elemId = location.hash.slice(1);
+      if (elemId) {
+        let elem = document.getElementById(elemId);
+        if (elem) {
+          elem.scrollIntoView({ behavior: "smooth" });
+        }
       }
-    }
+    };
+
+    // Bind the event listener
+    window.addEventListener("load", handleLoad);
+    // Invoke the handler in case the page is already loaded
+    handleLoad();
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, [location]);
 
   return null;
 };
 
-export default Locationscroll;
+export default LocationScroll;
