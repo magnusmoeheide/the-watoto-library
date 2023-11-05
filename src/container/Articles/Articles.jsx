@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { images } from "../../constants";
 import { Navbar, Footer, Section } from "../../components";
 import { SelectArticle } from "../../components";
+import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
 export const articles = [
   {
@@ -843,19 +844,10 @@ export const articles = [
 
 const Articles = () => {
   const years = ["2023", "2022"];
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
 
   return (
     <div>
+      <Locationscroll />
       <Navbar />
       <div className="row" id="flex">
         <div className="main">
