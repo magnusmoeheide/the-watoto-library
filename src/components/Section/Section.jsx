@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Section = ({
@@ -18,12 +18,29 @@ const Section = ({
   places,
   openingHours,
 }) => {
+  const imageRef = useRef(null);
+
+  const handleImageLoaded = (img) => {
+    const imageElement = img.current;
+    if (imageElement) {
+      const bounding = imageElement.getBoundingClientRect();
+      if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+        // Image is fully visible in viewport, no need to scroll
+      } else {
+        // Image is not fully visible, scroll into view
+        imageElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    }
+  };
+
   return (
     <div>
       <div className="flex-image-text">
         <div>
           <div className="flex-container-2">
             {header && <h2>{header}</h2>}
+            <br />
+            <br />
             {title && <h3>{title}</h3>}
             {coming && <span className="coming">{coming}</span>}
             <div class="flex-container-2">
@@ -73,7 +90,15 @@ const Section = ({
             </div>
           )}
         </div>
-        {img && <img src={img} className="img" alt={title} />}
+        {img && (
+          <img
+            src={img}
+            className="img"
+            alt={title}
+            onLoad={handleImageLoaded}
+            ref={imageRef}
+          />
+        )}
       </div>
       {!readMore && <br />}
     </div>

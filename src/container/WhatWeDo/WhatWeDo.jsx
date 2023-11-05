@@ -539,15 +539,19 @@ const WhatWeDo = () => {
               <div>
                 <h2>What We Do</h2>
                 <div className="flex-container-2">
-                  <div className="openhrs">Opening hours</div>
-                  <div className="flex-container-2">
-                    <div className="when">
-                      <i className="fa-regular fa-calendar"></i>Mon - Fri: 4pm -
-                      9pm
+                  <div className="openhrs">
+                    <div>
+                      <p>Opening hours</p>
                     </div>
-                    <div className="when">
-                      <i className="fa-regular fa-calendar"></i>Sat - Sun: 8am -
-                      9pm
+                    <div className="flex-container-2">
+                      <div className="when">
+                        <i className="fa-regular fa-calendar"></i>Mon - Fri: 3pm
+                        - 10pm
+                      </div>
+                      <div className="when">
+                        <i className="fa-regular fa-calendar"></i>Sat - Sun: 8am
+                        - 10pm
+                      </div>
                     </div>
                   </div>
                 </div>

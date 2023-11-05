@@ -44,8 +44,8 @@ const Donate = () => {
           <br /> */}
 
           <div className="article" id="payment">
-            <div className="flex-image-text">
-              <div style={{ alignItems: "left", width: "100%" }}>
+            <div className="flex-image-text donate">
+              <div style={{ alignItems: "left" }}>
                 <h3>Vipps</h3>
                 <a
                   className="button-design paypal"
@@ -73,7 +73,7 @@ const Donate = () => {
               <img
                 src={images.vippsLogo}
                 className="img-nozoom paypal"
-                style={{ width: "15em", marginTop: "-0.3em" }}
+                style={{ marginTop: "-0.3em" }}
               />
             </div>
           </div>
@@ -81,7 +81,7 @@ const Donate = () => {
           <br />
 
           <div className="article">
-            <div className="flex-image-text">
+            <div className="flex-image-text donate">
               <div style={{ alignItems: "left", width: "100%" }}>
                 <h3>Donorbox</h3>
                 <a
@@ -107,7 +107,7 @@ const Donate = () => {
           <br />
 
           <div className="article">
-            <div className="flex-image-text">
+            <div className="flex-image-text donate">
               <div style={{ alignItems: "left", width: "100%" }}>
                 <h3>PayPal</h3>
                 <a
@@ -153,6 +153,11 @@ const Donate = () => {
           <div className="article" id="legal termsofsale">
             <h3>Legal</h3>
             <p>
+              The Watoto Library is registered in Kenya as a CBO, org. nr.
+              KBR/CBO/5/4/2023(439).
+            </p>
+
+            <p>
               The Watoto Library is registered in Norway under{" "}
               <u>
                 <a
@@ -164,10 +169,7 @@ const Donate = () => {
               </u>
               , org. nr. 931 464 817.
             </p>
-            <p>
-              The Watoto Library is registered in Kenya as a CBO, org. nr.
-              KBR/CBO/5/4/2023(439).
-            </p>
+
             <p>
               For Norwegian sales terms,{" "}
               <Link to="termsofsale">

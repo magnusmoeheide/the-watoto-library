@@ -103,14 +103,15 @@ const GetInTouch = () => {
           <div className="article" id="contact">
             <h2>Contact Us</h2>
             <p>Kindly get in touch with us per email.</p>
-            <p>
+            <p className="email">
               For operational enquiries:{" "}
               <u>
                 <a href="mailto:brandon@thewatotolibrary.org">
                   brandon@thewatotolibrary.org
                 </a>
               </u>
-              <br />
+            </p>
+            <p className="email">
               For donation enquiries:{" "}
               <u>
                 <a href="mailto:brandon@thewatotolibrary.org">

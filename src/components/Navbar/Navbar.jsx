@@ -137,7 +137,7 @@ const Navbar = () => {
             >
               {item.name}
             </Link>
-            {item.submenu && (
+            {!isMobile && item.submenu && (
               <ul className="submenu">
                 {item.submenu.map((subItem) => (
                   <li
