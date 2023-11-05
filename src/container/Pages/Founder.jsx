@@ -68,7 +68,7 @@ const Founder = () => {
                   better place.
                 </>
               }
-              img={images.founder3}
+              img={images.founder4}
             />
 
             <Section
@@ -83,7 +83,7 @@ const Founder = () => {
                   working together for a better future.
                 </>
               }
-              img={images.founder4}
+              img={images.founder3}
             />
 
             <Slideshow slides={slides} dots={dots} />
