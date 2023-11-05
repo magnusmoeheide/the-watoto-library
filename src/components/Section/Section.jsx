@@ -56,12 +56,7 @@ const Section = ({
               </div>
             </h5>
           )}
-          {author && (
-            <span>
-              <br />
-              <i class="fa-solid fa-user-pen"></i> <span>{author}</span>
-            </span>
-          )}
+
           <p>{description}</p>
           {readMore && (
             <div class="div-readmore">

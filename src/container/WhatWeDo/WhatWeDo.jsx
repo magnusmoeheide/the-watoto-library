@@ -318,7 +318,7 @@ export const whatwedo = [
     id: 5,
     status: "Published",
     url: "klwf",
-    title: "Kibera Local Water Forum",
+    title: "River Cleanup",
     instructor: "Brandon",
     openingHours: "Fri - Sat | 8 - 12am",
     img: images.klwf13,
@@ -326,10 +326,11 @@ export const whatwedo = [
     slides: [images.klwf11, images.klwf8, images.klwf10, images.klwf7],
     description: (
       <>
-        We are dedicated to restoring and beautifying a long section of the
-        Nairobi River that flows through our community. In the past, this river
-        played a crucial role in enhancing our community's well-being, serving
-        as a source of clean water for drinking, bathing, and washing clothes.
+        We have founded Kibera Local Water Forum, a program that is dedicated to
+        restoring and beautifying a long section of the Nairobi River that flows
+        through our community. In the past, this river played a crucial role in
+        enhancing our community's well-being, serving as a source of clean water
+        for drinking, bathing, and washing clothes.
       </>
     ),
     sections: [

@@ -52,9 +52,9 @@ const Navbar = () => {
           .filter((wwd) => wwd.status === "Published")
           .map((program) => {
             let programName = program.title;
-            if (program.id === 5) {
-              programName = "River Cleanup";
-            }
+            // if (program.id === 5) {
+            //   programName = "River Cleanup";
+            // }
             return {
               name: programName,
               path: `/whatwedo/${program.url}`,
