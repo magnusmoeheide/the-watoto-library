@@ -18,35 +18,12 @@ const Section = ({
   places,
   openingHours,
 }) => {
-  const imageRef = useRef(null);
-
-  useEffect(() => {
-    const imageElement = imageRef.current;
-    if (imageElement && imageElement.complete) {
-      // If the image is already loaded when the component mounts, handle it
-      handleImageLoaded();
-    }
-  }, []); // This effect runs once on mount
-
-  const handleImageLoaded = () => {
-    const imageElement = imageRef.current;
-    if (imageElement) {
-      // You can check if the image needs scrolling based on its bounding box
-      const bounding = imageElement.getBoundingClientRect();
-      if (bounding.top < 0 || bounding.bottom > window.innerHeight) {
-        // Scroll the image into view if it's not fully visible
-        imageElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      }
-    }
-  };
-
   return (
     <div>
       <div className="flex-image-text">
         <div>
           <div className="flex-container-2">
             {header && <h2>{header}</h2>}
-            {/* {"TEST"} */}
             {title && <h3>{title}</h3>}
             {coming && <span className="coming">{coming}</span>}
             <div class="flex-container-2">
@@ -96,15 +73,7 @@ const Section = ({
             </div>
           )}
         </div>
-        {img && (
-          <img
-            src={img}
-            className="img"
-            alt={title}
-            onLoad={handleImageLoaded}
-            ref={imageRef}
-          />
-        )}
+        {img && <img src={img} className="img" alt={title} />}
       </div>
       {!readMore && <br />}
     </div>
