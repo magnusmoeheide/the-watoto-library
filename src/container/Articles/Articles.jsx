@@ -7,6 +7,146 @@ import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
 export const articles = [
   {
+    id: 11,
+    status: "Draft",
+    day: "6",
+    month: "November",
+    year: "2023",
+    title: "Our Progress and Achievements",
+    img: images.eleven5,
+    slides: [images.eleven12, images.eleven8, images.eleven9, images.eleven10],
+    description: (
+      <>
+        More than a year ago, The Watoto Library was introduced to the Kibera
+        community, a community facing numerous challenges but remaining
+        resilient and hopeful for better and brighter days. The Watoto Library
+        had only one agenda at that moment: To provide a safe and conducive
+        environment for the children in the community to learn and study
+        together in a child-friendly space.
+      </>
+    ),
+    sections: [
+      {
+        section_id: 1,
+        section_title: "Surpassing Our Goals",
+        section_image: images.eleven4,
+        section_description: (
+          <>
+            Today, dear friends, we are not only proud to say that we have
+            achieved our goals, but we have also surpassed them through our
+            programs. In our library, the children feel loved, respected, and
+            appreciated. We have created a place for them to foster new
+            beginnings and form lasting friendships.
+          </>
+        ),
+      },
+      {
+        section_id: 2,
+        section_title: "Consistent Assistance",
+        section_image: images.eleven7,
+        section_description: (
+          <>
+            At the start of this year, we hired our full-time librarian Justin,
+            to consistently support the children with their revisions, studies,
+            and homework assignments. This decision has been highly beneficial,
+            especially considering that these children do not receive as much
+            attention as they would like in school due to overcrowded
+            classrooms, with over 100 pupils per class and only one class
+            teacher. Having someone dedicated to tracking their academic
+            progress has significantly increased their commitment to studying,
+            resulting in more and more children spending time in the library and
+            showing improvement in school.
+          </>
+        ),
+      },
+      {
+        section_id: 3,
+        section_image: images.ten9,
+        section_description: (
+          <>
+            Our journey continues to have a profound impact on the lives of
+            these children. During weekends, we actively involve them in games
+            and dance classes, emphasizing their right to enjoy childhood and
+            play with each other. A considerable number of children participate
+            in our programs, with more than 120 children engaging with us on a
+            daily basis. Due to the overwhelming response, our dance group
+            expanded its sessions to include both Saturday and Sunday
+            afternoons. Our dedicated dance instructor consistently empowers
+            children of all ages, encouraging them to embrace the joy of
+            movement.
+          </>
+        ),
+      },
+      {
+        section_id: 4,
+        section_title: "Digital Sucess",
+        section_image: images.eleven2,
+        section_description: (
+          <>
+            Our digital hub continues to draw in more children eager to join our
+            computer classes, and many of them now possess a clear understanding
+            of what computers are all about. Our computer tutor Evans, holding a
+            degree in computer science, has taken it upon himself to impart the
+            best IT skills to these children.
+          </>
+        ),
+      },
+      {
+        section_id: 5,
+        section_image: images.eleven1,
+        section_description: (
+          <>
+            Today, these children have a much-improved understanding of
+            Microsoft packages, particularly Microsoft Word, and how to use it
+            effectively. Their typing skills have shown significant improvement,
+            especially considering that many of them had never used a computer
+            before. They have harnessed creativity and innovation and have even
+            embarked on the journey of creating a website and have started by
+            learning programming languages such as HTML. We have high hopes for
+            their continued progress.
+          </>
+        ),
+      },
+      {
+        section_id: 6,
+        section_title: "River Cleanup",
+        section_image: images.eleven3,
+        section_description: (
+          <>
+            We take immense pride and joy in serving our beloved Kibera
+            community. Our dedicated program, the{" "}
+            <Link to="/whatwedo/klwf">
+              <u>Kibera Local Water Forum</u>
+            </Link>
+            , comprising children, women, youths, and other community
+            volunteers, has been actively advocating for improved water quality
+            for our community. Our program has adopted and conducts regular
+            river clean-up activities Nairobi River, which is full of plastic
+            and all sorts of garbage, including human waste. This river plays a
+            very essential role in our community's health. Together with our
+            children, their parents, and other devoted community volunteers, we
+            have collectively committed over 30 hours every month to this
+            mission.
+          </>
+        ),
+      },
+      {
+        section_id: 7,
+        section_title: "Thank You",
+        section_image: images.eleven11,
+        section_description: (
+          <>
+            We extend an open invitation to our friends to join and support us
+            in our dedicated efforts to bring about a significant, meaningful,
+            and essential transformation for our community. Your contributions
+            make a big difference in helping us continue our work. We say THANK
+            YOU VERY MUCH.
+          </>
+        ),
+      },
+    ],
+  },
+  {
     id: 10,
     status: "Published",
     day: "27",

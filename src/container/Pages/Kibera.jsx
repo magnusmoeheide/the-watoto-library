@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { images } from "../../constants";
-import { Navbar, Footer, Side, Section } from "../../components";
+import { Navbar, Footer, Side, Section, Slideshow } from "../../components";
 
 const Kibera = () => {
+  const slides = [images.kibera6];
+  const dots = slides ? Array(slides.length).fill(null) : [];
+
   return (
     <div>
       <Navbar />
@@ -104,6 +107,7 @@ const Kibera = () => {
               }
               img={images.kibera5}
             />
+            <Slideshow slides={slides} dots={dots} />
           </div>
           <br />
         </div>

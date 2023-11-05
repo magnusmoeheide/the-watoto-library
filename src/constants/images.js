@@ -72,6 +72,7 @@ import kibera2 from '../assets/about/kibera/whoWeAreEngagingWith.jpeg';
 import kibera3 from '../assets/about/kibera/lifeOfAKiberaChild.jpeg';
 import kibera4 from '../assets/about/kibera/sufferingInSilence.jpeg';
 import kibera5 from '../assets/about/kibera/schoolSituation.jpeg';
+import kibera6 from '../assets/about/kibera/kiberaWindow.png';
 
 // ABOUT US - Founder
 import founder1 from '../assets/about/founder/BrandonAndKids.jpeg';
@@ -210,6 +211,20 @@ import ten8 from '../assets/articles/10-stephen/8.jpeg';
 import ten9 from '../assets/articles/10-stephen/9.jpeg';
 import ten10 from '../assets/articles/10-stephen/10.jpeg';
 
+// Article 11 - Progress
+import eleven1 from '../assets/articles/11-progress/1.jpeg'
+import eleven2 from '../assets/articles/11-progress/2.jpeg'
+import eleven3 from '../assets/articles/11-progress/3.jpeg'
+import eleven4 from '../assets/articles/11-progress/4.jpeg'
+import eleven5 from '../assets/articles/11-progress/5.jpeg'
+import eleven6 from '../assets/articles/11-progress/6.jpeg'
+import eleven7 from '../assets/articles/11-progress/7.jpeg'
+import eleven8 from '../assets/articles/11-progress/8.png'
+import eleven9 from '../assets/articles/11-progress/9.png'
+import eleven10 from '../assets/articles/11-progress/10.png'
+import eleven11 from '../assets/articles/11-progress/11.png'
+import eleven12 from '../assets/articles/11-progress/12.png'
+
 
 export default {
 
@@ -235,7 +250,7 @@ export default {
     twa1, twa2, twa3, twa4, twa5, twa6,
 
     // ABOUT US - Kibera
-    kibera1, kibera2, kibera3, kibera4, kibera5,
+    kibera1, kibera2, kibera3, kibera4, kibera5, kibera6,
 
     // ABOUT US - Founder
     founder1, founder2, founder3, founder4, founder5,
@@ -258,5 +273,6 @@ export default {
     seven1, seven2, seven3, seven4, seven5, seven6, seven7, seven8,
     eight1, eight2, eight3, eight4, eight5, eight6, eight7, eight8, eight9, eight10, eight11, eight12,
     nine1, nine2, nine3, nine4, nine5, nine6, nine7, nine8,
-    ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10
+    ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10,
+    eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11, eleven12
 }
