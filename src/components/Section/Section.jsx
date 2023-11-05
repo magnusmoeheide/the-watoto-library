@@ -22,7 +22,7 @@ const Section = ({
     <div>
       <div className="flex-image-text">
         <div>
-          <div className="flex-container-2">
+          <div className="flex-container-2 subheader">
             {header && <h2>{header}</h2>}
             {title && <h3>{title}</h3>}
             {coming && <span className="coming">{coming}</span>}

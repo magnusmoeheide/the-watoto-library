@@ -742,6 +742,10 @@ min-width: 50%;
 height: auto; 
 }
 
+.flex-container-2.subheader h3, .subheader div {
+  margin-top: 0.6em;
+}
+
 
 @media all and (max-width: 799px) {
 .flex-image-text {
