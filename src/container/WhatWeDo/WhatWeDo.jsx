@@ -61,13 +61,12 @@ export const whatwedo = [
         section_image: images.computerClass7,
         section_description: (
           <>
-            Malcom, an experienced computer trainer, will be leading the
+            Evans, holding a degree in Computer Science, will be leading the
             classes, teaching the children how to use the computer. Through the
             classes they will learn everything from how to operate a computer,
-            to how to create graphic designs and work with Adobe programs.
-            Malcom will be working closely with the children, providing
-            individualized instruction and support to help them achieve their
-            goals.
+            to how to create graphic designs and work with Adobe programs. Evans
+            will be working closely with the children, providing individualized
+            instruction and support to help them achieve their goals.
           </>
         ),
       },
