@@ -224,6 +224,8 @@ import eleven9 from '../assets/articles/11-progress/9.png'
 import eleven10 from '../assets/articles/11-progress/10.png'
 import eleven11 from '../assets/articles/11-progress/11.png'
 import eleven12 from '../assets/articles/11-progress/12.png'
+import eleven13 from '../assets/articles/11-progress/13.png'
+import eleven14 from '../assets/articles/11-progress/14.png'
 
 
 export default {
@@ -274,5 +276,5 @@ export default {
     eight1, eight2, eight3, eight4, eight5, eight6, eight7, eight8, eight9, eight10, eight11, eight12,
     nine1, nine2, nine3, nine4, nine5, nine6, nine7, nine8,
     ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10,
-    eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11, eleven12
+    eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11, eleven12, eleven13, eleven14
 }

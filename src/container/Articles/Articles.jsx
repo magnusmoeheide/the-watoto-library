@@ -8,13 +8,19 @@ import Locationscroll from "../../components/Locationscroll/Locationscroll";
 export const articles = [
   {
     id: 11,
-    status: "Draft",
+    status: "Published",
     day: "6",
     month: "November",
     year: "2023",
     title: "Our Progress and Achievements",
     img: images.eleven5,
-    slides: [images.eleven12, images.eleven8, images.eleven9, images.eleven10],
+    slides: [
+      images.eleven12,
+      images.eleven14,
+      images.eleven8,
+      images.eleven9,
+      images.eleven10,
+    ],
     description: (
       <>
         More than a year ago, The Watoto Library was introduced to the Kibera
@@ -61,7 +67,8 @@ export const articles = [
       },
       {
         section_id: 3,
-        section_image: images.ten9,
+        section_title: "Extending Our Dance Classes",
+        section_image: images.eleven13,
         section_description: (
           <>
             Our journey continues to have a profound impact on the lives of
