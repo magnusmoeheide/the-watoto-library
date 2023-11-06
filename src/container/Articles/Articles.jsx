@@ -75,7 +75,7 @@ export const articles = [
             these children. During weekends, we actively involve them in games
             and dance classes, emphasizing their right to enjoy childhood and
             play with each other. A considerable number of children participate
-            in our programs, with more than 120 children engaging with us on a
+            in our programs, with more than 200 children engaging with us on a
             daily basis. Due to the overwhelming response, our dance group
             expanded its sessions to include both Saturday and Sunday
             afternoons. Our dedicated dance instructor consistently empowers
@@ -86,7 +86,7 @@ export const articles = [
       },
       {
         section_id: 4,
-        section_title: "Digital Sucess",
+        section_title: "Digital Success",
         section_image: images.eleven2,
         section_description: (
           <>
