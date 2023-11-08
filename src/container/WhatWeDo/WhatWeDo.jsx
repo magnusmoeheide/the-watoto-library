@@ -627,9 +627,9 @@ export const whatwedo = [
             <br />
             We call upon our true friends to come and support us in making
             impactful differences in the lives of these children. No amount is
-            small, every small bit counts and matters. Let's make The Watoto
-            Academy a reality. It is possible. Thank you, everyone, very much
-            for your support.
+            small, every bit counts and matters. Let's make The Watoto Academy a
+            reality. It is possible. Thank you, everyone, very much for your
+            support.
           </>
         ),
         section_image: images.twa4,
