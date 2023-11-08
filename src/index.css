@@ -165,6 +165,10 @@ button {
   user-select: none;
 }
 
+.button:hover{
+  cursor: pointer;
+}
+
 .button-design {
   border: none;
   display: inline-block;
