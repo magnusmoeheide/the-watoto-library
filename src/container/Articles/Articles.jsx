@@ -122,7 +122,7 @@ export const articles = [
           <>
             We take immense pride and joy in serving our beloved Kibera
             community. Our dedicated program, the{" "}
-            <Link to="/whatwedo/klwf">
+            <Link to="/programs/klwf">
               <u>Kibera Local Water Forum</u>
             </Link>
             , comprising children, women, youths, and other community
@@ -641,7 +641,7 @@ export const articles = [
             the computer classes.
             <br />
             Read about the computer classes{" "}
-            <Link to="/whatwedo/computerclass">
+            <Link to="/programs/computerclass">
               <u>here</u>
             </Link>
             .
@@ -1001,11 +1001,10 @@ const Articles = () => {
           <div class="row">
             <div class="page">
               <div>
-                <Link to="/whatwedo">
+                <Link to="/programs">
                   <div className="div-back">
                     <p className="allNewsLetters">
-                      <i className="fa-solid fa-arrow-left"></i>Back to What We
-                      Do
+                      <i className="fa-solid fa-arrow-left"></i>Back to Programs
                     </p>
                   </div>
                 </Link>

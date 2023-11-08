@@ -573,7 +573,7 @@ export const whatwedo = [
             their support to children in less fortunate circumstances. It's
             worth noting that Skullerud skole has been a valuable partner in the
             past, having contributed to the development of our{" "}
-            <Link to="/whatwedo/computerclass">
+            <Link to="/programs/computerclass" target="_blank">
               <u>computer classes</u>
             </Link>{" "}
             by providing laptops. Now, their students are dedicating their
@@ -629,7 +629,7 @@ export const whatwedo = [
             impactful differences in the lives of these children. No amount is
             small, every bit counts and matters. Let's make The Watoto Academy a
             reality. It is possible. To make a contribution, kindly visit our{" "}
-            <Link to="/donate">
+            <Link to="/donate" target="_blank">
               <u>Donate</u>
             </Link>{" "}
             page and add 'The Watoto Academy' in the description. Thank you,
@@ -653,7 +653,7 @@ const WhatWeDo = () => {
           <div className="article">
             <div className="flex-image-text">
               <div>
-                <h2>What We Do</h2>
+                <h2>Programs</h2>
                 <div className="flex-container-2">
                   <div className="openhrs">
                     <div>
@@ -708,7 +708,7 @@ const WhatWeDo = () => {
                     description={wwd.description}
                     img={wwd.img}
                     readMore="Read more"
-                    customReadMoreLink={`/whatwedo/${wwd.url}`}
+                    customReadMoreLink={`/programs/${wwd.url}`}
                   />
                 </div>
                 <br />

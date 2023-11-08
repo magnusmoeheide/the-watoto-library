@@ -33,8 +33,8 @@ const Navbar = () => {
   const navItems = [
     { name: "HOME", path: "/" },
     {
-      name: "WHAT WE DO",
-      path: "/whatwedo",
+      name: "OUR PROGRAMS",
+      path: "/programs",
       submenu: [
         {
           name: "Newsletters",
@@ -43,8 +43,8 @@ const Navbar = () => {
           icon: <i class="fa-solid fa-newspaper"></i>,
         },
         {
-          name: "What We Do",
-          path: "/whatwedo",
+          name: "All Programs",
+          path: "/programs",
           className: "header-category",
           icon: <i class="fa-solid fa-people-roof"></i>,
         },
@@ -57,7 +57,7 @@ const Navbar = () => {
             // }
             return {
               name: programName,
-              path: `/whatwedo/${program.url}`,
+              path: `/programs/${program.url}`,
               icon: program.icon,
             };
           }),

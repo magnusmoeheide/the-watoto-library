@@ -21,10 +21,10 @@ const Wwd = () => {
         <Side />
         <div className="main">
           <div>
-            <Link to={`/whatwedo#${wwdUrl}`}>
+            <Link to={`/programs#${wwdUrl}`}>
               <div className="div-back">
                 <p className="allNewsLetters">
-                  <i className="fa-solid fa-arrow-left"></i>Back to What We Do
+                  <i className="fa-solid fa-arrow-left"></i>Back to Programs
                 </p>
               </div>
             </Link>

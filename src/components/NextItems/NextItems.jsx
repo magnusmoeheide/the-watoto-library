@@ -43,7 +43,7 @@ function NextItems({ items, currentIdentifier, identifierType }) {
             to={
               identifierType === "id"
                 ? `/article/${item.id}`
-                : `/whatwedo/${item.url}`
+                : `/programs/${item.url}`
             }
             key={item.id}
           >

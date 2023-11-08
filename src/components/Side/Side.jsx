@@ -34,7 +34,7 @@ const Side = () => {
       <br />
       <br />
 
-      <Link to="/whatwedo/chessclub">
+      <Link to="/programs/chessclub">
         <div className="pointer">
           <div className="chess-peak">
             <img
