@@ -793,6 +793,7 @@ height: auto;
 
 
 .coming {
+  user-select: none;
   background-color: #E6F5FD;
   color: #1ba0f2;
   padding: 0.3em 0.3em;

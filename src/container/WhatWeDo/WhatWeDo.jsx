@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Footer, Side, Section } from "../../components";
-import { images } from "../../constants";
+import { images, files } from "../../constants";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
 export const whatwedo = [
@@ -444,7 +444,7 @@ export const whatwedo = [
   },
   {
     id: 6,
-    status: "Draft",
+    status: "Published",
     url: "thewatotoacademy",
     title: "The Watoto Academy",
     coming: "coming",
@@ -453,57 +453,114 @@ export const whatwedo = [
     // slides: [images.klwf11, images.klwf8, images.klwf10, images.klwf7],
     description: (
       <>
-        We are planning to establish a tuition-free school for 30 talented Grade
-        7 students starting from 2024. The school will serve as a place for
-        students who lack the financial means to continue with their education.
+        A journey of a thousand miles begins with a single step. The Watoto
+        Library is expanding to make a greater impact on vulnerable children in
+        the slums of Kibera. In the heart of Kibera, we are proud to introduce
+        The Watoto Academy, a community school that will offer quality junior
+        secondary education to at least 30 boys and girls in the first year, and
+        will gradually welcome more students in the following years.
       </>
     ),
     sections: [
       {
         section_id: 1,
-        section_title: "Our Scholarship",
         section_description: (
           <>
-            Our students will receive a full scholarship and everything they
-            need to successfully do their studies for free. This includes
-            tuition fees covered, as well as school uniform, materials and
-            nutritious meals.
+            As Nelson Mandela once said, "Education is the most powerful weapon
+            you can use to change the world." The Watoto Academy will, starting
+            from 2024, admit 30 children aged 15 years to join Grade 7, where
+            they will receive a better and higher quality education. This
+            initiative is aimed at children from families who may not have the
+            means to provide better education for their children, but who are
+            eager and ready to receive a quality education for themselves and,
+            in turn, use that education to serve their community.
           </>
         ),
         section_image: images.twa6,
+      },
+      {
+        section_id: 1,
+        section_title: "Our Scholarship",
+        section_description: (
+          <>
+            The Watoto Academy will, therefore, provide a holistic junior
+            secondary school to children and families that lack financial
+            resources. Here, the children will have access to qualified teachers
+            who will engage them in a child-friendly environment and cover with
+            them a holistic curriculum that will enable them to be thinkers,
+            achievers, and doers. Our students will receive a full scholarship
+            and everything they need to successfully do their studies for free.
+            This includes tuition fees covered, as well as school uniform,
+            materials and nutritious meals.
+          </>
+        ),
+        section_image: images.twa9,
+      },
+      {
+        section_id: 1,
+        section_description: (
+          <>
+            The Watoto Academy aspires to provide a comprehensive and
+            exceptional educational program that nurtures holistic development,
+            instills deep values of love and respect for one another, and
+            upholds a strong commitment to serving the community. The children
+            will be provided with school uniforms, textbooks, study, and writing
+            materials that will enable them to showcase and utilize their
+            creativity to make them innovative in solving some of the community
+            challenges. The children will be fully sponsored, and they, together
+            with their parents and relatives, will be engaged in community
+            service activities.
+          </>
+        ),
+        section_image: images.twa7,
+      },
+      {
+        section_id: 1,
+        section_title: "Why The Watoto Academy",
+        section_description: (
+          <>
+            Through our ongoing engagement with the children in our community,
+            we have recognized a pressing demand for an improved and more
+            readily accessible junior secondary school. It has come to our
+            attention that a significant number of our children encounter
+            difficulties in accessing educational institutions, particularly
+            after completing grade six and transitioning to junior secondary
+            education in grade seven. Unfortunately, many of these children are
+            forced to enroll in overcrowded public schools with severely limited
+            resources.
+          </>
+        ),
+        section_image: images.twa8,
       },
       {
         section_id: 2,
         section_title: "Renovating The Watoto Library",
         section_description: (
           <>
-            To make best use of our resources and funds, we will renovate our
-            library space to serve as a school during the day, and as a library
-            in the afternoons. In that way, our facilities will be used
-            throughout the day and evening, every day.
+            We are excited to announce that we are undertaking a project to
+            renovate our library space, transforming it into a state-of-the-art
+            classroom for the benefit of our students. We have been actively
+            seeking investors to partner with us on this endeavor, and we are
+            grateful to have already secured the support of{" "}
+            <a
+              href="https://opsahlgruppen.no/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u>Opsahlgruppen</u>
+            </a>
+            , who will be contributing to the renovation of our library space,
+            ensuring our children have access to improved facilities.
           </>
         ),
         section_image: images.twa5,
       },
       {
-        section_id: 3,
-        section_title: "Science Lab",
-        section_description: (
-          <>
-            One of the reasons there are few schools in Kibera after Grade 7 is
-            the requirement for a science lab. We will also establish a science
-            lab, as per the Kenyan requirements.
-          </>
-        ),
-        section_image: images.twa2,
-      },
-
-      {
         section_id: 4,
         section_title: "Financing The School",
         section_description: (
           <>
-            We are thrilled to share that our partner{" "}
+            Additionally, we are delighted to share that our friends from{" "}
             <a
               href="https://skullerud.osloskolen.no/"
               target="_blank"
@@ -511,42 +568,68 @@ export const whatwedo = [
             >
               <u>Skullerud skole</u>
             </a>{" "}
-            will raise the necessary funds to run our school for the first year.
-            In addition,{" "}
-            <a
-              href="https://opsahlgruppen.no/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <u>Opsahlgruppen</u>
-            </a>{" "}
-            will donate the necessary funds for us to do renovation of our
-            classroom and science lab. Our{" "}
-            <u>
-              <Link to="/whatwedo/klwf">Kibera Local Water Forum</Link>
-            </u>{" "}
-            progam will set up a resource center which will allow the school to
-            have free toilet facilities and water access.
+            have shown their commitment to our cause. They will be mobilizing
+            their students to raise funds for our initiative, further extending
+            their support to children in less fortunate circumstances. It's
+            worth noting that Skullerud skole has been a valuable partner in the
+            past, having contributed to the development of our{" "}
+            <Link to="/whatwedo/computerclass">
+              <u>computer classes</u>
+            </Link>{" "}
+            by providing laptops. Now, their students are dedicating their
+            efforts to support our school, and we are deeply appreciative of
+            their continued generosity.
           </>
         ),
         section_image: images.twa3,
+      },
+      {
+        section_id: 3,
+        section_title: "We Invite You",
+        section_description: (
+          <>
+            By sharing our progress and collaborations, we aim to create a space
+            for potential investors to join us in making a meaningful difference
+            for our students. We welcome the opportunity to discuss how you can
+            become a part of our mission. We are working towards getting a
+            modern science lab for our children and a community kitchen for them
+            to have nutritious meals. It is possible to make it happen.
+            <br />
+            <br />
+            Our organization holds a deep understanding of the impact we bring
+            to the Kibera community. We consider ourselves a grassroots movement
+            where everyone's opinions and considerations are valued. The call
+            for a school has come from the children themselves and their
+            parents, and this is largely thanks to the support our community
+            library has provided in aiding the children with their studies and
+            academics.
+          </>
+        ),
+        section_image: images.twa2,
       },
       {
         section_id: 5,
         section_title: "Our Budget",
         section_description: (
           <>
-            Our budget is designed to support the requirements of quality
-            education in today's world, ensuring that essential resources are
-            included. We've been careful to keep costs down to enable a wider
-            number of students to benefit from our program. For further details,
-            please consult the{" "}
+            Our proposed budget is thoughtfully planned to deliver high-quality
+            education without unnecessary expenses. We aim to make the most of
+            our resources while providing the essential resources our students
+            deserve. For a detailed breakdown, we encourage you to review the{" "}
             <u>
-              <a href="" target="_blank">
+              <a href={files.twa1} target="_blank" rel="noopener noreferrer">
                 attached budget document
               </a>
             </u>
-            .
+            . Your support is instrumental in making accessible education a
+            reality for more students.
+            <br />
+            <br />
+            We call upon our true friends to come and support us in making
+            impactful differences in the lives of these children. No amount is
+            small, every small bit counts and matters. Let's make The Watoto
+            Academy a reality. It is possible. Thank you, everyone, very much
+            for your support.
           </>
         ),
         section_image: images.twa4,

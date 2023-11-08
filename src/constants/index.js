@@ -1,3 +1,4 @@
 import images from './images';
+import files from './files';
 
-export { images };
+export { images, files };
