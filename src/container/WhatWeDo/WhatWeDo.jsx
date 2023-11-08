@@ -628,8 +628,12 @@ export const whatwedo = [
             We call upon our true friends to come and support us in making
             impactful differences in the lives of these children. No amount is
             small, every bit counts and matters. Let's make The Watoto Academy a
-            reality. It is possible. Thank you, everyone, very much for your
-            support.
+            reality. It is possible. To make a contribution, kindly visit our{" "}
+            <Link to="/donate">
+              <u>Donate</u>
+            </Link>{" "}
+            page and add 'The Watoto Academy' in the description. Thank you,
+            everyone, very much for your support.
           </>
         ),
         section_image: images.twa4,
