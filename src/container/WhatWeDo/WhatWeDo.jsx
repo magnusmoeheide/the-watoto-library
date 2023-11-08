@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Footer, Side, Section } from "../../components";
-import { images, files } from "../../constants";
+import { images } from "../../constants";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
 export const whatwedo = [
@@ -609,22 +609,8 @@ export const whatwedo = [
       },
       {
         section_id: 5,
-        section_title: "Our Budget",
         section_description: (
           <>
-            Our proposed budget is thoughtfully planned to deliver high-quality
-            education without unnecessary expenses. We aim to make the most of
-            our resources while providing the essential resources our students
-            deserve. For a detailed breakdown, we encourage you to review the{" "}
-            <u>
-              <a href={files.twa1} target="_blank" rel="noopener noreferrer">
-                attached budget document
-              </a>
-            </u>
-            . Your support is instrumental in making accessible education a
-            reality for more students.
-            <br />
-            <br />
             We call upon our true friends to come and support us in making
             impactful differences in the lives of these children. No amount is
             small, every bit counts and matters. Let's make The Watoto Academy a

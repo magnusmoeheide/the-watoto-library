@@ -62,7 +62,7 @@ import klwf13 from '../assets/whatwedo/klwf/IMG_1301.JPG';
 import twa1 from '../assets/whatwedo/theWatotoAcademy/classroom.jpg';
 import twa2 from '../assets/whatwedo/theWatotoAcademy/sciencelab.png';
 import twa3 from '../assets/whatwedo/theWatotoAcademy/fundraising.png';
-import twa4 from '../assets/whatwedo/theWatotoAcademy/budget.png';
+import twa4 from '../assets/whatwedo/theWatotoAcademy/support.png';
 import twa5 from '../assets/whatwedo/theWatotoAcademy/renovating.jpg';
 import twa6 from '../assets/whatwedo/theWatotoAcademy/twa-logo.png';
 import twa7 from '../assets/whatwedo/theWatotoAcademy/tutored.png';
