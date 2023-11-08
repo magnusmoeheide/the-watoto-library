@@ -639,11 +639,11 @@ const WhatWeDo = () => {
           <div className="article">
             <div className="flex-image-text">
               <div>
-                <h2>Programs</h2>
+                <h2>Our Programs</h2>
                 <div className="flex-container-2">
                   <div className="openhrs">
                     <div>
-                      <p>Opening hours</p>
+                      <p>Library opening hours</p>
                     </div>
                     <div className="flex-container-2">
                       <div className="when">
