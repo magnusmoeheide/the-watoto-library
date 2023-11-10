@@ -862,7 +862,7 @@ export const articles = [
             different backgrounds result in different personalities.
           </>
         ),
-        section_image: images.three6,
+        section_image: images.three8,
       },
       {
         section_id: 2,
