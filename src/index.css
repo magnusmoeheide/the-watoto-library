@@ -402,13 +402,24 @@ padding-right: 5%;
 
 .row {  
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.main {   
+  flex: 73%;
+  padding: 1.3em;
+  background-color: inherit;
+  overflow-y: auto;
 }
 
 .side {
   flex: 27%;
   background-color: inherit;
   padding: 1.3em;
+  position: sticky;
+  bottom: 1rem;
+  align-self: flex-end;
 }
 
 img {
@@ -578,14 +589,22 @@ img {
 }
 
 @media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+
   .main {
+    margin-top: 1.3em;
+    padding: 0.2em;
     flex: 1;
     order: 1;
   }
-  
+
   .side {
     flex: 1;
     order: 2;
+    padding: 1.3em;
+    position: relative; /* Explicitly set position for smaller screens */
   }
 }  
 
@@ -603,13 +622,6 @@ img {
     flex: 45%;
   }
 
-}
-
-/* Main column */
-.main {   
-  flex: 73%;
-  padding: 1.3em;
-  background-color: inherit;
 }
 
 .article {

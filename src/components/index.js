@@ -9,8 +9,9 @@ import Partners from './Partners/Partners';
 import Section from './Section/Section';
 import NextItems from './NextItems/NextItems';
 import Locationscroll from './Locationscroll/Locationscroll'
+import StickySidebar from './Javascript/StickySidebar'
 
 
 export {
-    Navbar, Footer, Side, Slideshow, Fullscreen, SelectArticle, Counter, Partners, Section, NextItems, Locationscroll
+    Navbar, Footer, Side, Slideshow, Fullscreen, SelectArticle, Counter, Partners, Section, NextItems, Locationscroll, StickySidebar
 }

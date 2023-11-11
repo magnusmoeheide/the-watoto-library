@@ -16,7 +16,7 @@ const Home = () => {
       <Navbar />
       <div className="row" id="flex">
         <Side />
-        <div className="main">
+        <div className="main" id="main">
           <div className="article">
             <div className="counter-parent">
               <Counter
