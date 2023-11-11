@@ -9,16 +9,16 @@ function StickySidebar() {
 
             const rect = sideRef.current.getBoundingClientRect();
             if (rect.top <= 0) {
-                sideRef.current.style.position = 'sticky';
+                sideRef.current.style.transform = `translateY(${-rect.top}px)`;
+                sideRef.current.style.position = 'fixed'; // Using fixed instead of sticky
             } else {
+                sideRef.current.style.transform = 'translateY(0)';
                 sideRef.current.style.position = 'relative';
-                sideRef.current.style.top = `${rect.top}px`;
             }
         };
 
         window.addEventListener('scroll', checkPosition);
         checkPosition();
-
 
         return () => window.removeEventListener('scroll', checkPosition);
     }, []);
@@ -26,9 +26,10 @@ function StickySidebar() {
     return (
         <div className="container">
             <div ref={sideRef} className="side">
+                {/* Content of .side */}
             </div>
         </div>
     );
 }
 
-export default StickySidebar
+export default StickySidebar;

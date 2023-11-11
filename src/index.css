@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-size: 1em;
   background-color: #E6F5FD;
+  background: linear-gradient(0, #d6edf9, #E6F5FD); 
   color: #443c3e;
 }
 
@@ -418,7 +419,7 @@ padding-right: 5%;
   background-color: inherit;
   padding: 1.3em;
   position: sticky;
-  bottom: 1rem;
+  bottom: 0rem;
   align-self: flex-end;
 }
 
@@ -1051,6 +1052,11 @@ cursor: pointer;
 
 .chess-peak {
 text-align: center;
+cursor: default;
+}
+
+.chess-peak img {
+  border: 0.3em solid #1ba0f220;
 }
 
 .newsletter-wrapping {
