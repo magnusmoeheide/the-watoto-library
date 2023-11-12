@@ -5,6 +5,7 @@ import happyBoys from '../assets/whatwedo/happy-boys.jpeg';
 import insideTheLibrary from '../assets/about/inside-the-library.jpg';
 import workingTogether from '../assets/about/working-together.jpeg';
 import happyChildren from '../assets/about/happyChildren.JPG';
+import kiberaKidBlack from '../assets/home/kibera-kid-black.png';
 
 // WHAT WE DO - Computer class
 import computerClass1 from '../assets/whatwedo/computerClass/IMG_1450.jpg'
@@ -234,7 +235,7 @@ import eleven14 from '../assets/articles/11-progress/14.png'
 export default {
 
     // PAGES IMAGES
-    logoTransparent, boysPlayingChess, happyBoys, insideTheLibrary, workingTogether, happyChildren,
+    logoTransparent, boysPlayingChess, happyBoys, insideTheLibrary, workingTogether, happyChildren, kiberaKidBlack,
 
     // WHAT WE DO - Computer class
     computerClass1, computerClass2, computerClass3, computerClass4, computerClass5, computerClass6, computerClass7, computerClass8, computerClass9,
