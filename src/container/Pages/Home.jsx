@@ -30,7 +30,7 @@ const Home = () => {
           <br />
           In Areas Faced With
           <br />
-          Poverty And Opression
+          Poverty And Oppression
         </div>
       </div>
       {isImageLoaded && (
