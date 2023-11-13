@@ -4,8 +4,8 @@ import { images } from "../../constants";
 import { Navbar, Footer, Side, Section, Slideshow } from "../../components";
 
 const Kibera = () => {
-  const slides = [images.kibera6];
-  const dots = slides ? Array(slides.length).fill(null) : [];
+  // const slides = [images.kibera6];
+  // const dots = slides ? Array(slides.length).fill(null) : [];
 
   return (
     <div>
@@ -107,7 +107,36 @@ const Kibera = () => {
               }
               img={images.kibera5}
             />
-            <Slideshow slides={slides} dots={dots} />
+
+            <Section
+              title="Kibera Statistics"
+              description={
+                <>
+                  <p>
+                    Only 40% of the children attend school. <br />
+                    Only 1 out of 2 girls will ever attend school. <br />
+                    19% of children will not live to see their 5th birthday.{" "}
+                    <br />
+                    50% of Kibera's eligeble workforce is unemployed. <br />
+                    Only 20% of the houses have electricity. <br />
+                    The average home measures 3.5 x 3.5 meters with an average
+                    of 8 people living together.
+                  </p>
+
+                  <p>
+                    Source:{" "}
+                    <Link
+                      to="https://www.chaffinch.org.uk/kibera-slum/"
+                      target="_blank"
+                    >
+                      <u>chaffinch.org.uk</u>
+                    </Link>
+                  </p>
+                </>
+              }
+              img={images.kibera6}
+            />
+            {/* <Slideshow slides={slides} dots={dots} /> */}
           </div>
           <br />
         </div>
