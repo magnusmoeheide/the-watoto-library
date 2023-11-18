@@ -111,6 +111,9 @@ const Footer = () => {
                   © 2023
                   <span className="notranslate"> The Watoto Library</span>
                   <br />
+                  <span className="orgnr">
+                    Org. nr. KBR/CBO/5/4/2023(439) (Kenya)
+                  </span>
                   <span className="orgnr">Org. nr. 931 464 817 (Norway)</span>
                 </p>
 

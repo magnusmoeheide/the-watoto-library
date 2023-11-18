@@ -1352,7 +1352,7 @@ margin-top: 0.3em;
 .footer-col ul li .developed {
 line-height: 0;
 font-size: 0.6em;
-margin-top: 0.7em;
+margin-top: 2em;
 }
 
 .footer-col ul li .adminLoginLink {
@@ -1387,6 +1387,8 @@ background-color: #1ba0f2;
 
 .orgnr {
   font-size: 0.8em;
+  white-space: nowrap;
+  display: block;
 }
 
 /*responsive*/
@@ -1962,6 +1964,7 @@ color: rgba(0, 0, 0, 0.25);
 .partners-section h2 {
   margin-bottom: 0;
   margin-top: 1.2em;
+  user-select: none;
 }
 
 .partners-list {
