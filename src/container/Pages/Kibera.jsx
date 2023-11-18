@@ -4,8 +4,8 @@ import { images } from "../../constants";
 import { Navbar, Footer, Side, Section, Slideshow } from "../../components";
 
 const Kibera = () => {
-  // const slides = [images.kibera6];
-  // const dots = slides ? Array(slides.length).fill(null) : [];
+  const slides = [images.kibera6];
+  const dots = slides ? Array(slides.length).fill(null) : [];
 
   return (
     <div>
@@ -108,7 +108,7 @@ const Kibera = () => {
               img={images.kibera5}
             />
 
-            <Section
+            {/* <Section
               title="Kibera Statistics"
               description={
                 <>
@@ -135,8 +135,8 @@ const Kibera = () => {
                 </>
               }
               img={images.kibera6}
-            />
-            {/* <Slideshow slides={slides} dots={dots} /> */}
+            /> */}
+            <Slideshow slides={slides} dots={dots} />
           </div>
           <br />
         </div>
