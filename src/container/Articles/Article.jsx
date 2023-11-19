@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import {
   Navbar,
   Footer,
@@ -7,11 +7,12 @@ import {
   Slideshow,
   Section,
   NextItems,
+  MyLink,
 } from "../../components";
 import { useParams } from "react-router-dom";
 import { articles } from "./Articles";
 
-const Article = () => {
+const Article = ({ isAdmin }) => {
   const { articleId } = useParams();
   const article = articles.find((article) => article.id === Number(articleId));
   const dots = article.slides ? Array(article.slides.length).fill(null) : [];
@@ -27,13 +28,36 @@ const Article = () => {
         <Side />
         <div className="main">
           <div>
-            <Link to={`/articles#${articleId}`}>
+            <MyLink to={`/articles#${articleId}`}>
               <div className="div-back">
                 <p className="allNewsLetters">
                   <i className="fa-solid fa-arrow-left"></i>Back to Newsletters
                 </p>
               </div>
-            </Link>
+            </MyLink>
+            {isAdmin && (
+              <>
+                <span className={`status-${article.status.toLowerCase()}`}>
+                  {article.status === "Published" ? (
+                    <>
+                      {article.status} <i className="fa fa-check-circle"></i>
+                    </>
+                  ) : (
+                    <>
+                      {article.status} <i className="fa fa-pencil-alt"></i>
+                    </>
+                  )}
+                </span>
+                <span className="div-readmore status">
+                  {" "}
+                  {article.status === "Published" ? (
+                    <>Unpublish</>
+                  ) : (
+                    <>Publish</>
+                  )}
+                </span>
+              </>
+            )}
           </div>
           <div className="article" id={articleId}>
             <Section
@@ -43,6 +67,7 @@ const Article = () => {
               year={article.year}
               description={article.description}
               img={article.img}
+              isAdmin={isAdmin}
             />
 
             {article.sections.map((section) => (
@@ -52,6 +77,7 @@ const Article = () => {
                   title={section.section_title}
                   img={section.section_image}
                   description={section.section_description}
+                  isAdmin={isAdmin}
                 />
               </div>
             ))}

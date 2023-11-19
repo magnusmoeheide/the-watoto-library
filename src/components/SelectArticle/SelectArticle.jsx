@@ -18,7 +18,7 @@ function SelectArticle() {
   };
 
   return (
-    <select value={selectedValue} onChange={handleChange}>
+    <select value={selectedValue} onChange={handleChange} className="select">
       <option value="">Select article</option>
       {articles
         .filter((article) => article.status === "Published")

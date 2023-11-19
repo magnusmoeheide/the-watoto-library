@@ -79,7 +79,7 @@ input {
   text-indent: 0.3em;
 }
 
-input, select {
+.select {
   width: 100%;
   height: 2.8em;
   margin-top: 0.6em;
@@ -96,14 +96,19 @@ input, select {
   color: #443c3e;
 }
 
-select {
+.select {
   border-radius: 0.3em;
 }
 
-select:focus {
+.select:focus {
   border: 0em;
   outline: none;
   border-bottom: 0.2em solid #1ba0f220;
+}
+
+input:focus {
+  /* border: 0em; */
+  outline: none;
 }
 
 input:hover {
@@ -785,6 +790,51 @@ img {
   font-size: 1.3em;
 }
 
+textarea {
+  background-color: white;
+  border: 0;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+/* -------------- INPUT AND PLACEHOLDER DEFAULT ----------------- */
+
+input, select {
+  padding: 0.5em;
+  padding-left: 0;
+  border: 0.05em solid rgb(237, 237, 237);
+  display: inline-block;
+  border-radius: 0.15em;
+}
+
+
+input::placeholder, select::placeholder {
+  color: #443c3e;
+  font-size: 0.95em;
+}
+
+select:focus {
+  outline: none;
+}
+
+input + input, input + select, select + input, select + select {
+  border-left: none;
+  margin-top: 0.5em;
+}
+
+
+/* -------------- INPUT END ----------------- */
+
+.h2 {
+  font-size: 1.3em;
+}
+
+.h3 {
+  font-size: 1em;
+}
+
 .container::after, .row2::after {
   content: "";
   clear: both;
@@ -811,7 +861,6 @@ color: white;
 display: flex;
 align-items: center;
 justify-content: flex-start; 
-/* border: 1px solid black; */
 }
 
 .flex-image-text > div > p {
@@ -1194,6 +1243,14 @@ user-select: none;
   background-color: rgba(211, 211, 211, 0.150);
   user-select: none;
   color: #443c3e;
+}
+
+.div-readmore.status {
+  margin-left: 0.5em;
+}
+
+.div-readmore.status:hover {
+  cursor: pointer;
 }
 
 .div-readmore a {
@@ -1664,6 +1721,10 @@ align-items: center;
   margin-top: 0;
 }
 
+.flex-container-2 input {
+    flex: 1; 
+}
+
 @media (max-width: 800px) { 
   .flex-container-2.subheader h3 {
     margin-top: 0.6em;
@@ -1708,6 +1769,11 @@ color: rgba(51, 51, 51, 0.785);
 user-select: none;
 }
 
+.counter {
+  padding: 0.2em;
+  font-size: 0.8em;
+}
+
 /* -------------------------- */
 
 .partners {
@@ -1721,13 +1787,14 @@ color: rgba(0, 0, 0, 0.25);
 
 
 
-/* --------- ADMIN -------------------- */
+/* --------- OLD ADMIN -------------------- */
 
-.admin {
+ .admin {
   text-align: center;
-  padding: 0em 5em;
-  margin-top: 3em;
+  padding: 1em 5em;
 }
+
+/*
 
 .admin input {
   margin: 0;
@@ -1769,23 +1836,18 @@ color: rgba(0, 0, 0, 0.25);
   border-collapse: collapse;
 }
 
-.counter {
-  padding: 0.2em;
-  font-size: 0.8em;
-}
-
 .adminLogin {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
+} */
 
 
 /* ----- MESSAGE ------ */
 
-.message {
+/* .message {
   display: none;
   position: fixed;
   top: 0;
@@ -1808,7 +1870,7 @@ color: rgba(0, 0, 0, 0.25);
 .message.error {
   color: red;
   background-color: rgba(255, 0, 0, 0.1);
-}
+} */
 
 
 /* ------------------------------------- */
@@ -1873,7 +1935,7 @@ color: rgba(0, 0, 0, 0.25);
   margin: 0;
 }
 
-.counter > .number {
+.counter > .number, .counter input {
   font-size: 5em;
   padding: 0;
   margin: 0;
@@ -1881,6 +1943,12 @@ color: rgba(0, 0, 0, 0.25);
   /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.counter input {
+  max-width: 3em;
+  text-align: center;
+}
+
 
 @keyframes underlineAppearThenDisappear {
   0% {
@@ -1995,6 +2063,35 @@ color: rgba(0, 0, 0, 0.25);
 
 .partner-item p {
   margin-top: 0;
+}
+
+
+
+/* STATUS */
+.status-published, .status-draft {
+  padding: 0.5em 0.5em;
+  border-radius: 0.3em;
+  margin: 0;
+}
+
+.status-published {
+  color: green;
+  background-color: #c8fec3;
+}
+
+.status-draft {
+  color: orange;
+  background-color: rgb(252, 242, 223)
+}
+
+.status-published i {
+  color: green;
+  padding: 0;
+}
+
+ .status-draft i {
+  color: orange;
+  padding: 0;
 }
 
 

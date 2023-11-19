@@ -1,7 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { images } from "../../constants";
-import { Navbar, Footer, Side, Section, Slideshow } from "../../components";
+import {
+  Navbar,
+  Footer,
+  Side,
+  Section,
+  Slideshow,
+  MyLink,
+} from "../../components";
 
 const Kibera = () => {
   const slides = [images.kibera6];
@@ -14,13 +20,13 @@ const Kibera = () => {
         <Side />
         <div className="main">
           <div>
-            <Link to="/about#kibera">
+            <MyLink to="/about#kibera">
               <div className="div-back">
                 <p className="allNewsLetters">
                   <i className="fa-solid fa-arrow-left"></i>Back to About
                 </p>
               </div>
-            </Link>
+            </MyLink>
           </div>
           <div className="article">
             <Section

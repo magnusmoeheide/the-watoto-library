@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Footer, Side } from "../../components";
+import { Navbar, Footer, Side, MyLink } from "../../components";
 
 const TermsOfSale = () => {
   return (
@@ -9,13 +8,13 @@ const TermsOfSale = () => {
       <div className="row" id="flex">
         <Side />
         <div className="main">
-          <Link to="/donate#termsofsale">
+          <MyLink to="/donate#termsofsale">
             <div class="div-back">
               <p class="allNewsLetters">
                 <i class="fa-solid fa-arrow-left"></i>Back to Donate
               </p>
             </div>
-          </Link>
+          </MyLink>
           <div className="article termsofsale">
             <h2>Terms Of Sale</h2>
             <i>

@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Footer, Side, Slideshow, Section } from "../../components";
+import {
+  Navbar,
+  Footer,
+  Side,
+  Slideshow,
+  Section,
+  MyLink,
+} from "../../components";
 import { useParams } from "react-router-dom";
 import { whatwedo } from "./WhatWeDo";
 import NextItems from "../../components/NextItems/NextItems";
 
-const Wwd = () => {
+const Wwd = ({ isAdmin }) => {
   const { wwdUrl } = useParams();
   const wwd = whatwedo.find((item) => item.url === wwdUrl);
   const dots = wwd.slides ? Array(wwd.slides.length).fill(null) : [];
@@ -21,13 +27,32 @@ const Wwd = () => {
         <Side />
         <div className="main">
           <div>
-            <Link to={`/programs#${wwdUrl}`}>
+            <MyLink to={`/programs#${wwdUrl}`}>
               <div className="div-back">
                 <p className="allNewsLetters">
                   <i className="fa-solid fa-arrow-left"></i>Back to Programs
                 </p>
               </div>
-            </Link>
+            </MyLink>
+            {isAdmin && (
+              <>
+                <span className={`status-${wwd.status.toLowerCase()}`}>
+                  {wwd.status === "Published" ? (
+                    <>
+                      {wwd.status} <i className="fa fa-check-circle"></i>
+                    </>
+                  ) : (
+                    <>
+                      {wwd.status} <i className="fa fa-pencil-alt"></i>
+                    </>
+                  )}
+                </span>
+                <span className="div-readmore status">
+                  {" "}
+                  {wwd.status === "Published" ? <>Unpublish</> : <>Publish</>}
+                </span>
+              </>
+            )}
           </div>
           <div className="article" id={wwdUrl}>
             <Section
@@ -38,6 +63,7 @@ const Wwd = () => {
               openingHours={wwd.openingHours}
               description={wwd.description}
               img={wwd.img}
+              isAdmin={isAdmin}
             />
 
             {wwd.sections.map((section) => (
@@ -47,6 +73,7 @@ const Wwd = () => {
                   title={section.section_title}
                   img={section.section_image}
                   description={section.section_description}
+                  isAdmin={isAdmin}
                 />
               </div>
             ))}

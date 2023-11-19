@@ -1,5 +1,3 @@
-
-// PAGES
 import Home from './Pages/Home';
 import GetInTouch from './Pages/GetInTouch';
 import Donate from './Pages/Donate';
@@ -13,9 +11,9 @@ import TermsOfSale from './Pages/TermsOfSale';
 import Article from './Articles/Article';
 import Articles from './Articles/Articles';
 
-// WHAT WE DO
-import WhatWeDo from './WhatWeDo/WhatWeDo';
 import Wwd from './WhatWeDo/Wwd';
+import WhatWeDo from './WhatWeDo/WhatWeDo';
+
 
 
 export {

@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Footer, Side } from "../../components";
+import { Navbar, Footer, Side, MyLink } from "../../components";
 import { images } from "../../constants";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
@@ -45,13 +44,13 @@ const About = () => {
                   earning less than US$2 per day. Unemployment rates are high
                   and many people cannot afford education for their children.
                 </p>
-                <Link to="/about/kibera">
+                <MyLink to="/about/kibera">
                   <div className="div-readmore">
                     <p className="readmore">
                       Read more <i className="fa-solid fa-arrow-right"></i>
                     </p>
                   </div>
-                </Link>
+                </MyLink>
               </div>
               <img src={images.kibera1} className="img" alt="Kibera1" />
             </div>
@@ -111,13 +110,13 @@ const About = () => {
                   care of all the small kids in the area, and thus becoming an
                   important reporter from the slums to the outside world.
                 </p>
-                <Link to="/about/founder">
+                <MyLink to="/about/founder">
                   <div className="div-readmore">
                     <p className="readmore">
                       Read more <i className="fa-solid fa-arrow-right"></i>
                     </p>
                   </div>
-                </Link>
+                </MyLink>
               </div>
               <img src={images.founder1} className="img" alt="The founder" />
             </div>

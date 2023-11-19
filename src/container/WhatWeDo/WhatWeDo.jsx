@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Footer, Side, Section } from "../../components";
+import { Navbar, Footer, Side, Section, MyLink } from "../../components";
 import { images } from "../../constants";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
@@ -49,9 +48,9 @@ export const whatwedo = [
             need to succeed.
             <br />
             Read about the expansion{" "}
-            <Link to="/article/6" target="_blank">
+            <MyLink to="/article/6" target="_blank">
               <u>here</u>.
-            </Link>
+            </MyLink>
           </>
         ),
       },
@@ -573,9 +572,9 @@ export const whatwedo = [
             their support to children in less fortunate circumstances. It's
             worth noting that Skullerud skole has been a valuable partner in the
             past, having contributed to the development of our{" "}
-            <Link to="/programs/computerclass" target="_blank">
+            <MyLink to="/programs/computerclass" target="_blank">
               <u>computer classes</u>
-            </Link>{" "}
+            </MyLink>{" "}
             by providing laptops. Now, their students are dedicating their
             efforts to support our school, and we are deeply appreciative of
             their continued generosity.
@@ -615,9 +614,9 @@ export const whatwedo = [
             impactful differences in the lives of these children. No amount is
             small, every bit counts and matters. Let's make The Watoto Academy a
             reality. It is possible. To make a contribution, kindly visit our{" "}
-            <Link to="/donate" target="_blank">
+            <MyLink to="/donate" target="_blank">
               <u>Donate</u>
-            </Link>{" "}
+            </MyLink>{" "}
             page and add 'The Watoto Academy' in the description. Thank you,
             everyone, very much for your support.
           </>
@@ -663,14 +662,14 @@ const WhatWeDo = () => {
                   computer classes and chess regularly. You can read more about
                   our other engagements in our newsletters.
                 </p>
-                <Link to="/articles">
+                <MyLink to="/articles">
                   <div className="div-readmore">
                     <p className="allNewsLetters">
                       All newsletters{" "}
                       <i className="fa-solid fa-arrow-right"></i>
                     </p>
                   </div>
-                </Link>
+                </MyLink>
               </div>
               <img src={images.happyBoys} className="img" />
             </div>

@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { images } from "../../constants";
-import { Navbar, Footer, Section } from "../../components";
+import { Navbar, Footer, Section, MyLink } from "../../components";
 import { SelectArticle } from "../../components";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
@@ -122,9 +121,9 @@ export const articles = [
           <>
             We take immense pride and joy in serving our beloved Kibera
             community. Our dedicated program, the{" "}
-            <Link to="/programs/klwf">
+            <MyLink to="/programs/klwf">
               <u>Kibera Local Water Forum</u>
-            </Link>
+            </MyLink>
             , comprising children, women, youths, and other community
             volunteers, has been actively advocating for improved water quality
             for our community. Our program has adopted and conducts regular
@@ -296,9 +295,9 @@ export const articles = [
             <br />
             <br />
             Earlier this year, we made plans to do{" "}
-            <Link to="/articles/4" target="_blank">
+            <MyLink to="/articles/4" target="_blank">
               cleanups around Kibera
-            </Link>{" "}
+            </MyLink>{" "}
             to improve the water quality of the community. We are thrilled to
             see these plans being implemented, and we are proud to share that
             our children and staff are actively volunteering and devoting their
@@ -641,9 +640,9 @@ export const articles = [
             the computer classes.
             <br />
             Read about the computer classes{" "}
-            <Link to="/programs/computerclass">
+            <MyLink to="/programs/computerclass">
               <u>here</u>
-            </Link>
+            </MyLink>
             .
           </>
         ),
@@ -989,7 +988,7 @@ export const articles = [
   },
 ];
 
-const Articles = () => {
+const Articles = ({ isAdmin }) => {
   const years = ["2023", "2022"];
 
   return (
@@ -1001,19 +1000,16 @@ const Articles = () => {
           <div class="row">
             <div class="page">
               <div>
-                <Link to="/programs">
+                <MyLink to="/programs">
                   <div className="div-back">
                     <p className="allNewsLetters">
                       <i className="fa-solid fa-arrow-left"></i>Back to Programs
                     </p>
                   </div>
-                </Link>
+                </MyLink>
               </div>
 
-              <div
-                class="article-click newsletters"
-                style={{ cursor: "default" }}
-              >
+              <div className="article-click" style={{ cursor: "default" }}>
                 <h2>Newsletters</h2>
                 <SelectArticle />
                 {/* <p>
@@ -1060,7 +1056,9 @@ const Articles = () => {
                     <div className="timeline__cards">
                       {articles
                         .filter((article) => article.year.includes(year))
-                        .filter((article) => article.status === "Published")
+                        .filter(
+                          (article) => isAdmin || article.status === "Published"
+                        )
                         .map((article) => (
                           <div
                             key={article.id}

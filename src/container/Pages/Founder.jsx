@@ -1,7 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { images } from "../../constants";
-import { Navbar, Footer, Side, Slideshow, Section } from "../../components";
+import {
+  Navbar,
+  Footer,
+  Side,
+  Slideshow,
+  Section,
+  MyLink,
+} from "../../components";
 
 const Founder = () => {
   const slides = [images.founder5];
@@ -14,13 +20,13 @@ const Founder = () => {
         <Side />
         <div className="main">
           <div>
-            <Link to="/about#founder">
+            <MyLink to="/about#founder">
               <div className="div-back">
                 <p className="allNewsLetters">
                   <i className="fa-solid fa-arrow-left"></i>Back to About
                 </p>
               </div>
-            </Link>
+            </MyLink>
           </div>
           <div className="article">
             <Section

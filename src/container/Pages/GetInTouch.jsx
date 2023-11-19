@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React from "react";
 import { Navbar, Footer, Side, Section } from "../../components";
 import { images } from "../../constants";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
@@ -51,8 +50,8 @@ const team = [
   },
 ];
 
-const boardMembers = team.filter((member) => member.role === "Board");
-const teamMembers = team.filter((member) => member.role === "Team");
+export const boardMembers = team.filter((member) => member.role === "Board");
+export const teamMembers = team.filter((member) => member.role === "Team");
 
 const renderMember = (member) => (
   <div className="column" id={member.name.toLowerCase().replace(/\s/g, "")}>

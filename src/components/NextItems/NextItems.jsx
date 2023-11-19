@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import MyLink from "../MyLink/MyLink";
 
 function NextItems({ items, currentIdentifier, identifierType }) {
   const filteredItems = items.filter((item) => item.status === "Published");
@@ -39,7 +39,7 @@ function NextItems({ items, currentIdentifier, identifierType }) {
       >
         <h3>{identifierType === "id" ? "Read More" : "Discover More"}</h3>
         {articlesToShow.map((item) => (
-          <Link
+          <MyLink
             to={
               identifierType === "id"
                 ? `/article/${item.id}`
@@ -50,7 +50,7 @@ function NextItems({ items, currentIdentifier, identifierType }) {
             <div className="newsletter-wrapping">
               <span className="button">{item.title}</span>
             </div>
-          </Link>
+          </MyLink>
         ))}
       </div>
     </div>

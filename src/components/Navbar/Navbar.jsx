@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import MyLink from "../MyLink/MyLink";
 import { whatwedo } from "../../container/WhatWeDo/WhatWeDo";
 
 const Navbar = () => {
@@ -130,13 +131,13 @@ const Navbar = () => {
       <ul className={`navigation ${isMenuOpen ? "mobile-open" : ""}`} id="nav">
         {navItems.map((item) => (
           <li key={item.name} className={`${isActive(item)} main-nav-item`}>
-            <Link
+            <MyLink
               to={item.path}
               className="main-link"
               // onClick={(e) => isMobile && item.submenu && e.preventDefault()}
             >
               {item.name}
-            </Link>
+            </MyLink>
             {!isMobile && item.submenu && (
               <ul className="submenu">
                 {item.submenu.map((subItem) => (
@@ -146,10 +147,10 @@ const Navbar = () => {
                       subItem.className ? subItem.className : "submenu-item"
                     }`}
                   >
-                    <Link to={subItem.path} className="submenu-link">
+                    <MyLink to={subItem.path} className="submenu-link">
                       {subItem.icon}
                       <span>{subItem.name}</span>
-                    </Link>
+                    </MyLink>
                   </li>
                 ))}
               </ul>

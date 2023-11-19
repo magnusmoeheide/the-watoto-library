@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { images } from "../../constants";
-import { Navbar, Footer, Side, Section } from "../../components";
+import { Navbar, Footer, Side, Section, MyLink } from "../../components";
 
 const Kibera = () => {
   return (
@@ -11,13 +10,13 @@ const Kibera = () => {
         <Side />
         <div className="main">
           <div>
-            <Link to="/donate#store">
+            <MyLink to="/donate#store">
               <div className="div-back">
                 <p className="allNewsLetters">
                   <i className="fa-solid fa-arrow-left"></i>Back to Donate
                 </p>
               </div>
-            </Link>
+            </MyLink>
           </div>
           <div className="article">
             <Section

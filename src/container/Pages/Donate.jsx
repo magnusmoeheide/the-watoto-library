@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Footer, Side } from "../../components";
+import { Navbar, Footer, Side, MyLink } from "../../components";
 import { images } from "../../constants";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
@@ -172,11 +171,11 @@ const Donate = () => {
 
             <p>
               For Norwegian sales terms,{" "}
-              <Link to="termsofsale">
+              <MyLink to="termsofsale">
                 <u>
                   <a>click here</a>
                 </u>
-              </Link>
+              </MyLink>
               .
             </p>
             <p>

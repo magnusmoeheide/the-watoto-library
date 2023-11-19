@@ -1,15 +1,15 @@
 import React from "react";
 import { images } from "../../constants";
-import { Link } from "react-router-dom";
+import MyLink from "../MyLink/MyLink";
 
 const Side = () => {
   return (
     <div className="side" id="side">
-      <Link to="/">
+      <MyLink to="/">
         <div className="logo" style={{ cursor: "pointer" }}>
           <img src={images.logoTransparent} className="img-nozoom" alt="logo" />
         </div>
-      </Link>
+      </MyLink>
 
       <div className="vision-statement">
         <p>
@@ -35,7 +35,7 @@ const Side = () => {
       <br />
       <br />
 
-      <Link to="/programs/chessclub">
+      <MyLink to="/programs/chessclub">
         <div className="pointer">
           <div className="chess-peak">
             <img
@@ -45,7 +45,7 @@ const Side = () => {
             />
           </div>
         </div>
-      </Link>
+      </MyLink>
       <br />
       <div className="side-vision">
         <h3>Our Mission</h3>

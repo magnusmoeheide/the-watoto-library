@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import MyLink from "../MyLink/MyLink";
 
 const Footer = () => {
   return (
@@ -7,80 +7,76 @@ const Footer = () => {
       <div className="container-footer">
         <div className="container-row">
           <div className="footer-col">
-            <Link to="/">
+            <MyLink to="/">
               <h4>
                 <a style={{ color: "white" }}>
                   <span className="notranslate">The Watoto Library</span>
                 </a>
               </h4>
-            </Link>
+            </MyLink>
 
             <ul>
-              <Link to="/">
+              <MyLink to="/">
                 <li>
                   <a>Home</a>
                 </li>
-              </Link>
-              <Link to="/articles">
+              </MyLink>
+              <MyLink to="/articles">
                 <li>
                   <a>Newsletters</a>
                 </li>
-              </Link>
-              <Link to="/whatwedo">
+              </MyLink>
+              <MyLink to="/whatwedo">
                 <li>
                   <a>What We Do</a>
                 </li>
-              </Link>
+              </MyLink>
             </ul>
           </div>
           <div className="footer-col">
-            <Link to="/about">
+            <MyLink to="/about">
               <h4>
                 <a style={{ color: "white" }}>About</a>
               </h4>
-            </Link>
+            </MyLink>
 
             <ul>
-              <Link to="/about">
+              <MyLink to="/about">
                 <li>
                   <a>About Us</a>
                 </li>
-              </Link>
+              </MyLink>
 
-              <Link to="/getintouch#team">
+              <MyLink to="/getintouch#team">
                 <li>
                   <a>Our Team</a>
                 </li>
-              </Link>
-              <Link to="/about/founder">
+              </MyLink>
+              <MyLink to="/about/founder">
                 <li>
                   <a>Our Founder</a>
                 </li>
-              </Link>
+              </MyLink>
             </ul>
           </div>
           <div className="footer-col">
-            <Link to="/donate">
+            <MyLink to="/donate">
               <h4>
                 <a style={{ color: "white" }}>Engage</a>
               </h4>
-            </Link>
+            </MyLink>
             <ul>
-              <Link to="/getintouch#contact">
+              <MyLink to="/getintouch#contact">
                 <li>
                   <a>Contact Us</a>
                 </li>
-              </Link>
-              {/* <Link to="/getintouch#partners">
-                <li>
-                  <a>Partners</a>
-                </li>
-              </Link> */}
-              <Link to="/donate">
+              </MyLink>
+
+              <MyLink to="/donate">
                 <li>
                   <a>Donate</a>
                 </li>
-              </Link>
+              </MyLink>
             </ul>
           </div>
           <div className="footer-col">

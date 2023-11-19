@@ -6,6 +6,7 @@ const Counter = ({
   header = "",
   targetNumber,
   duration = 2000,
+  isAdmin,
 }) => {
   const [count, setCount] = useState(0);
 
@@ -31,7 +32,12 @@ const Counter = ({
 
   return (
     <div className="counter">
-      <p className="number">{count}</p>
+      {isAdmin ? (
+        <input type="number" value={count} />
+      ) : (
+        <p className="number">{count}</p>
+      )}
+
       <h3 className="underline-animation-header">
         <span dangerouslySetInnerHTML={{ __html: icon }}></span> {header}
       </h3>

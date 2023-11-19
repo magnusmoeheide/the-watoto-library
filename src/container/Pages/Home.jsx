@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import {
   Navbar,
   Footer,
@@ -7,12 +6,16 @@ import {
   Counter,
   Partners,
   Section,
+  MyLink,
 } from "../../components";
 import { articles } from "../../container/Articles/Articles";
-import { images } from "../../constants";
+// import { is } from "immutable";
 
-const Home = () => {
-  const [isImageLoaded, setImageLoaded] = useState(false);
+const Home = ({ isAdmin }) => {
+  // const [isImageLoaded, setImageLoaded] = useState(false);
+  const publishedArticles = articles.filter(
+    (article) => article.status === "Published"
+  ).length;
 
   return (
     <div>
@@ -34,6 +37,15 @@ const Home = () => {
         </div>
       </div> */}
       {/* {isImageLoaded && ( */}
+      {isAdmin && (
+        <div className="article admin">
+          <h2>Interacting as Admin</h2>
+          <p>
+            Articles created: {articles.length} | Articles published:{" "}
+            {publishedArticles}
+          </p>
+        </div>
+      )}
       <div>
         <div className="row" id="flex">
           <Side />
@@ -87,11 +99,11 @@ const Home = () => {
               </div>
             </div>
             <br />
-            <Link to="/articles">
+            <MyLink to="/articles">
               <h2 className="home-newsletter-header">
                 <u>Newsletters</u>
               </h2>
-            </Link>
+            </MyLink>
 
             {articles
               .filter((article) => article.status === "Published")
@@ -115,13 +127,13 @@ const Home = () => {
                 </div>
               ))}
 
-            <Link to="/articles">
+            <MyLink to="/articles">
               <div className="article-click goToNews">
                 <p className="readmore">
                   All Newsletters <i className="fa-solid fa-arrow-right"></i>
                 </p>
               </div>
-            </Link>
+            </MyLink>
           </div>
         </div>
         <Partners />
