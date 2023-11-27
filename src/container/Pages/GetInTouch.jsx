@@ -16,7 +16,7 @@ const team = [
     id: 2,
     role: "Board",
     name: "Magnus Heide",
-    description_1: "Cofounder",
+    description_1: "Co-Founder",
     description_2: "Director of Finance and IT",
     img: images.magnus,
   },
@@ -53,21 +53,25 @@ const team = [
 export const boardMembers = team.filter((member) => member.role === "Board");
 export const teamMembers = team.filter((member) => member.role === "Team");
 
-const renderMember = (member) => (
-  <div className="column" id={member.name.toLowerCase().replace(/\s/g, "")}>
-    <div className="card">
-      <img src={member.img} alt={member.name} style={{ width: "100%" }} />
-      <div className="container">
-        <h2>{member.name}</h2>
-        <p className="title">
-          {member.description_1}
-          <br />
-          {member.description_2 && `${member.description_2}`}
-        </p>
+const renderMember = (member) => {
+  const firstName = member.name.split(" ")[0].toLowerCase();
+
+  return (
+    <div className="column" id={firstName}>
+      <div className="card">
+        <img src={member.img} alt={member.name} style={{ width: "100%" }} />
+        <div className="container">
+          <h2>{member.name}</h2>
+          <p className="title">
+            {member.description_1}
+            <br />
+            {member.description_2 && `${member.description_2}`}
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const GetInTouch = () => {
   return (

@@ -77,8 +77,13 @@ const Section = ({
                 </div>
               ) : instructor ? (
                 <div className="coach">
-                  <i className="fa-solid fa-chalkboard-user"></i>
-                  {instructor}
+                  <MyLink
+                    to={`/getintouch#${instructor.toLowerCase()}`}
+                    className="mylink-coach"
+                  >
+                    <i className="fa-solid fa-chalkboard-user"></i>
+                    {instructor}
+                  </MyLink>
                 </div>
               ) : null}
 

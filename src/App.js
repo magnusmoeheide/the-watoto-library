@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { sharedRoutes } from './SharedRoutes';
 // import AdminRoutes from './AdminRoutes'; 
 import { Fullscreen } from './components';
@@ -26,6 +26,7 @@ function App() {
               element={React.createElement(route.component, { isAdmin: route.isAdmin })} 
             />
           ))}   
+           <Route path="*" element={<Navigate to="/" replace />} />
            {/* <Route path="/admin/*" element={<AdminRoutes />} /> */}
         </Routes>
     </div>

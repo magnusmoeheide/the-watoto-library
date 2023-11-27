@@ -321,7 +321,7 @@ export const whatwedo = [
     openingHours: "Fri - Sat | 8 - 12am",
     img: images.klwf13,
     icon: <i className="fa-solid fa-person-digging"></i>,
-    slides: [images.klwf11, images.klwf8, images.klwf10, images.klwf7],
+    slides: [images.klwf11, images.klwf7, images.klwf8, images.klwf10],
     description: (
       <>
         We have founded Kibera Local Water Forum, a program that is dedicated to
