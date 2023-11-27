@@ -51,10 +51,17 @@ const Article = ({ isAdmin }) => {
                 <span className="div-readmore status">
                   {" "}
                   {article.status === "Published" ? (
-                    <>Unpublish</>
+                    <>
+                      <i class="fa-solid fa-download"></i> Unpublish
+                    </>
                   ) : (
-                    <>Publish</>
+                    <>
+                      <i class="fa-solid fa-upload"></i> Publish
+                    </>
                   )}
+                </span>
+                <span className="div-readmore status">
+                  <i class="fa-solid fa-trash-can"></i> Delete
                 </span>
               </>
             )}

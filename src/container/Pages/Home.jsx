@@ -39,7 +39,7 @@ const Home = ({ isAdmin }) => {
       {/* {isImageLoaded && ( */}
       {isAdmin && (
         <div className="article admin">
-          <h2>Interacting as Admin</h2>
+          <h2>Admin</h2>
           <p>
             Articles created: {articles.length} | Articles published:{" "}
             {publishedArticles}
@@ -62,6 +62,7 @@ const Home = ({ isAdmin }) => {
                       on a daily basis.
                     </>
                   }
+                  isAdmin={isAdmin}
                 />
                 <Counter
                   header="Children impacted"
@@ -73,6 +74,7 @@ const Home = ({ isAdmin }) => {
                       Library.
                     </>
                   }
+                  isAdmin={isAdmin}
                 />
                 <Counter
                   header="Sponsored children"
@@ -84,6 +86,7 @@ const Home = ({ isAdmin }) => {
                       school.
                     </>
                   }
+                  isAdmin={isAdmin}
                 />
                 <Counter
                   header="Meals served"
@@ -95,6 +98,7 @@ const Home = ({ isAdmin }) => {
                       children.
                     </>
                   }
+                  isAdmin={isAdmin}
                 />
               </div>
             </div>

@@ -627,7 +627,7 @@ export const whatwedo = [
   },
 ];
 
-const WhatWeDo = () => {
+const WhatWeDo = ({ isAdmin }) => {
   return (
     <div>
       <Locationscroll />
@@ -699,6 +699,15 @@ const WhatWeDo = () => {
                 <br />
               </div>
             ))}
+
+          {isAdmin ? (
+            <div className="article">
+              <h3>Create New Program</h3>
+              <p>
+                Program title: <input type="text" />
+              </p>
+            </div>
+          ) : null}
         </div>
       </div>
       <Footer />

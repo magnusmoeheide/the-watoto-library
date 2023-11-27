@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
 import { sharedRoutes } from './SharedRoutes';
-import AdminRoutes from './AdminRoutes'; 
+// import AdminRoutes from './AdminRoutes'; 
 import { Fullscreen } from './components';
 
 
@@ -26,7 +26,7 @@ function App() {
               element={React.createElement(route.component, { isAdmin: route.isAdmin })} 
             />
           ))}   
-           <Route path="/admin/*" element={<AdminRoutes />} />
+           {/* <Route path="/admin/*" element={<AdminRoutes />} /> */}
         </Routes>
     </div>
   );

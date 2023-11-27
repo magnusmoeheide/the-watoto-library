@@ -26,9 +26,9 @@ const Footer = () => {
                   <a>Newsletters</a>
                 </li>
               </MyLink>
-              <MyLink to="/whatwedo">
+              <MyLink to="/programs">
                 <li>
-                  <a>What We Do</a>
+                  <a>Programs</a>
                 </li>
               </MyLink>
             </ul>
@@ -107,15 +107,15 @@ const Footer = () => {
                   © 2023
                   <span className="notranslate"> The Watoto Library</span>
                   <br />
-                  <span className="orgnr">
-                    Org. nr. KBR/CBO/5/4/2023(439) (Kenya)
-                  </span>
+                  <span className="orgnr">KBR/CBO/5/4/2023(439) (Kenya)</span>
                   <span className="orgnr">Org. nr. 931 464 817 (Norway)</span>
                 </p>
-
                 <p className="developed">
                   Developed and designed by Magnus Heide
                 </p>
+                {/* <MyLink to="login">
+                  <p className="developed">Admin login</p>
+                </MyLink> */}
               </li>
             </ul>
           </div>

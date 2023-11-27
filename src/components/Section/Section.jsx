@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MyLink from "../MyLink/MyLink";
 import { boardMembers, teamMembers } from "../../container/Pages/GetInTouch";
 import TextEditor from "../TextEditor/TextEditor";
@@ -39,6 +39,13 @@ const Section = ({
     "December",
   ];
 
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile(file);
+  };
+
   return (
     <div>
       <div className="flex-image-text">
@@ -78,7 +85,7 @@ const Section = ({
               {isAdmin && places ? (
                 <div className="amount">
                   <i className="fa-solid fa-child"></i>
-                  <input type="number" value={places} />
+                  <input type="text" value={places} className="amountNumber" />
                 </div>
               ) : places ? (
                 <div className="amount">
@@ -135,6 +142,24 @@ const Section = ({
               )}
             </h5>
           )}
+          {isAdmin && (
+            <div className="file-upload-parent">
+              <input
+                type="file"
+                id="file-upload"
+                className="file-upload-input"
+              />
+              <label htmlFor="file-upload" className="file-upload-button">
+                Upload Image
+              </label>{" "}
+              {selectedFile ? (
+                <span>Selected Image: {selectedFile.name}</span>
+              ) : (
+                <span>No image selected</span>
+              )}
+            </div>
+          )}
+
           {isAdmin ? (
             <TextEditor htmlContent={description} />
           ) : description ? (
@@ -142,15 +167,18 @@ const Section = ({
           ) : null}
 
           {readMore && (
-            <div class="div-readmore">
+            <div>
               <MyLink to={customReadMoreLink || `/article/${articleId}`}>
-                <p class="readmore">
-                  {readMore} <i class="fa-solid fa-arrow-right"></i>
-                </p>
+                <div class="div-readmore">
+                  <p class="readmore">
+                    {readMore} <i class="fa-solid fa-arrow-right"></i>
+                  </p>
+                </div>
               </MyLink>
             </div>
           )}
         </div>
+
         {img && <img src={img} className="img" alt={title} />}
       </div>
       {!readMore && <br />}

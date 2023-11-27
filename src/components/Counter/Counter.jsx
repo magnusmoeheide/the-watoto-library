@@ -33,7 +33,7 @@ const Counter = ({
   return (
     <div className="counter">
       {isAdmin ? (
-        <input type="number" value={count} />
+        <input type="number" value={count} className="adminCounter" />
       ) : (
         <p className="number">{count}</p>
       )}

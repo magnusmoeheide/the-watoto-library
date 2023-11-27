@@ -49,7 +49,18 @@ const Wwd = ({ isAdmin }) => {
                 </span>
                 <span className="div-readmore status">
                   {" "}
-                  {wwd.status === "Published" ? <>Unpublish</> : <>Publish</>}
+                  {wwd.status === "Published" ? (
+                    <>
+                      <i class="fa-solid fa-download"></i> Unpublish
+                    </>
+                  ) : (
+                    <>
+                      <i class="fa-solid fa-upload"></i> Publish
+                    </>
+                  )}
+                </span>
+                <span className="div-readmore status">
+                  <i class="fa-solid fa-trash-can"></i> Delete
                 </span>
               </>
             )}
