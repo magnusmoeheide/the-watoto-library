@@ -1009,7 +1009,10 @@ const Articles = ({ isAdmin }) => {
                 </MyLink>
               </div>
 
-              <div className="article-click" style={{ cursor: "default" }}>
+              <div
+                className="article newsletters"
+                style={{ cursor: "default" }}
+              >
                 <h2>Newsletters</h2>
                 <SelectArticle />
                 {/* <p>

@@ -808,6 +808,10 @@ img {
     margin-left: 0.6em;
   }
 
+  .article.newsletters {
+    margin: 0;
+  }
+
 }
 
 .container {
