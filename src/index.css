@@ -735,9 +735,12 @@ img {
   box-shadow: var(--timelineCardBoxShadow, 0 0.1em 0.2em 0 rgba(0, 0, 0, .12), 0 0.1em 0.2em 0 rgba(0, 0, 0, .24));
 }  
 
-.article:hover .div-readmore, .article-card:hover .div-readmore {
-  transform: scale(1.05);
+@media screen and (min-width: 800px) {
+  .article:hover .div-readmore, .article-card:hover .div-readmore {
+    transform: scale(1.05);
+  }
 }
+
 
 
 .article-click {
@@ -900,8 +903,12 @@ justify-content: flex-start;
   margin-left: 0.05em;
 }
 
-.flex-image-text div {
-  padding-right: 0.9em;
+
+
+@media screen and (min-width: 800px) {
+  .flex-image-text div {
+    padding-right: 0.9em;
+  }
 }
 
 
