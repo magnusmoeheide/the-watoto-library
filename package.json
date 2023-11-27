@@ -1,7 +1,7 @@
 {
   "name": "the-watoto-library",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "The principle goal of The Watoto Library is to have an impact on the lives of many kids living with the traumas of poverty, faced by domestic violence, denied or not provided with the space to express their thoughts and feelings.",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/magnusmoeheide/the-watoto-library/issues"
   },
-  "homepage": "https://github.com/magnusmoeheide/the-watoto-library",
+  "homepage": "https://thewatotolibrary.org",
   "dependencies": {
     "draft-js": "^0.11.7",
     "draft-js-export-html": "^1.4.1",
@@ -30,6 +30,7 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint": "^8.54.0",
     "eslint-config-react-app": "^7.0.1"
   },
