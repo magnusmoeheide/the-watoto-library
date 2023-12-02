@@ -14,7 +14,7 @@ DEPENDENCES
   
 p:not([class]){
   line-height: var(--cssTypographyLineHeight, 1.78);
-  margin-top: var(--cssTypographyBasicMargin, 1em);
+  /* margin-top: var(--cssTypographyBasicMargin, 1em); */
   margin-bottom: 0;
 }
 

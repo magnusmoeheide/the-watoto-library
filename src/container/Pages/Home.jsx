@@ -39,10 +39,9 @@ const Home = ({ isAdmin }) => {
       {/* {isImageLoaded && ( */}
       {isAdmin && (
         <div className="article admin">
-          <h2>Admin</h2>
           <p>
-            Articles created: {articles.length} | Articles published:{" "}
-            {publishedArticles}
+            <b>Admin</b>| Articles created: {articles.length} | Articles
+            published: {publishedArticles}
           </p>
         </div>
       )}

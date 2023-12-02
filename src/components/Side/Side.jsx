@@ -50,11 +50,10 @@ const Side = () => {
       <div className="side-vision">
         <h3>Our Mission</h3>
         <p>
-          The principle goal of
-          <span className="notranslate"> The Watoto Library </span>is to have an
-          impact on the lives of many kids living with the traumas of poverty,
-          faced by domestic violence, denied or not provided with the space to
-          express their thoughts and feelings.
+          The principle goal of The Watoto Library is to have an impact on the
+          lives of many kids living with the traumas of poverty, faced by
+          domestic violence, denied or not provided with the space to express
+          their thoughts and feelings.
         </p>
         <p>&#9733;</p>
         <p>

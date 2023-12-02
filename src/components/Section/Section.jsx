@@ -38,7 +38,7 @@ const Section = ({
     "November",
     "December",
   ];
-
+  const monthIndex = months.indexOf(month);
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleFileChange = (e) => {
@@ -119,21 +119,21 @@ const Section = ({
                 <>
                   {" "}
                   <i class="fa-regular fa-calendar"></i> Posted on{" "}
-                  <select value={month} name="" id="">
+                  <select value={monthIndex} name="" id="">
                     {months.map((month, index) => (
                       <option key={index} value={index}>
                         {month}
                       </option>
                     ))}
                   </select>
-                  <select>
+                  <select value={day}>
                     {days.map((day) => (
                       <option key={day} value={day}>
                         {day}
                       </option>
                     ))}
                   </select>
-                  <select name="" id="">
+                  <select name="" id="" value={year}>
                     <option value="">{currentYear}</option>
                     <option value="">{nextYear}</option>
                     <option value="">{previousYear}</option>

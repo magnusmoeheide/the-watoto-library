@@ -28,7 +28,7 @@ const Footer = () => {
               </MyLink>
               <MyLink to="/programs">
                 <li>
-                  <a>Programs</a>
+                  <a>Our programs</a>
                 </li>
               </MyLink>
             </ul>
@@ -66,15 +66,15 @@ const Footer = () => {
               </h4>
             </MyLink>
             <ul>
-              <MyLink to="/getintouch#contact">
-                <li>
-                  <a>Contact Us</a>
-                </li>
-              </MyLink>
-
               <MyLink to="/donate">
                 <li>
                   <a>Donate</a>
+                </li>
+              </MyLink>
+
+              <MyLink to="/getintouch#contact">
+                <li>
+                  <a>Contact Us</a>
                 </li>
               </MyLink>
             </ul>
@@ -103,23 +103,24 @@ const Footer = () => {
             </div>
             <ul>
               <li>
-                <p>
-                  © 2023
-                  <span className="notranslate"> The Watoto Library</span>
-                  <br />
-                  <span className="orgnr">KBR/CBO/5/4/2023(439) (Kenya)</span>
-                  <span className="orgnr">Org. nr. 931 464 817 (Norway)</span>
-                </p>
-                <p className="developed">
-                  Developed and designed by Magnus Heide
-                </p>
+                <p>@thewatotolibrary</p>
                 {/* <MyLink to="login">
                   <p className="developed">Admin login</p>
                 </MyLink> */}
               </li>
             </ul>
           </div>
-          <div></div>
+        </div>
+      </div>
+      <div className="footer-end">
+        <div className="footer-item left">© 2023 The Watoto Library</div>
+        <div className="footer-item center">
+          <span className="item-block">KBR/CBO/5/4/2023(439) (Kenya)</span>
+          <span class="separator">|</span>
+          <span className="item-block">Org. nr. 931 464 817 (Norway)</span>
+        </div>
+        <div className="footer-item right">
+          Developed and designed by Magnus Heide
         </div>
       </div>
     </div>

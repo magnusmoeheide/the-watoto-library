@@ -231,6 +231,16 @@ import eleven12 from '../assets/articles/11-progress/12.png'
 import eleven13 from '../assets/articles/11-progress/13.png'
 import eleven14 from '../assets/articles/11-progress/14.png'
 
+// Article 12 - Exam results
+import twelve1 from '../assets/articles/12-exam-results/blessing.jpeg'
+import twelve2 from '../assets/articles/12-exam-results/messi.jpg'
+import twelve3 from '../assets/articles/12-exam-results/jamila.jpg'
+import twelve4 from '../assets/articles/12-exam-results/brian.jpg'
+import twelve5 from '../assets/articles/12-exam-results/nicholas.jpg'
+import twelve6 from '../assets/articles/12-exam-results/results.png'
+import twelve7 from '../assets/articles/12-exam-results/paperstuff.jpeg'
+import twelve8 from '../assets/articles/12-exam-results/justin.jpeg'
+
 
 export default {
 
@@ -280,5 +290,6 @@ export default {
     eight1, eight2, eight3, eight4, eight5, eight6, eight7, eight8, eight9, eight10, eight11, eight12,
     nine1, nine2, nine3, nine4, nine5, nine6, nine7, nine8,
     ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10,
-    eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11, eleven12, eleven13, eleven14
+    eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11, eleven12, eleven13, eleven14,
+    twelve1, twelve2, twelve3, twelve4, twelve5, twelve6, twelve7, twelve8
 }

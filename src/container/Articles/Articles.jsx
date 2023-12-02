@@ -6,6 +6,254 @@ import Locationscroll from "../../components/Locationscroll/Locationscroll";
 
 export const articles = [
   {
+    id: 12,
+    status: "Draft",
+    day: "2",
+    month: "December",
+    year: "2023",
+    title: "Extraordinary Exam Results",
+    img: images.twelve6,
+    description: (
+      <>
+        We have a beautiful announcement to make: Our Class Eight pupils have
+        done very well in their final national primary school examination,
+        producing wonderful and amazing results. These results play a very
+        important role in the high schools the children get selected to join for
+        their future studies.
+      </>
+    ),
+    sections: [
+      {
+        section_id: 3,
+        section_title: "Beating The Odds",
+        section_image: images.twelve7,
+        section_description: (
+          <>
+            A child from Kibera is faced with severe disadvantages from early
+            childhood. Unfortunately,{" "}
+            <MyLink
+              to="https://www.crossingthresholds.org/about-kibera.html#:~:text=Of%20the%20more%20than%20500%2C000,opportunity%20to%20attend%20high%20school."
+              target="_blank"
+            >
+              <u>less than 15% of students</u>
+            </MyLink>{" "}
+            who graduate from Grade 8 have the opportunity to attend high
+            school. Despite these daunting statistics, our collective efforts
+            over the past year have created a beacon of hope. We have worked
+            tirelessly with the children, fostering a spirit of mutual
+            encouragement and support.
+          </>
+        ),
+      },
+      {
+        section_id: 1,
+        section_title: "",
+        section_image: images.twelve6,
+        section_description: (
+          <>
+            We are happy to report that with the marks they have attained, all
+            our children will be able to attend high school. We are very proud
+            and happy to witness a 100% success rate, with all of our children
+            having the opportunity to transit to high school thanks to their
+            academic success. We are very proud of the marks that each and every
+            one of them attained. We value the work they had to put in, together
+            with our staff members who ensured they receive guidance, support,
+            and mentorship.
+          </>
+        ),
+      },
+      // {
+      //   section_id: 2,
+      //   section_title: "",
+      //   section_image: images.eleven4,
+      //   section_description: (
+      //     <>
+      //       We have worked tirelessly with the children for the last year,
+      //       encouraging one another. We have set the right path for them to
+      //       follow and spent many hours revising together, building trust with
+      //       one another, and they have learned and understood the values of
+      //       togetherness, brotherhood, and sisterhood among themselves. Now,
+      //       they will be moving to high school, where they will be assigned more
+      //       subjects to study. We are hopeful that they will continue to excel
+      //       with their skills of studying, revising, and interacting with one
+      //       another.
+      //     </>
+      //   ),
+      // },
+      {
+        section_id: 4,
+        section_title: "Nicolas Chakua Ondiere (15)",
+        section_image: images.twelve5,
+        section_description: (
+          <>
+            Nicolas, who scored 320/500 marks in his final primary school
+            examination, says the library, together with its members,
+            contributed to his grades, and he shares with us his dreams and
+            aspirations: "I am 14 years old. I live in Kibera at a place known
+            as Kianda. I was born in 2009. I studied in Olympic Primary School
+            and recieved my Kenya Certificate of Primary Education in 2023. I am
+            a footballer at a club known as Wale Wale Slum Soccer and my hobby
+            is to draw. During my free time, I go to a library called The Watoto
+            Library to do my studies. I have three main goals. The first one is
+            to play professional football as my career. The second is to help
+            children who did not have what I have when I was a child. The last
+            one is to leave the streets and go settle in a nice place along with
+            my family. I know to succeed in these goals, I must put God first."
+          </>
+        ),
+      },
+      // {
+      //   section_id: 5,
+      //   section_title: "",
+      //   section_image: images.eleven1,
+      //   section_description: (
+      //     <>
+      //       I am a footballer at a club known as Wale Wale Slum Soccer and my
+      //       hobby is to draw. During my free time, I go to a library called The
+      //       Watoto Library to do my studies. I have three main goals. The first
+      //       one is to play professional football as my career. The second is to
+      //       help children who did not have what I have when I was a child. The
+      //       last one is to leave the streets and go settle in a nice place along
+      //       with my family. I know, to succeed in these goals, I must put God
+      //       first.”
+      //     </>
+      //   ),
+      // },
+      {
+        section_id: 7,
+        section_title: "Jamila Isendi (15)",
+        section_image: images.twelve3,
+        section_description: (
+          <>
+            Jamila, one of the girls who uses our library space very frequently,
+            reminds us that together we stand, divided we fall. She calls on
+            humanity to stand together and support one another. A true leader of
+            her time, she mentions that The Watoto Library has been one of the
+            places where she finds refuge and has helped her in getting
+            impeccable results in her studies. She was able to top her class,
+            with a score of 361/500 marks. Marks that she had worked hard the
+            entire year to achieve.
+          </>
+        ),
+      },
+      // {
+      //   section_id: 8,
+      //   section_title: "",
+      //   section_image: images.eleven1,
+      //   section_description: (
+      //     <>
+      //       Step by step, we continue with the work we do for our community. We
+      //       understand and value the impact we have on the lives of children,
+      //       living with the hope for a better future, always hoping that
+      //       tomorrow becomes better for them and their families. Now that the
+      //       children are home for a two-month holiday that began in early
+      //       November, a long break that, if not used well, can lead the children
+      //       to join bad companies.
+      //     </>
+      //   ),
+      // },
+      {
+        section_id: 6,
+        section_title: "Justin Omondi",
+        section_image: images.twelve8,
+        section_description: (
+          <>
+            Justin spends most of his time teaching, revising, setting exams for
+            the children, and marking their papers. He shares with us his kind
+            thoughts: "I want to thank The Watoto Library for everything it has
+            done for the benefit and well-being of every child it welcomes. I
+            pray that it may continue to be a loving place for children to
+            always feel at home. I love the library very much, and I hope to
+            continue serving these children selflessly with my whole heart."
+          </>
+        ),
+      },
+      {
+        section_id: 9,
+        section_title: "",
+        section_image: images.eleven1,
+        section_description: (
+          <>
+            Now that the children are home for a two-month holiday that began in
+            early November, we have been prompted to increase our programs as we
+            strive to transform and reach out to many of the children through
+            our activities. The library's working hours have extended from as
+            early as nine o'clock to around ten in the evening. Here are some of
+            the other messages of encouragement we have been receiving from our
+            children.
+          </>
+        ),
+      },
+      {
+        section_id: 10,
+        section_title: "Brian Obama (14)",
+        section_image: images.twelve4,
+        section_description: (
+          <>
+            Brian is an ever-present and very dedicated, committed 14-year-old
+            boy who frequently utilizes our library space. He has improved his
+            grades from scoring 260, to securing 310 marks in his national
+            primary school exams — an incredible achievement. Here is what he
+            has to say: “The Watoto Library is one of the greatest libraries.
+            When I first started using the library, I was weak in mathematics
+            and sciences, but with the help of my library teacher, I improved
+            and became a good mathematics student. Justin, my teacher, is
+            understanding; he has helped me very much, and now I know how to
+            answer exam questions without getting scared. I want to be the most
+            improved person in my life. I thank The Watoto Library for being so
+            gracious in my life."
+          </>
+        ),
+      },
+      {
+        section_id: 11,
+        section_title: "John Messi (15)",
+        section_image: images.twelve2,
+        section_description: (
+          <>
+            "I thank The Watoto Library very much for supporting my education."
+            Messi is one of our children who has improved the most in his
+            studies. When he first joined us, he was academically weak, scoring
+            only 215 marks. After receiving our continuous support, he scored
+            349 marks in his national primary school examination — an increase
+            of 60% in less than a year. He attributes this achievement to our
+            motivation and support.
+          </>
+        ),
+      },
+      {
+        section_id: 12,
+        section_title: "Blessing Atieno (15)",
+        section_image: images.twelve1,
+        section_description: (
+          <>
+            "The Watoto Library has helped me excel in my examinations. I was
+            getting 314 out of 500 marks, but scored 352 in my primary school
+            national exams thanks to the library. I now know things that I did
+            not know before. All The Watoto library members are like my brothers
+            and sisters. I will always remember you all and thank my library
+            teacher for motivating and teaching me."
+          </>
+        ),
+      },
+      {
+        section_id: 13,
+        section_title: "Join Our Efforts",
+        section_image: images.eleven1,
+        section_description: (
+          <>
+            We are reaching out to our friends, calling on you to come and
+            support us in our efforts to continue transforming the lives of
+            these children by providing them with access to education. Your
+            donation goes a long way in enabling us to continue our programs and
+            enables us to impact and reach out to more children, women, and
+            youths in Kibera.
+          </>
+        ),
+      },
+    ],
+  },
+  {
     id: 11,
     status: "Published",
     day: "6",
