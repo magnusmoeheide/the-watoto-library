@@ -146,6 +146,10 @@ label {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.home-newsletter-header, .star {
+ user-select: none;
+}
+
 .home-newsletter-header u:hover {
   border-bottom: 0.2em dotted rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -337,7 +341,7 @@ padding-right: -0.2em;
 }
 
 .navigation li:last-of-type a {
-  border-bottom: 0.2em solid rgba(0, 0, 0, 0.1); 
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.1); 
   margin: 0;
   border-radius: 0;
 }

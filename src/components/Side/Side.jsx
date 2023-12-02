@@ -55,13 +55,13 @@ const Side = () => {
           domestic violence, denied or not provided with the space to express
           their thoughts and feelings.
         </p>
-        <p>&#9733;</p>
+        <p className="star">&#9733;</p>
         <p>
           Our library is dedicated to provide a safe and welcoming environment
           to kids so that they can come in and feel loved and appreciated. We
           are creating a society that values and respects its children.
         </p>
-        <p>&#9733;</p>
+        <p className="star">&#9733;</p>
         <p>
           A place where they can freely embrace who they are. Understand the
           value of one another. Engage them in activities that will help boost
