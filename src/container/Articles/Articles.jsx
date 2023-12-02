@@ -7,7 +7,7 @@ import Locationscroll from "../../components/Locationscroll/Locationscroll";
 export const articles = [
   {
     id: 12,
-    status: "Published",
+    status: "Draft",
     day: "3",
     month: "December",
     year: "2023",
