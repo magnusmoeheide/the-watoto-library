@@ -104,17 +104,18 @@ export const articles = [
       },
       {
         section_id: 6,
-        section_title: "",
-        section_image: images.twelve10,
+        section_title: "Jamila Isendi",
+        section_image: images.twelve3,
         section_description: (
           <>
-            Now that the children are home for a two-month holiday that began in
-            early November, we have been prompted to increase our programs as we
-            strive to transform and reach out to many of the children through
-            our activities. The library's working hours have extended from as
-            early as nine o'clock to around ten in the evening. Here are some of
-            the other messages of encouragement we have been receiving from our
-            children.
+            Jamila, one of the girls who uses our library space very frequently,
+            reminds us that together we stand, divided we fall. She calls on
+            humanity to stand together and support one another. A true leader of
+            her time, she mentions that The Watoto Library has been one of the
+            places where she finds refuge and has helped her in getting
+            impeccable results in her studies. She was able to top her class,
+            with a score of 361/500 marks. Marks that she had worked hard the
+            entire year to achieve.
           </>
         ),
       },
@@ -141,23 +142,6 @@ export const articles = [
       },
       {
         section_id: 8,
-        section_title: "Jamila Isendi",
-        section_image: images.twelve3,
-        section_description: (
-          <>
-            Jamila, one of the girls who uses our library space very frequently,
-            reminds us that together we stand, divided we fall. She calls on
-            humanity to stand together and support one another. A true leader of
-            her time, she mentions that The Watoto Library has been one of the
-            places where she finds refuge and has helped her in getting
-            impeccable results in her studies. She was able to top her class,
-            with a score of 361/500 marks. Marks that she had worked hard the
-            entire year to achieve.
-          </>
-        ),
-      },
-      {
-        section_id: 9,
         section_title: "Nicholas Chakua Ondiere",
         section_image: images.twelve5,
         section_description: (
@@ -175,6 +159,20 @@ export const articles = [
             children who did not have what I have when I was a child. The last
             one is to leave the streets and go settle in a nice place along with
             my family. I know to succeed in these goals, I must put God first."
+          </>
+        ),
+      },
+      {
+        section_id: 9,
+        section_title: "Extended Opening Hours",
+        section_image: images.twelve10,
+        section_description: (
+          <>
+            Now that the children are home for a two-month holiday that began in
+            early November, we have been prompted to increase our programs as we
+            strive to transform and reach out to many of the children through
+            our activities. The library's working hours have extended from as
+            early as eight o'clock to around ten in the evening.
           </>
         ),
       },
