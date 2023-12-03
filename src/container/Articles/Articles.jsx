@@ -57,40 +57,32 @@ export const articles = [
       },
       {
         section_id: 3,
-        section_title: "Jamila Isendi",
-        section_image: images.twelve3,
+        section_title: "John Messi",
+        section_image: images.twelve2,
         section_description: (
           <>
-            Jamila, one of the girls who uses our library space very frequently,
-            reminds us that together we stand, divided we fall. She calls on
-            humanity to stand together and support one another. A true leader of
-            her time, she mentions that The Watoto Library has been one of the
-            places where she finds refuge and has helped her in getting
-            impeccable results in her studies. She was able to top her class,
-            with a score of 361/500 marks. Marks that she had worked hard the
-            entire year to achieve.
+            "I thank The Watoto Library very much for supporting my education."
+            Messi is one of our children who has improved the most in his
+            studies. When he first joined us, he was academically weak, scoring
+            only 215 marks. After receiving our continuous support, he scored
+            349 marks in his national primary school examination — an increase
+            of 60% in less than a year. He attributes this achievement to our
+            motivation and support.
           </>
         ),
       },
       {
         section_id: 4,
-        section_title: "Nicholas Chakua Ondiere",
-        section_image: images.twelve5,
+        section_title: "Blessing Atieno",
+        section_image: images.twelve1,
         section_description: (
           <>
-            Nicholas, who scored 320/500 marks in his final primary school
-            examination, says the library, together with its members,
-            contributed to his grades, and he shares with us his dreams and
-            aspirations: "I am 14 years old. I live in Kibera at a place known
-            as Kianda. I was born in 2009. I studied in Olympic Primary School
-            and recieved my Kenya Certificate of Primary Education in 2023. I am
-            a footballer at a club known as Wale Wale Slum Soccer and my hobby
-            is to draw. During my free time, I go to a library called The Watoto
-            Library to do my studies. I have three main goals. The first one is
-            to play professional football as my career. The second is to help
-            children who did not have what I have when I was a child. The last
-            one is to leave the streets and go settle in a nice place along with
-            my family. I know to succeed in these goals, I must put God first."
+            "The Watoto Library has helped me excel in my examinations. I was
+            getting 314 out of 500 marks, but scored 352 in my primary school
+            national exams thanks to the library. I now know things that I did
+            not know before. All The Watoto library members are like my brothers
+            and sisters. I will always remember you all and thank my library
+            teacher for motivating and teaching me."
           </>
         ),
       },
@@ -149,32 +141,40 @@ export const articles = [
       },
       {
         section_id: 8,
-        section_title: "John Messi",
-        section_image: images.twelve2,
+        section_title: "Jamila Isendi",
+        section_image: images.twelve3,
         section_description: (
           <>
-            "I thank The Watoto Library very much for supporting my education."
-            Messi is one of our children who has improved the most in his
-            studies. When he first joined us, he was academically weak, scoring
-            only 215 marks. After receiving our continuous support, he scored
-            349 marks in his national primary school examination — an increase
-            of 60% in less than a year. He attributes this achievement to our
-            motivation and support.
+            Jamila, one of the girls who uses our library space very frequently,
+            reminds us that together we stand, divided we fall. She calls on
+            humanity to stand together and support one another. A true leader of
+            her time, she mentions that The Watoto Library has been one of the
+            places where she finds refuge and has helped her in getting
+            impeccable results in her studies. She was able to top her class,
+            with a score of 361/500 marks. Marks that she had worked hard the
+            entire year to achieve.
           </>
         ),
       },
       {
         section_id: 9,
-        section_title: "Blessing Atieno",
-        section_image: images.twelve1,
+        section_title: "Nicholas Chakua Ondiere",
+        section_image: images.twelve5,
         section_description: (
           <>
-            "The Watoto Library has helped me excel in my examinations. I was
-            getting 314 out of 500 marks, but scored 352 in my primary school
-            national exams thanks to the library. I now know things that I did
-            not know before. All The Watoto library members are like my brothers
-            and sisters. I will always remember you all and thank my library
-            teacher for motivating and teaching me."
+            Nicholas, who scored 320/500 marks in his final primary school
+            examination, says the library, together with its members,
+            contributed to his grades, and he shares with us his dreams and
+            aspirations: "I am 14 years old. I live in Kibera at a place known
+            as Kianda. I was born in 2009. I studied in Olympic Primary School
+            and recieved my Kenya Certificate of Primary Education in 2023. I am
+            a footballer at a club known as Wale Wale Slum Soccer and my hobby
+            is to draw. During my free time, I go to a library called The Watoto
+            Library to do my studies. I have three main goals. The first one is
+            to play professional football as my career. The second is to help
+            children who did not have what I have when I was a child. The last
+            one is to leave the streets and go settle in a nice place along with
+            my family. I know to succeed in these goals, I must put God first."
           </>
         ),
       },
