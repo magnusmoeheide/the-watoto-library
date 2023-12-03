@@ -66,8 +66,8 @@ export const articles = [
             studies. When he first joined us, he was academically weak, scoring
             only 215 marks. After receiving our continuous support, he scored
             349 marks in his national primary school examination — an increase
-            of 60% in less than a year. He attributes this achievement to our
-            motivation and support.
+            of more than 60% in less than a year. He attributes this achievement
+            to our motivation and support.
           </>
         ),
       },
