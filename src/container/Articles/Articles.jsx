@@ -74,11 +74,11 @@ export const articles = [
       },
       {
         section_id: 4,
-        section_title: "Nicolas Chakua Ondiere",
+        section_title: "Nicholas Chakua Ondiere",
         section_image: images.twelve5,
         section_description: (
           <>
-            Nicolas, who scored 320/500 marks in his final primary school
+            Nicholas, who scored 320/500 marks in his final primary school
             examination, says the library, together with its members,
             contributed to his grades, and he shares with us his dreams and
             aspirations: "I am 14 years old. I live in Kibera at a place known
