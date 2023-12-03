@@ -58,7 +58,6 @@ export const articles = [
       {
         section_id: 3,
         section_title: "Jamila Isendi",
-        section_titlespan: "(15)",
         section_image: images.twelve3,
         section_description: (
           <>
@@ -76,7 +75,6 @@ export const articles = [
       {
         section_id: 4,
         section_title: "Nicolas Chakua Ondiere",
-        section_titlespan: "(15)",
         section_image: images.twelve5,
         section_description: (
           <>
@@ -131,7 +129,6 @@ export const articles = [
       {
         section_id: 7,
         section_title: "Brian Obama",
-        section_titlespan: "(14)",
         section_image: images.twelve4,
         section_description: (
           <>
@@ -153,7 +150,6 @@ export const articles = [
       {
         section_id: 8,
         section_title: "John Messi",
-        section_titlespan: "(15)",
         section_image: images.twelve2,
         section_description: (
           <>
@@ -170,7 +166,6 @@ export const articles = [
       {
         section_id: 9,
         section_title: "Blessing Atieno",
-        section_titlespan: "(15)",
         section_image: images.twelve1,
         section_description: (
           <>
