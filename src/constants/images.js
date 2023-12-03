@@ -240,6 +240,10 @@ import twelve5 from '../assets/articles/12-exam-results/nicholas.jpg'
 import twelve6 from '../assets/articles/12-exam-results/results.png'
 import twelve7 from '../assets/articles/12-exam-results/paperstuff.jpeg'
 import twelve8 from '../assets/articles/12-exam-results/justin.jpeg'
+import twelve9 from '../assets/articles/12-exam-results/studying.jpeg'
+import twelve10 from '../assets/articles/12-exam-results/child.jpeg'
+import twelve11 from '../assets/articles/12-exam-results/treeplanting.jpeg'
+import twelve12 from '../assets/articles/12-exam-results/celebrating.jpeg'
 
 
 export default {
@@ -291,5 +295,5 @@ export default {
     nine1, nine2, nine3, nine4, nine5, nine6, nine7, nine8,
     ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10,
     eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11, eleven12, eleven13, eleven14,
-    twelve1, twelve2, twelve3, twelve4, twelve5, twelve6, twelve7, twelve8
+    twelve1, twelve2, twelve3, twelve4, twelve5, twelve6, twelve7, twelve8, twelve9, twelve10, twelve11, twelve12
 }

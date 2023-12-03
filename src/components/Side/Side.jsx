@@ -51,15 +51,15 @@ const Side = () => {
         <h3>Our Mission</h3>
         <p>
           The principle goal of The Watoto Library is to have an impact on the
-          lives of many kids living with the traumas of poverty, faced by
+          lives of many children living with the traumas of poverty, faced by
           domestic violence, denied or not provided with the space to express
           their thoughts and feelings.
         </p>
         <p className="star">&#9733;</p>
         <p>
           Our library is dedicated to provide a safe and welcoming environment
-          to kids so that they can come in and feel loved and appreciated. We
-          are creating a society that values and respects its children.
+          to children so that they can come in and feel loved and appreciated.
+          We are creating a society that values and respects its children.
         </p>
         <p className="star">&#9733;</p>
         <p>

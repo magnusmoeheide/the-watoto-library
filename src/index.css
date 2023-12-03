@@ -944,7 +944,6 @@ height: auto;
   margin-top: 0em;
 }
 
-
 @media all and (max-width: 799px) {
 .flex-image-text {
   flex-flow: column wrap;

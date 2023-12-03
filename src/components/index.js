@@ -12,9 +12,10 @@ import NextItems from './NextItems/NextItems';
 import Locationscroll from './Locationscroll/Locationscroll';
 import StickySidebar from './Javascript/StickySidebar';
 import TextEditor from './TextEditor/TextEditor';
+import TextToSpeech from './Javascript/TextToSpeech';
 
 
 export {
     MyLink, Navbar, Footer, Side, Slideshow, Fullscreen, SelectArticle, Counter, Partners, Section, NextItems, Locationscroll, 
-    StickySidebar, TextEditor
+    StickySidebar, TextEditor, TextToSpeech
 }

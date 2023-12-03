@@ -7,12 +7,12 @@ import Locationscroll from "../../components/Locationscroll/Locationscroll";
 export const articles = [
   {
     id: 12,
-    status: "Draft",
+    status: "Published",
     day: "3",
     month: "December",
     year: "2023",
     title: "Extraordinary Exam Results",
-    img: images.twelve6,
+    img: images.twelve12,
     description: (
       <>
         We have a beautiful announcement to make: Our Class Eight pupils have
@@ -24,30 +24,23 @@ export const articles = [
     ),
     sections: [
       {
-        section_id: 3,
+        section_id: 1,
         section_title: "Beating The Odds",
         section_image: images.twelve7,
         section_description: (
           <>
             A child from Kibera is faced with severe disadvantages from early
-            childhood. Unfortunately,{" "}
-            <MyLink
-              to="https://www.crossingthresholds.org/about-kibera.html#:~:text=Of%20the%20more%20than%20500%2C000,opportunity%20to%20attend%20high%20school."
-              target="_blank"
-            >
-              <u>less than 15% of students</u>
-            </MyLink>{" "}
-            who graduate from Grade 8 have the opportunity to attend high
-            school. Despite these daunting statistics, our collective efforts
-            over the past year have created a beacon of hope. We have worked
-            tirelessly with the children, fostering a spirit of mutual
-            encouragement and support.
+            childhood. Unfortunately, less than 15% of students who graduate
+            from Grade 8 have the opportunity to attend high school. Despite
+            these daunting statistics, our collective efforts over the past year
+            have created a beacon of hope. We have worked tirelessly with the
+            children, fostering a spirit of mutual encouragement and support.
           </>
         ),
       },
       {
-        section_id: 1,
-        section_title: "",
+        section_id: 2,
+        section_title: "100% Success Rate",
         section_image: images.twelve6,
         section_description: (
           <>
@@ -62,27 +55,28 @@ export const articles = [
           </>
         ),
       },
-      // {
-      //   section_id: 2,
-      //   section_title: "",
-      //   section_image: images.eleven4,
-      //   section_description: (
-      //     <>
-      //       We have worked tirelessly with the children for the last year,
-      //       encouraging one another. We have set the right path for them to
-      //       follow and spent many hours revising together, building trust with
-      //       one another, and they have learned and understood the values of
-      //       togetherness, brotherhood, and sisterhood among themselves. Now,
-      //       they will be moving to high school, where they will be assigned more
-      //       subjects to study. We are hopeful that they will continue to excel
-      //       with their skills of studying, revising, and interacting with one
-      //       another.
-      //     </>
-      //   ),
-      // },
+      {
+        section_id: 3,
+        section_title: "Jamila Isendi",
+        section_titlespan: "(15)",
+        section_image: images.twelve3,
+        section_description: (
+          <>
+            Jamila, one of the girls who uses our library space very frequently,
+            reminds us that together we stand, divided we fall. She calls on
+            humanity to stand together and support one another. A true leader of
+            her time, she mentions that The Watoto Library has been one of the
+            places where she finds refuge and has helped her in getting
+            impeccable results in her studies. She was able to top her class,
+            with a score of 361/500 marks. Marks that she had worked hard the
+            entire year to achieve.
+          </>
+        ),
+      },
       {
         section_id: 4,
-        section_title: "Nicolas Chakua Ondiere (15)",
+        section_title: "Nicolas Chakua Ondiere",
+        section_titlespan: "(15)",
         section_image: images.twelve5,
         section_description: (
           <>
@@ -102,58 +96,8 @@ export const articles = [
           </>
         ),
       },
-      // {
-      //   section_id: 5,
-      //   section_title: "",
-      //   section_image: images.eleven1,
-      //   section_description: (
-      //     <>
-      //       I am a footballer at a club known as Wale Wale Slum Soccer and my
-      //       hobby is to draw. During my free time, I go to a library called The
-      //       Watoto Library to do my studies. I have three main goals. The first
-      //       one is to play professional football as my career. The second is to
-      //       help children who did not have what I have when I was a child. The
-      //       last one is to leave the streets and go settle in a nice place along
-      //       with my family. I know, to succeed in these goals, I must put God
-      //       first.”
-      //     </>
-      //   ),
-      // },
       {
-        section_id: 7,
-        section_title: "Jamila Isendi (15)",
-        section_image: images.twelve3,
-        section_description: (
-          <>
-            Jamila, one of the girls who uses our library space very frequently,
-            reminds us that together we stand, divided we fall. She calls on
-            humanity to stand together and support one another. A true leader of
-            her time, she mentions that The Watoto Library has been one of the
-            places where she finds refuge and has helped her in getting
-            impeccable results in her studies. She was able to top her class,
-            with a score of 361/500 marks. Marks that she had worked hard the
-            entire year to achieve.
-          </>
-        ),
-      },
-      // {
-      //   section_id: 8,
-      //   section_title: "",
-      //   section_image: images.eleven1,
-      //   section_description: (
-      //     <>
-      //       Step by step, we continue with the work we do for our community. We
-      //       understand and value the impact we have on the lives of children,
-      //       living with the hope for a better future, always hoping that
-      //       tomorrow becomes better for them and their families. Now that the
-      //       children are home for a two-month holiday that began in early
-      //       November, a long break that, if not used well, can lead the children
-      //       to join bad companies.
-      //     </>
-      //   ),
-      // },
-      {
-        section_id: 6,
+        section_id: 5,
         section_title: "Justin Omondi",
         section_image: images.twelve8,
         section_description: (
@@ -169,9 +113,9 @@ export const articles = [
         ),
       },
       {
-        section_id: 9,
+        section_id: 6,
         section_title: "",
-        section_image: images.eleven1,
+        section_image: images.twelve10,
         section_description: (
           <>
             Now that the children are home for a two-month holiday that began in
@@ -185,8 +129,9 @@ export const articles = [
         ),
       },
       {
-        section_id: 10,
-        section_title: "Brian Obama (14)",
+        section_id: 7,
+        section_title: "Brian Obama",
+        section_titlespan: "(14)",
         section_image: images.twelve4,
         section_description: (
           <>
@@ -206,8 +151,9 @@ export const articles = [
         ),
       },
       {
-        section_id: 11,
-        section_title: "John Messi (15)",
+        section_id: 8,
+        section_title: "John Messi",
+        section_titlespan: "(15)",
         section_image: images.twelve2,
         section_description: (
           <>
@@ -222,8 +168,9 @@ export const articles = [
         ),
       },
       {
-        section_id: 12,
-        section_title: "Blessing Atieno (15)",
+        section_id: 9,
+        section_title: "Blessing Atieno",
+        section_titlespan: "(15)",
         section_image: images.twelve1,
         section_description: (
           <>
@@ -237,9 +184,9 @@ export const articles = [
         ),
       },
       {
-        section_id: 13,
+        section_id: 10,
         section_title: "Join Our Efforts",
-        section_image: images.eleven1,
+        section_image: images.twelve11,
         section_description: (
           <>
             We are reaching out to our friends, calling on you to come and
@@ -247,7 +194,11 @@ export const articles = [
             these children by providing them with access to education. Your
             donation goes a long way in enabling us to continue our programs and
             enables us to impact and reach out to more children, women, and
-            youths in Kibera.
+            youths in Kibera. Kindly refer to our{" "}
+            <MyLink to="/donate">
+              <u>Donate</u>
+            </MyLink>{" "}
+            page for the different options. Thank you very much.
           </>
         ),
       },
@@ -311,6 +262,7 @@ export const articles = [
             showing improvement in school.
           </>
         ),
+        // " At the start of this year, we hired our full-time librarian Justin, to consistently support the children with their revisions, studies, and homework assignments. This decision has been highly beneficial, especially considering that these children do not receive as much attention as they would like in school due to overcrowded classrooms, with over 100 pupils per class and only one class teacher. Having someone dedicated to tracking their academic progress has significantly increased their commitment to studying, resulting in more and more children spending time in the library and showing improvement in school.",
       },
       {
         section_id: 3,

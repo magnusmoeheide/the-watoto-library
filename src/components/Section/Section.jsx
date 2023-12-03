@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MyLink from "../MyLink/MyLink";
 import { boardMembers, teamMembers } from "../../container/Pages/GetInTouch";
 import TextEditor from "../TextEditor/TextEditor";
+// import TextToSpeech from "../Javascript/TextToSpeech";
 
 const Section = ({
   articleId,
@@ -19,6 +20,7 @@ const Section = ({
   places,
   openingHours,
   isAdmin,
+  titlespan,
 }) => {
   const currentYear = new Date().getFullYear();
   const previousYear = currentYear - 1;
@@ -41,6 +43,11 @@ const Section = ({
   const monthIndex = months.indexOf(month);
   const [selectedFile, setSelectedFile] = useState(null);
 
+  // const fullArticleText = [
+  //   article.description,
+  //   ...article.sections.map((section) => section.section_description),
+  // ].join(" ");
+
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setSelectedFile(file);
@@ -59,7 +66,10 @@ const Section = ({
             {title && isAdmin ? (
               <input type="text" value={title} className="h3" />
             ) : title ? (
-              <h3>{title}</h3>
+              <>
+                <h3>{title}</h3>
+                <span>{titlespan}</span>
+              </>
             ) : null}
             {coming && <span className="coming">{coming}</span>}
             <div class="flex-container-2">
@@ -140,9 +150,12 @@ const Section = ({
                   </select>
                 </>
               ) : (
-                <div className="date">
-                  <i class="fa-regular fa-calendar"></i>
-                  Posted on {month} {day}, {year}
+                <div>
+                  <div className="date">
+                    <i class="fa-regular fa-calendar"></i>
+                    Posted on {month} {day}, {year}
+                  </div>
+                  {/* <TextToSpeech text={fullArticleText} /> */}
                 </div>
               )}
             </h5>

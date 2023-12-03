@@ -82,6 +82,7 @@ const Article = ({ isAdmin }) => {
                 <Section
                   key={section.section_id}
                   title={section.section_title}
+                  titlespan={section.section_titlespan}
                   img={section.section_image}
                   description={section.section_description}
                   isAdmin={isAdmin}

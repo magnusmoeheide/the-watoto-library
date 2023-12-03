@@ -36,7 +36,7 @@ const About = () => {
           <div className="article" id="kibera">
             <div className="flex-image-text">
               <div>
-                <h3>Kibera and its Kids</h3>
+                <h3>Kibera And The Children</h3>
                 <p>
                   The Watoto Library is located in Kibera, in Nairobi, Kenya.
                   Kibera is the largest urban slum in Africa. Around 2,000,000
