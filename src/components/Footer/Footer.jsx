@@ -52,9 +52,9 @@ const Footer = () => {
                   <a>Our Team</a>
                 </li>
               </MyLink>
-              <MyLink to="/about/founder">
+              <MyLink to="/about/founders">
                 <li>
-                  <a>Our Founder</a>
+                  <a>Our Founders</a>
                 </li>
               </MyLink>
             </ul>

@@ -80,9 +80,9 @@ const Navbar = () => {
           path: "/about#kibera",
         },
         {
-          name: "Our Founder",
+          name: "Our Founders",
           icon: <i className="fa-solid fa-book-open-reader"></i>,
-          path: "/about#founder",
+          path: "/about#founders",
         },
       ],
     },

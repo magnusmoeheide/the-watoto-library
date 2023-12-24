@@ -9,8 +9,8 @@ import {
   MyLink,
 } from "../../components";
 
-const Founder = () => {
-  const slides = [images.founder5];
+const Founders = () => {
+  const slides = [images.founder3, images.founder8, images.founder5];
   const dots = Array(slides.length).fill(null);
 
   return (
@@ -20,7 +20,7 @@ const Founder = () => {
         <Side />
         <div className="main">
           <div>
-            <MyLink to="/about#founder">
+            <MyLink to="/about#founders">
               <div className="div-back">
                 <p className="allNewsLetters">
                   <i className="fa-solid fa-arrow-left"></i>Back to About
@@ -30,7 +30,7 @@ const Founder = () => {
           </div>
           <div className="article">
             <Section
-              header="Our Founder"
+              header="Our Founders"
               description={
                 <>
                   Our founder, Brandon Francis Okoth, was himself born and
@@ -48,11 +48,11 @@ const Founder = () => {
               title="Brandon's Academy"
               description={
                 <>
-                  At the age of 14, he started Brandon's Academy where he
+                  At the age of 14, he started Brandon's Academy. This system
                   supports children in school from 1-8th grade and high school
-                  through sponsors. He works as their coordinator and advisor,
-                  and is the person who is in contact with the school, parents
-                  and sponsors. He has himself experienced hardship and
+                  through sponsors. Brandon works as their coordinator and
+                  advisor, and is the person who is in contact with the school,
+                  parents and sponsors. He has himself experienced hardship and
                   suffering, and because of that always taken a big part in the
                   children's education to help improve their situation.
                 </>
@@ -61,20 +61,19 @@ const Founder = () => {
             />
 
             <Section
-              title="Other Engagements"
+              title="Co-Founder Magnus Heide"
               description={
                 <>
-                  Brandon has a lot of experience with helping improve local
-                  communities from work in other organizations. He has done a
-                  lot of work with SOS Odontología Social, a dentist team
-                  providing free dental care to vunerable communities. He has
-                  also worked a lot with ONGD Youcanyolé Expediciones Médicas, a
-                  team of Spanish doctors that operate in Kibera. Brandon is
-                  very engaged in helping people and trying to make the world a
-                  better place.
+                  Magnus has from a young age been a Kenya-sponsor and supported
+                  children in need. During his first travels to Kenya in 2020,
+                  he resided in the Kibera slum, and saw and experienced the
+                  struggles the people go through on a daily basis. He was
+                  schocked to see the huge inequalities, and has since decided
+                  to come back to Kenya every year to help bring change to the
+                  lives of children living in absolute poverty.
                 </>
               }
-              img={images.founder4}
+              img={images.founder7}
             />
 
             <Section
@@ -83,13 +82,14 @@ const Founder = () => {
                 <>
                   Brandon has always had a soft heart for kids. From a young age
                   he always dreamt about starting a library where they can come
-                  in an study, engage and grow. In 2021 he decided to put
-                  thought a long-time thought to action. He found a suitable
-                  place, set it up, and partnered with friends. Now we are
-                  working together for a better future.
+                  in an study, engage and grow. Magnus works in a school in
+                  Norway and the huge inequalities he experienced installed a
+                  deep call for action. In 2021 Brandon found a suitable place,
+                  set it up, and partnered with Magnus. Now we are working
+                  together for a better future.
                 </>
               }
-              img={images.founder3}
+              img={images.founder6}
             />
 
             <Slideshow slides={slides} dots={dots} />
@@ -101,4 +101,4 @@ const Founder = () => {
   );
 };
 
-export default Founder;
+export default Founders;

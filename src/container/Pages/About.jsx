@@ -99,10 +99,10 @@ const About = () => {
 
           <br />
 
-          <div className="article" id="founder">
+          <div className="article" id="founders">
             <div className="flex-image-text">
               <div>
-                <h3>Our Founder</h3>
+                <h3>Our Founders</h3>
                 <p>
                   Our founder, Brandon Francis Okoth, was himself born and
                   raised in Kibera. He started volunteering in 2008 at only 8
@@ -110,7 +110,7 @@ const About = () => {
                   care of all the small kids in the area, and thus becoming an
                   important reporter from the slums to the outside world.
                 </p>
-                <MyLink to="/about/founder">
+                <MyLink to="/about/founders">
                   <div className="div-readmore">
                     <p className="readmore">
                       Read more <i className="fa-solid fa-arrow-right"></i>

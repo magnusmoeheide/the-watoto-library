@@ -84,6 +84,9 @@ import founder2 from '../assets/about/founder/BrandonAndKids2.jpeg';
 import founder3 from '../assets/about/founder/brandonAndKids3.jpeg';
 import founder4 from '../assets/about/founder/BrandonInTanzania.jpeg';
 import founder5 from '../assets/about/founder/BrandonInTWL.JPG';
+import founder6 from '../assets/about/founder/BrandonAndKids4.JPG';
+import founder7 from '../assets/about/founder/Magnus.png';
+import founder8 from '../assets/about/founder/MagnusChess.jpg';
 
 // Get in touch - TEAM
 import brandon from '../assets/team/brandon.jpeg';
@@ -273,7 +276,7 @@ export default {
     kibera1, kibera2, kibera3, kibera4, kibera5, kibera6,
 
     // ABOUT US - Founder
-    founder1, founder2, founder3, founder4, founder5,
+    founder1, founder2, founder3, founder4, founder5, founder6, founder7, founder8,
 
     // Get in touch - TEAM
     brandon, magnus, justin, bernard, malcom, alice, evans, sandra,
