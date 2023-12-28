@@ -1151,19 +1151,20 @@ text-decoration: none;
 /* ------------------------ */
 
 .popup-container {
-width: 44em;
-background: white;
-border-radius: 0.3em;
-position: fixed;
-top: calc(50% - 1.9em);;
-left: calc(50%);
-transform: translate(-50%, -50%) scale(0.1);
-text-align: center;
-padding: 0 1.9em 1.9em;
-color: #333;
-visibility: hidden;
-transition: transform 0.4s, top 0.4s;
-box-shadow: 0 0.1em 0.3em rgba(0.5, 0.5, 0.5, 0.5);
+  width: 44em;
+  background: white;
+  border-radius: 0.3em;
+  position: fixed;
+  top: calc(50% - 1.9em);;
+  left: calc(50%);
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 1.9em 1.9em;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  box-shadow: 0 0.1em 0.3em rgba(0.5, 0.5, 0.5, 0.5);
+  z-index: 10;
 }
 
 .open-popup {

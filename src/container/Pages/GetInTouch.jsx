@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Footer, Side, Section } from "../../components";
 import { images } from "../../constants";
 import Locationscroll from "../../components/Locationscroll/Locationscroll";
@@ -53,27 +53,42 @@ const team = [
 export const boardMembers = team.filter((member) => member.role === "Board");
 export const teamMembers = team.filter((member) => member.role === "Team");
 
-const renderMember = (member) => {
-  const firstName = member.name.split(" ")[0].toLowerCase();
+const GetInTouch = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [currentMember, setCurrentMember] = useState(null);
 
-  return (
-    <div className="column" id={firstName}>
-      <div className="card">
-        <img src={member.img} alt={member.name} style={{ width: "100%" }} />
-        <div className="container">
-          <h2>{member.name}</h2>
-          <p className="title">
-            {member.description_1}
-            <br />
-            {member.description_2 && `${member.description_2}`}
-          </p>
+  const openPopup = (member) => {
+    setCurrentMember(member);
+    setIsPopupOpen(true);
+  };
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    setCurrentMember(null);
+  };
+
+  const renderMember = (member) => {
+    const firstName = member.name.split(" ")[0].toLowerCase();
+
+    return (
+      <div className="column" id={firstName}>
+        <div className="card">
+          <img src={member.img} alt={member.name} style={{ width: "100%" }} />
+          <div className="container">
+            <h2>{member.name}</h2>
+            <p className="title">
+              {member.description_1}
+              <br />
+              {member.description_2 && `${member.description_2}`}
+            </p>
+            <p onClick={() => openPopup(member)}>
+              <a class="button-design form">Read message</a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
-const GetInTouch = () => {
   return (
     <div>
       <Locationscroll />
@@ -100,6 +115,32 @@ const GetInTouch = () => {
               </div>
             </div>
           </div>
+
+          {isPopupOpen && currentMember && (
+            <div
+              className={`popup-container ${isPopupOpen ? "open-popup" : ""}`}
+              id="popup"
+            >
+              <img src={images.logo} className="popup-img" />
+              <h3>Message from {currentMember.name}</h3>
+              <div className="flex-image-text">
+                <div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quidem molestias hic ipsum vel sapiente, illo dolores sit
+                    harum enim. Laborum vero tempore cupiditate illum aliquid
+                    quam ab aut dolore iure.
+                  </p>
+                </div>
+                <img src={images.seven1} alt="" className="img" />
+              </div>
+              <p>
+                <a className="button-design form" onClick={closePopup}>
+                  Close
+                </a>
+              </p>
+            </div>
+          )}
 
           <br />
 

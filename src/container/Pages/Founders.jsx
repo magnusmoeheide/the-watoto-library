@@ -33,12 +33,13 @@ const Founders = () => {
               header="Our Founders"
               description={
                 <>
-                  Our founder, Brandon Francis Okoth, was himself born and
-                  raised in Kibera. He started volunteering in 2008 at only 8
-                  years old, but already stood out as a responsible boy, taking
-                  care of all the small kids in the area. From there started
-                  taking on more and more responsibilities with a mission of
-                  supporting the Kibera kids.
+                  The Watoto Library was founded by Brandon Francis Okoth and
+                  Magnus Heide. Brandon was himself born and raised in Kibera.
+                  He started volunteering in 2008 at only 8 years old, but
+                  already stood out as a responsible boy, taking care of all the
+                  small kids in the area. From there started taking on more and
+                  more responsibilities with a mission of supporting the Kibera
+                  kids.
                 </>
               }
               img={images.founder1}
@@ -61,16 +62,16 @@ const Founders = () => {
             />
 
             <Section
-              title="Co-Founder Magnus Heide"
+              title="Magnus Heide"
               description={
                 <>
-                  Magnus has from a young age been a Kenya-sponsor and supported
-                  children in need. During his first travels to Kenya in 2020,
-                  he resided in the Kibera slum, and saw and experienced the
-                  struggles the people go through on a daily basis. He was
-                  schocked to see the huge inequalities, and has since decided
-                  to come back to Kenya every year to help bring change to the
-                  lives of children living in absolute poverty.
+                  Co-Founder Magnus has from a young age been a Kenya-sponsor
+                  and supported children in need. During his first travels to
+                  Kenya in 2020, he resided in the Kibera slum, and saw and
+                  experienced the struggles the people go through on a daily
+                  basis. He was schocked to see the huge inequalities, and has
+                  since decided to come back to Kenya every year to help bring
+                  change to the lives of children living in absolute poverty.
                 </>
               }
               img={images.founder7}

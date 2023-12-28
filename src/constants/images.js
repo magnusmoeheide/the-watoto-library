@@ -1,5 +1,6 @@
 // PAGES IMAGES
 import logoTransparent from '../assets/logo/logo-transparent.png';
+import logo from '../assets/logo/logo.png';
 import boysPlayingChess from '../assets/chess/boys-playing-chess.png';
 import happyBoys from '../assets/whatwedo/happy-boys.jpeg';
 import insideTheLibrary from '../assets/about/inside-the-library.jpg';
@@ -252,7 +253,7 @@ import twelve12 from '../assets/articles/12-exam-results/celebrating.jpeg'
 export default {
 
     // PAGES IMAGES
-    logoTransparent, boysPlayingChess, happyBoys, insideTheLibrary, workingTogether, happyChildren, kiberaKidBlack,
+    logoTransparent, logo, boysPlayingChess, happyBoys, insideTheLibrary, workingTogether, happyChildren, kiberaKidBlack,
 
     // WHAT WE DO - Computer class
     computerClass1, computerClass2, computerClass3, computerClass4, computerClass5, computerClass6, computerClass7, computerClass8, computerClass9,

@@ -104,11 +104,13 @@ const About = () => {
               <div>
                 <h3>Our Founders</h3>
                 <p>
-                  Our founder, Brandon Francis Okoth, was himself born and
-                  raised in Kibera. He started volunteering in 2008 at only 8
-                  years old, but already stood out as a responsible boy, taking
-                  care of all the small kids in the area, and thus becoming an
-                  important reporter from the slums to the outside world.
+                  The Watoto Library was founded by Brandon Francis Okoth and
+                  Magnus Heide. Brandon was himself born and raised in Kibera.
+                  He started volunteering in 2008 at only 8 years old, but
+                  already stood out as a responsible boy, taking care of all the
+                  small kids in the area. From there started taking on more and
+                  more responsibilities with a mission of supporting the Kibera
+                  kids.
                 </p>
                 <MyLink to="/about/founders">
                   <div className="div-readmore">
