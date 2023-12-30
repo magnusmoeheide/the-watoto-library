@@ -48,7 +48,7 @@ function NextItems({ items, currentIdentifier, identifierType }) {
             key={item.id}
           >
             <div className="newsletter-wrapping">
-              <span className="button">{item.title}</span>
+              <span className="pointer">{item.title}</span>
             </div>
           </MyLink>
         ))}

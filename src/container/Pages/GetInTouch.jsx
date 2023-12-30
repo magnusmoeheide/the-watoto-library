@@ -11,6 +11,12 @@ const team = [
     description_1: "Founder",
     description_2: "Executive Director",
     img: images.brandon,
+    message: (
+      <>
+        Thank you for taking the time to learn about us and the work we do. Your
+        support is crucial to ensure brighter futures for vulnerable children.
+      </>
+    ),
   },
   {
     id: 2,
@@ -19,6 +25,15 @@ const team = [
     description_1: "Co-Founder",
     description_2: "Director of Finance and IT",
     img: images.magnus,
+    message: (
+      <>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+        quisquam, dolor explicabo eaque sapiente. Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Reiciendis quos explicabo ipsum magnam
+        saepe a iste sequi officiis nobis doloribus delectus in ratione quidem
+        qui accusamus amet minima, fuga fugiat?
+      </>
+    ),
   },
   {
     id: 3,
@@ -80,9 +95,9 @@ const GetInTouch = () => {
               <br />
               {member.description_2 && `${member.description_2}`}
             </p>
-            <p onClick={() => openPopup(member)}>
-              <a class="button-design form">Read message</a>
-            </p>
+            {/* <p onClick={() => openPopup(member)}>
+              <a className="button-design form">Read message</a>
+            </p> */}
           </div>
         </div>
       </div>
@@ -123,17 +138,9 @@ const GetInTouch = () => {
             >
               <img src={images.logo} className="popup-img" />
               <h3>Message from {currentMember.name}</h3>
-              <div className="flex-image-text">
-                <div>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quidem molestias hic ipsum vel sapiente, illo dolores sit
-                    harum enim. Laborum vero tempore cupiditate illum aliquid
-                    quam ab aut dolore iure.
-                  </p>
-                </div>
-                <img src={images.seven1} alt="" className="img" />
-              </div>
+              <p>"{currentMember.message}"</p>
+              <br />
+              <br />
               <p>
                 <a className="button-design form" onClick={closePopup}>
                   Close
@@ -147,10 +154,14 @@ const GetInTouch = () => {
           <div className="article" id="contact">
             <h2>Contact Us</h2>
             <p>Kindly get in touch with us per email.</p>
+            <br />
             <p className="email">
               For operational enquiries:{" "}
               <u>
-                <a href="mailto:brandon@thewatotolibrary.org">
+                <a
+                  className="button"
+                  href="mailto:brandon@thewatotolibrary.org"
+                >
                   brandon@thewatotolibrary.org
                 </a>
               </u>
@@ -158,7 +169,10 @@ const GetInTouch = () => {
             <p className="email">
               For donation enquiries:{" "}
               <u>
-                <a href="mailto:brandon@thewatotolibrary.org">
+                <a
+                  className="button"
+                  href="mailto:brandon@thewatotolibrary.org"
+                >
                   magnus@thewatotolibrary.org
                 </a>
               </u>

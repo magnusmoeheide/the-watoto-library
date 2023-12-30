@@ -225,13 +225,31 @@ button {
   margin-bottom: 0.8em;
 }
 
-.button-design:hover {
+.button:hover, .button-design:hover {
   transform: scale(1.05);
 }
 
 .button-design.form:hover {
   transform: scale(1.02);
-}  
+} 
+
+.button {
+  border: none;
+  display: inline-block;
+  padding: 0.3em;
+  text-align: center;
+  width: auto;
+
+  background: #1ba0f2;
+  color: #fff;
+  outline: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.2) ;
+  transition: transform .2s;
+  user-select: none;
+  margin-bottom: 0.8em;
+}
 
 
 .title {
@@ -1159,7 +1177,7 @@ text-decoration: none;
   left: calc(50%);
   transform: translate(-50%, -50%) scale(0.1);
   text-align: center;
-  padding: 0 1.9em 1.9em;
+  padding: 0 1.9em 1.7em;
   color: #333;
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
@@ -1208,12 +1226,20 @@ box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.2) ;
 font-weight: bold;
 }
 
+.popup-container .button-design.form {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 700px) {
 .popup-container {
   width: 100%;
   top: calc(50%);
   left: calc(50%);
   padding: 2%;
+}
+
+.popup-container .flex-image-text img {
+  display: none;
 }
 
 }
