@@ -146,7 +146,7 @@ export const articles = [
         section_image: images.twelve5,
         section_description: (
           <>
-            Nicholas, who scored 320/500 marks in his final primary school
+            Nicholas, who scored 333/500 marks in his final primary school
             examination, says the library, together with its members,
             contributed to his grades, and he shares with us his dreams and
             aspirations: "I am 14 years old. I live in Kibera at a place known
