@@ -8,7 +8,7 @@ const TermsOfSale = () => {
       <div className="row" id="flex">
         <Side />
         <div className="main">
-          <MyLink to="/donate#termsofsale">
+          <MyLink to="/donate#legal">
             <div class="div-back">
               <p class="allNewsLetters">
                 <i class="fa-solid fa-arrow-left"></i>Back to Donate

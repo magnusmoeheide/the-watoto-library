@@ -89,7 +89,7 @@ const Home = ({ isAdmin }) => {
                 />
                 <Counter
                   header="Meals served"
-                  targetNumber={800}
+                  targetNumber={1400}
                   icon='<i class="fa-solid fa-utensils"></i>'
                   description={
                     <>

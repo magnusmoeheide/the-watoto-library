@@ -149,7 +149,7 @@ const Donate = () => {
 
           <br />
 
-          <div className="article" id="legal termsofsale">
+          <div className="article" id="legal">
             <h3>Legal</h3>
             <p>
               The Watoto Library is registered in Kenya as a CBO, org. nr.

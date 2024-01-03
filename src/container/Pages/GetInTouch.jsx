@@ -63,6 +63,20 @@ const team = [
     description_1: "Computer Educator",
     img: images.evans,
   },
+  // {
+  //   id: 7,
+  //   role: "Team",
+  //   name: "Lucky Odhiambo",
+  //   description_1: "Youth Leader",
+  //   img: images.evans,
+  // },
+  // {
+  //   id: 8,
+  //   role: "Team",
+  //   name: "Theresia Muthoni",
+  //   description_1: "Women Representative",
+  //   img: images.evans,
+  // },
 ];
 
 export const boardMembers = team.filter((member) => member.role === "Board");

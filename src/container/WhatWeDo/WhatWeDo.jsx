@@ -17,8 +17,8 @@ export const whatwedo = [
     slides: [images.computerClass9],
     description: (
       <>
-        The Watoto Library is excited to announce the launch of its new computer
-        classes, made possible by a generous donation of computers from{" "}
+        The Watoto Library offers weekly computer classes, made possible by
+        generous donations of computers from{" "}
         <a
           href="https://skullerud.osloskolen.no/"
           target="_blank"
@@ -29,7 +29,7 @@ export const whatwedo = [
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </u>
         </a>{" "}
-        in Oslo, Norway. These classes will provide the Kibera children with
+        in Oslo, Norway. These classes have provided the Kibera children with
         valuable skills that will help them succeed in the digital age.
       </>
     ),
@@ -40,12 +40,12 @@ export const whatwedo = [
         section_image: images.computerClass4,
         section_description: (
           <>
-            To accommodate the computer classes, we have purchased and
-            refurbished a room next to the library, creating a dedicated space
-            for the children to learn and explore the world of technology. The
-            room is equipped with desks and benches, computers and necessary
-            equipment, ensuring that the children have access to the tools they
-            need to succeed.
+            To accommodate the computer classes, we purchased and refurbished a
+            room next to the library, creating a dedicated space for the
+            children to learn and explore the world of technology. The room is
+            equipped with desks and benches, computers and necessary equipment,
+            ensuring that the children have access to the tools they need to
+            succeed.
             <br />
             Read about the expansion{" "}
             <MyLink to="/article/6" target="_blank">
@@ -632,84 +632,84 @@ const WhatWeDo = ({ isAdmin }) => {
     <div>
       <Locationscroll />
       <Navbar />
-      <div className="row" id="flex">
-        <Side />
-        <div className="main">
-          <div className="article">
-            <div className="flex-image-text">
-              <div>
-                <h2>Our Programs</h2>
-                <div className="flex-container-2">
-                  <div className="openhrs">
-                    <div>
-                      <p>Library opening hours</p>
-                    </div>
-                    <div className="flex-container-2">
-                      <div className="when">
-                        <i className="fa-regular fa-calendar"></i>Mon - Fri: 3pm
-                        - 10pm
-                      </div>
-                      <div className="when">
-                        <i className="fa-regular fa-calendar"></i>Sat - Sun: 8am
-                        - 10pm
-                      </div>
-                    </div>
-                  </div>
+      <div className="article programsTxt">
+        <div className="flex-image-text">
+          <div>
+            <h2>Our Programs</h2>
+            <div className="flex-container-2">
+              <div className="openhrs">
+                <div>
+                  <p>Library opening hours</p>
                 </div>
-                <p>
-                  We inspire, empower and facilitate childhood growth in areas
-                  faced with poverty and oppression. We do studying, dancing,
-                  computer classes and chess regularly. You can read more about
-                  our other engagements in our newsletters.
-                </p>
-                <MyLink to="/articles">
-                  <div className="div-readmore">
-                    <p className="allNewsLetters">
-                      All newsletters{" "}
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </p>
-                  </div>
-                </MyLink>
               </div>
-              <img src={images.happyBoys} className="img" />
+              <div className="when">
+                <i className="fa-regular fa-calendar" aria-hidden="true"></i>{" "}
+                Mon - Fri: 3pm - 10pm
+              </div>
+              <div className="when">
+                <i className="fa-regular fa-calendar" aria-hidden="true"></i>
+                Sat - Sun: 8am - 10pm
+              </div>
             </div>
-          </div>
-          <br />
 
+            <p>
+              We inspire, empower and facilitate childhood growth in areas faced
+              with poverty and oppression. We do studying, dancing, computer
+              classes and chess regularly. You can read more about our other
+              engagements in our newsletters.
+            </p>
+            <MyLink to="/articles">
+              <div className="div-readmore">
+                <p className="allNewsLetters">
+                  All newsletters{" "}
+                  <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </p>
+              </div>
+            </MyLink>
+          </div>
+          <img src={images.happyBoys} alt="" />
+        </div>
+      </div>
+
+      <div className="flex-container" id="flex">
+        <div className="row2">
           {whatwedo
             .filter((wwd) => wwd.status === "Published")
             .map((wwd) => (
-              <div key={wwd.id}>
-                <div className="article" id={wwd.url}>
-                  <Section
+              <div className="column-2" key={wwd.id}>
+                <MyLink to={`/programs/${wwd.url}`}>
+                  <div className="program-card card" id={wwd.url}>
+                    <div className="flex-container-2">
+                      <h3>
+                        {wwd.icon} {wwd.title}{" "}
+                      </h3>
+                      {wwd.coming && (
+                        <span className="coming">{wwd.coming}</span>
+                      )}
+                    </div>
+
+                    <img
+                      src={wwd.img}
+                      className="program-img"
+                      alt={wwd.title}
+                    />
+
+                    {/* <Section
                     wwdId={wwd.id}
                     wwdUrl={wwd.url}
                     header={wwd.header}
                     title={wwd.title}
-                    coming={wwd.coming}
-                    instructor={wwd.instructor}
-                    places={wwd.places}
-                    openingHours={wwd.openingHours}
-                    description={wwd.description}
                     img={wwd.img}
                     readMore="Read more"
                     customReadMoreLink={`/programs/${wwd.url}`}
-                  />
-                </div>
-                <br />
+                  /> */}
+                  </div>
+                </MyLink>
               </div>
             ))}
-
-          {isAdmin ? (
-            <div className="article">
-              <h3>Create New Program</h3>
-              <p>
-                Program title: <input type="text" />
-              </p>
-            </div>
-          ) : null}
         </div>
       </div>
+      <br />
       <Footer />
     </div>
   );

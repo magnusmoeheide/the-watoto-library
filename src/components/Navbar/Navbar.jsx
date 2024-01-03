@@ -38,30 +38,17 @@ const Navbar = () => {
       path: "/programs",
       submenu: [
         {
-          name: "Newsletters",
-          path: "/articles",
-          className: "header-category",
-          icon: <i class="fa-solid fa-newspaper"></i>,
-        },
-        {
           name: "All Programs",
           path: "/programs",
           className: "header-category",
           icon: <i class="fa-solid fa-people-roof"></i>,
         },
-        ...whatwedo
-          .filter((wwd) => wwd.status === "Published")
-          .map((program) => {
-            let programName = program.title;
-            // if (program.id === 5) {
-            //   programName = "River Cleanup";
-            // }
-            return {
-              name: programName,
-              path: `/programs/${program.url}`,
-              icon: program.icon,
-            };
-          }),
+        {
+          name: "Newsletters",
+          path: "/articles",
+          className: "header-category",
+          icon: <i class="fa-solid fa-newspaper"></i>,
+        },
       ],
     },
     {
