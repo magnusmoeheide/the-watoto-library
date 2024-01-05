@@ -850,6 +850,12 @@ img {
   margin: 1em;
 }
 
+.programsTxt .flex-image-text img {
+  max-width: 35%;
+  min-width: 35%;
+  height: auto; 
+}
+
 @media screen and (max-width: 800px) {
   .program-card {
     flex: 0 0 100%;
@@ -861,6 +867,10 @@ img {
 
   .column-2 {
     width: 50%;
+  }
+
+  .programsTxt .flex-image-text img {
+    display: none;
   }
 
 }
@@ -1016,6 +1026,10 @@ justify-content: flex-start;
 @media screen and (min-width: 800px) {
   .flex-image-text div {
     padding-right: 0.9em;
+  }
+
+  .programsTxt .flex-image-text div {
+    padding-right: 0em;
   }
 }
 

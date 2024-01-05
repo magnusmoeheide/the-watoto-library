@@ -642,22 +642,25 @@ const WhatWeDo = ({ isAdmin }) => {
                   <p>Library opening hours</p>
                 </div>
               </div>
-              <div className="when">
-                <i className="fa-regular fa-calendar" aria-hidden="true"></i>{" "}
-                Mon - Fri: 3pm - 10pm
-              </div>
-              <div className="when">
-                <i className="fa-regular fa-calendar" aria-hidden="true"></i>
-                Sat - Sun: 8am - 10pm
+              <div className="flex-container-2">
+                <div className="when">
+                  <i className="fa-regular fa-calendar" aria-hidden="true"></i>{" "}
+                  Mon - Fri: 3pm - 10pm
+                </div>
+                <div className="when">
+                  <i className="fa-regular fa-calendar" aria-hidden="true"></i>
+                  Sat - Sun: 8am - 10pm
+                </div>
               </div>
             </div>
 
             <p>
               We inspire, empower and facilitate childhood growth in areas faced
-              with poverty and oppression. We do studying, dancing, computer
-              classes and chess regularly. You can read more about our other
-              engagements in our newsletters.
+              with poverty and oppression. <br />
+              We do studying, dancing, computer classes and chess regularly. You
+              can read more about our other engagements in our newsletters.
             </p>
+            <br />
             <MyLink to="/articles">
               <div className="div-readmore">
                 <p className="allNewsLetters">
@@ -667,7 +670,7 @@ const WhatWeDo = ({ isAdmin }) => {
               </div>
             </MyLink>
           </div>
-          <img src={images.happyBoys} alt="" />
+          <img src={images.happyBoys} className="img" alt="" />
         </div>
       </div>
 
